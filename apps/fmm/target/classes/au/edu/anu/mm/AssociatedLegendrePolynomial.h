@@ -39,10 +39,10 @@ namespace au { namespace edu { namespace anu { namespace mm {
 
 class AssociatedLegendrePolynomial_Strings {
   public:
-    static ::x10::lang::String sl__48622;
-    static ::x10::lang::String sl__48623;
-    static ::x10::lang::String sl__48624;
-    static ::x10::lang::String sl__48621;
+    static ::x10::lang::String sl__73258;
+    static ::x10::lang::String sl__73259;
+    static ::x10::lang::String sl__73260;
+    static ::x10::lang::String sl__73257;
 };
 
 class AssociatedLegendrePolynomial : public ::x10::lang::X10Class   {

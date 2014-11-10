@@ -99,7 +99,7 @@ namespace au { namespace edu { namespace anu { namespace mm {
 
 class ParentOctant_Strings {
   public:
-    static ::x10::lang::String sl__48563;
+    static ::x10::lang::String sl__73199;
 };
 
 class ParentOctant : public ::au::edu::anu::mm::Octant   {

@@ -39,10 +39,10 @@ namespace au { namespace edu { namespace anu { namespace mm {
 
 class OctantId_Strings {
   public:
-    static ::x10::lang::String sl__48516;
-    static ::x10::lang::String sl__48517;
-    static ::x10::lang::String sl__48519;
-    static ::x10::lang::String sl__48518;
+    static ::x10::lang::String sl__73152;
+    static ::x10::lang::String sl__73153;
+    static ::x10::lang::String sl__73155;
+    static ::x10::lang::String sl__73154;
 };
 
 class OctantId   {
@@ -90,7 +90,7 @@ class OctantId   {
         FMGL(level) = level;
         
         //#line 17 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-        ::au::edu::anu::mm::OctantId this__43862 = (*this);
+        ::au::edu::anu::mm::OctantId this__70123 = (*this);
         
     }
     static ::au::edu::anu::mm::OctantId _make(x10_ubyte x, x10_ubyte y, x10_ubyte z,

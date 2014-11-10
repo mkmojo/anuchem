@@ -8,8 +8,8 @@
 void au::edu::anu::mm::Factorial::FMGL(factorial__do_init)() {
     FMGL(factorial__status) = ::x10aux::StaticInitController::INITIALIZING;
     _SI_("Doing static initialization for field: au::edu::anu::mm::Factorial.factorial");
-    ::x10::lang::Rail< x10_double >* __var181__ = ::au::edu::anu::mm::Factorial::calcFact();
-    FMGL(factorial) = __var181__;
+    ::x10::lang::Rail< x10_double >* __var255__ = ::au::edu::anu::mm::Factorial::calcFact();
+    FMGL(factorial) = __var255__;
     FMGL(factorial__status) = ::x10aux::StaticInitController::INITIALIZED;
 }
 void au::edu::anu::mm::Factorial::FMGL(factorial__init)() {
@@ -31,12 +31,12 @@ volatile ::x10aux::StaticInitController::status au::edu::anu::mm::Factorial::FMG
     
     //#line 26 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Factorial.x10"
     {
-        x10_long i__48054;
-        for (i__48054 = ((x10_long)1ll); ((i__48054) <= (((x10_long)99ll)));
-             i__48054 = ((i__48054) + (((x10_long)1ll)))) {
-            x10_long i__48055 = i__48054;
-            fact->x10::lang::Rail< x10_double >::__set(i__48055, ((((x10_double) (i__48055))) * (fact->x10::lang::Rail< x10_double >::__apply(
-                                                                                                   ((i__48055) - (((x10_long)1ll)))))));
+        x10_long i__72454;
+        for (i__72454 = ((x10_long)1ll); ((i__72454) <= (((x10_long)99ll)));
+             i__72454 = ((i__72454) + (((x10_long)1ll)))) {
+            x10_long i__72455 = i__72454;
+            fact->x10::lang::Rail< x10_double >::__set(i__72455, ((((x10_double) (i__72455))) * (fact->x10::lang::Rail< x10_double >::__apply(
+                                                                                                   ((i__72455) - (((x10_long)1ll)))))));
         }
     }
     
@@ -59,7 +59,7 @@ x10_double au::edu::anu::mm::Factorial::getFactorial(x10_long i) {
     
 }
 void au::edu::anu::mm::Factorial::_constructor() {
-    ::au::edu::anu::mm::Factorial* this__48056 = this;
+    ::au::edu::anu::mm::Factorial* this__72456 = this;
     
 }
 ::au::edu::anu::mm::Factorial* au::edu::anu::mm::Factorial::_make(

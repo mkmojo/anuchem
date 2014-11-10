@@ -105,7 +105,7 @@ namespace au { namespace edu { namespace anu { namespace mm {
 
 class Octant_Strings {
   public:
-    static ::x10::lang::String sl__48442;
+    static ::x10::lang::String sl__73078;
 };
 
 class Octant : public ::x10::lang::X10Class   {

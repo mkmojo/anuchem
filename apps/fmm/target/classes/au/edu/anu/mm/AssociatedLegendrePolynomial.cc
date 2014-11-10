@@ -24,7 +24,7 @@
 void au::edu::anu::mm::AssociatedLegendrePolynomial::_constructor(x10_long p) {
     
     //#line 20 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__46245 = this;
+    ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__70645 = this;
     
     //#line 28 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
     this->FMGL(terms) = ::x10::lang::Rail< x10_double >::_make(((((p) + (((x10_long)1ll)))) * (((p) + (((x10_long)1ll))))));
@@ -79,7 +79,7 @@ x10_double au::edu::anu::mm::AssociatedLegendrePolynomial::__set(
       p);
     
     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    x10_double ret__46269;
+    x10_double ret__70669;
     
     //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
     ::x10aux::nullCheck(P->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
@@ -87,141 +87,141 @@ x10_double au::edu::anu::mm::AssociatedLegendrePolynomial::__set(
       1.0);
     
     //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ret__46269 = 1.0;
+    ret__70669 = 1.0;
     
     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ret__46269;
-    x10_double v__46270 = (-(sinTheta));
-    x10_double ret__46271;
+    ret__70669;
+    x10_double v__70670 = (-(sinTheta));
+    x10_double ret__70671;
     
     //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
     ::x10aux::nullCheck(P->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
       ((((((x10_long)1ll)) * (((((x10_long)1ll)) + (((x10_long)1ll)))))) + (((x10_long)1ll))),
-      v__46270);
+      v__70670);
     
     //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ret__46271 = v__46270;
+    ret__70671 = v__70670;
     
     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ret__46271;
-    x10_double v__46272 = cosTheta;
-    x10_double ret__46273;
+    ret__70671;
+    x10_double v__70672 = cosTheta;
+    x10_double ret__70673;
     
     //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
     ::x10aux::nullCheck(P->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
       ((((((x10_long)1ll)) * (((((x10_long)1ll)) + (((x10_long)1ll)))))) + (((x10_long)0ll))),
-      v__46272);
+      v__70672);
     
     //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ret__46273 = v__46272;
+    ret__70673 = v__70672;
     
     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ret__46273;
+    ret__70673;
     
     //#line 54 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
     x10_double fact = 1.0;
     
     //#line 55 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    x10_long i__28824max__46274 = p;
+    x10_long i__63130max__70674 = p;
     {
-        x10_long i__46275;
-        for (i__46275 = ((x10_long)2ll); ((i__46275) <= (i__28824max__46274));
-             i__46275 = ((i__46275) + (((x10_long)1ll))))
+        x10_long i__70675;
+        for (i__70675 = ((x10_long)2ll); ((i__70675) <= (i__63130max__70674));
+             i__70675 = ((i__70675) + (((x10_long)1ll))))
         {
-            x10_long l__46276 = i__46275;
+            x10_long l__70676 = i__70675;
             
             //#line 56 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
             fact = ((fact) + (2.0));
             
             //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            x10_long l__46254 = l__46276;
-            x10_long m__46255 = l__46276;
-            x10_double v__46256 = ((((fact) * (sinTheta))) * ((-((__extension__ ({
+            x10_long l__70654 = l__70676;
+            x10_long m__70655 = l__70676;
+            x10_double v__70656 = ((((fact) * (sinTheta))) * ((-((__extension__ ({
                 
                 //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                x10_long l__46257 = ((l__46276) - (((x10_long)1ll)));
-                x10_long m__46258 = ((l__46276) - (((x10_long)1ll)));
+                x10_long l__70657 = ((l__70676) - (((x10_long)1ll)));
+                x10_long m__70658 = ((l__70676) - (((x10_long)1ll)));
                 ::x10aux::nullCheck(P->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                  ((((l__46257) * (((l__46257) + (((x10_long)1ll)))))) + (m__46258)));
+                  ((((l__70657) * (((l__70657) + (((x10_long)1ll)))))) + (m__70658)));
             }))
             ))));
-            x10_double ret__46259;
+            x10_double ret__70659;
             
             //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
             ::x10aux::nullCheck(P->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
-              ((((l__46254) * (((l__46254) + (((x10_long)1ll)))))) + (m__46255)),
-              v__46256);
+              ((((l__70654) * (((l__70654) + (((x10_long)1ll)))))) + (m__70655)),
+              v__70656);
             
             //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ret__46259 = v__46256;
+            ret__70659 = v__70656;
             
             //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ret__46259;
-            x10_long l__46260 = l__46276;
-            x10_long m__46261 = ((l__46276) - (((x10_long)1ll)));
-            x10_double v__46262 = ((((fact) * (cosTheta))) * ((__extension__ ({
+            ret__70659;
+            x10_long l__70660 = l__70676;
+            x10_long m__70661 = ((l__70676) - (((x10_long)1ll)));
+            x10_double v__70662 = ((((fact) * (cosTheta))) * ((__extension__ ({
                 
                 //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                x10_long l__46263 = ((l__46276) - (((x10_long)1ll)));
-                x10_long m__46264 = ((l__46276) - (((x10_long)1ll)));
+                x10_long l__70663 = ((l__70676) - (((x10_long)1ll)));
+                x10_long m__70664 = ((l__70676) - (((x10_long)1ll)));
                 ::x10aux::nullCheck(P->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                  ((((l__46263) * (((l__46263) + (((x10_long)1ll)))))) + (m__46264)));
+                  ((((l__70663) * (((l__70663) + (((x10_long)1ll)))))) + (m__70664)));
             }))
             ));
-            x10_double ret__46265;
+            x10_double ret__70665;
             
             //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
             ::x10aux::nullCheck(P->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
-              ((((l__46260) * (((l__46260) + (((x10_long)1ll)))))) + (m__46261)),
-              v__46262);
+              ((((l__70660) * (((l__70660) + (((x10_long)1ll)))))) + (m__70661)),
+              v__70662);
             
             //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ret__46265 = v__46262;
+            ret__70665 = v__70662;
             
             //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ret__46265;
+            ret__70665;
             
             //#line 59 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            x10_long i__28806max__46266 = ((l__46276) - (((x10_long)2ll)));
+            x10_long i__63112max__70666 = ((l__70676) - (((x10_long)2ll)));
             {
-                x10_long i__46267;
-                for (i__46267 = ((x10_long)0ll); ((i__46267) <= (i__28806max__46266));
-                     i__46267 = ((i__46267) + (((x10_long)1ll))))
+                x10_long i__70667;
+                for (i__70667 = ((x10_long)0ll); ((i__70667) <= (i__63112max__70666));
+                     i__70667 = ((i__70667) + (((x10_long)1ll))))
                 {
-                    x10_long k__46268 = i__46267;
+                    x10_long k__70668 = i__70667;
                     
                     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                    x10_long l__46246 = l__46276;
-                    x10_long m__46247 = k__46268;
-                    x10_double v__46248 = ((((((((fact) * (cosTheta))) * ((__extension__ ({
+                    x10_long l__70646 = l__70676;
+                    x10_long m__70647 = k__70668;
+                    x10_double v__70648 = ((((((((fact) * (cosTheta))) * ((__extension__ ({
                         
                         //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                        x10_long l__46249 = ((l__46276) - (((x10_long)1ll)));
-                        x10_long m__46250 = k__46268;
+                        x10_long l__70649 = ((l__70676) - (((x10_long)1ll)));
+                        x10_long m__70650 = k__70668;
                         ::x10aux::nullCheck(P->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                          ((((l__46249) * (((l__46249) + (((x10_long)1ll)))))) + (m__46250)));
+                          ((((l__70649) * (((l__70649) + (((x10_long)1ll)))))) + (m__70650)));
                     }))
-                    ))) - (((((x10_double) (((((l__46276) + (k__46268))) - (((x10_long)1ll)))))) * ((__extension__ ({
+                    ))) - (((((x10_double) (((((l__70676) + (k__70668))) - (((x10_long)1ll)))))) * ((__extension__ ({
                         
                         //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                        x10_long l__46251 = ((l__46276) - (((x10_long)2ll)));
-                        x10_long m__46252 = k__46268;
+                        x10_long l__70651 = ((l__70676) - (((x10_long)2ll)));
+                        x10_long m__70652 = k__70668;
                         ::x10aux::nullCheck(P->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                          ((((l__46251) * (((l__46251) + (((x10_long)1ll)))))) + (m__46252)));
+                          ((((l__70651) * (((l__70651) + (((x10_long)1ll)))))) + (m__70652)));
                     }))
-                    ))))) / (((x10_double) (((l__46276) - (k__46268))))));
-                    x10_double ret__46253;
+                    ))))) / (((x10_double) (((l__70676) - (k__70668))))));
+                    x10_double ret__70653;
                     
                     //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
                     ::x10aux::nullCheck(P->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
-                      ((((l__46246) * (((l__46246) + (((x10_long)1ll)))))) + (m__46247)),
-                      v__46248);
+                      ((((l__70646) * (((l__70646) + (((x10_long)1ll)))))) + (m__70647)),
+                      v__70648);
                     
                     //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                    ret__46253 = v__46248;
+                    ret__70653 = v__70648;
                     
                     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                    ret__46253;
+                    ret__70653;
                 }
             }
             
@@ -244,195 +244,195 @@ void au::edu::anu::mm::AssociatedLegendrePolynomial::getPlk(
     x10_double sinTheta = ::x10::lang::MathNatives::sin(theta);
     
     //#line 77 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__46307 =
+    ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__70707 =
       this;
     
     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    x10_double ret__46308;
+    x10_double ret__70708;
     
     //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ::x10aux::nullCheck(::x10aux::nullCheck(this__46307)->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
+    ::x10aux::nullCheck(::x10aux::nullCheck(this__70707)->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
       ((((((x10_long)0ll)) * (((((x10_long)0ll)) + (((x10_long)1ll)))))) + (((x10_long)0ll))),
       1.0);
     
     //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ret__46308 = 1.0;
+    ret__70708 = 1.0;
     
     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ret__46308;
+    ret__70708;
     
     //#line 78 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__46309 =
+    ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__70709 =
       this;
     
     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    x10_double v__46310 = (-(sinTheta));
-    x10_double ret__46311;
+    x10_double v__70710 = (-(sinTheta));
+    x10_double ret__70711;
     
     //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ::x10aux::nullCheck(::x10aux::nullCheck(this__46309)->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
+    ::x10aux::nullCheck(::x10aux::nullCheck(this__70709)->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
       ((((((x10_long)1ll)) * (((((x10_long)1ll)) + (((x10_long)1ll)))))) + (((x10_long)1ll))),
-      v__46310);
+      v__70710);
     
     //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ret__46311 = v__46310;
+    ret__70711 = v__70710;
     
     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ret__46311;
+    ret__70711;
     
     //#line 79 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__46312 =
+    ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__70712 =
       this;
     
     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    x10_double v__46313 = cosTheta;
-    x10_double ret__46314;
+    x10_double v__70713 = cosTheta;
+    x10_double ret__70714;
     
     //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ::x10aux::nullCheck(::x10aux::nullCheck(this__46312)->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
+    ::x10aux::nullCheck(::x10aux::nullCheck(this__70712)->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
       ((((((x10_long)1ll)) * (((((x10_long)1ll)) + (((x10_long)1ll)))))) + (((x10_long)0ll))),
-      v__46313);
+      v__70713);
     
     //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ret__46314 = v__46313;
+    ret__70714 = v__70713;
     
     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ret__46314;
+    ret__70714;
     
     //#line 80 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
     x10_double fact = 1.0;
     
     //#line 81 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    x10_long i__28860max__46315 = this->FMGL(p);
+    x10_long i__63166max__70715 = this->FMGL(p);
     {
-        x10_long i__46316;
-        for (i__46316 = ((x10_long)2ll); ((i__46316) <= (i__28860max__46315));
-             i__46316 = ((i__46316) + (((x10_long)1ll))))
+        x10_long i__70716;
+        for (i__70716 = ((x10_long)2ll); ((i__70716) <= (i__63166max__70715));
+             i__70716 = ((i__70716) + (((x10_long)1ll))))
         {
-            x10_long l__46317 = i__46316;
+            x10_long l__70717 = i__70716;
             
             //#line 82 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
             fact = ((fact) + (2.0));
             
             //#line 83 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__46288 =
+            ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__70688 =
               this;
             
             //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            x10_long l__46289 = l__46317;
-            x10_long m__46290 = l__46317;
-            x10_double v__46291 = ((((fact) * (sinTheta))) * ((-((__extension__ ({
+            x10_long l__70689 = l__70717;
+            x10_long m__70690 = l__70717;
+            x10_double v__70691 = ((((fact) * (sinTheta))) * ((-((__extension__ ({
                 
                 //#line 83 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__46292 =
+                ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__70692 =
                   this;
                 
                 //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                x10_long l__46293 = ((l__46317) - (((x10_long)1ll)));
-                x10_long m__46294 = ((l__46317) - (((x10_long)1ll)));
-                ::x10aux::nullCheck(::x10aux::nullCheck(this__46292)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                  ((((l__46293) * (((l__46293) + (((x10_long)1ll)))))) + (m__46294)));
+                x10_long l__70693 = ((l__70717) - (((x10_long)1ll)));
+                x10_long m__70694 = ((l__70717) - (((x10_long)1ll)));
+                ::x10aux::nullCheck(::x10aux::nullCheck(this__70692)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
+                  ((((l__70693) * (((l__70693) + (((x10_long)1ll)))))) + (m__70694)));
             }))
             ))));
-            x10_double ret__46295;
+            x10_double ret__70695;
             
             //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ::x10aux::nullCheck(::x10aux::nullCheck(this__46288)->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
-              ((((l__46289) * (((l__46289) + (((x10_long)1ll)))))) + (m__46290)),
-              v__46291);
+            ::x10aux::nullCheck(::x10aux::nullCheck(this__70688)->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
+              ((((l__70689) * (((l__70689) + (((x10_long)1ll)))))) + (m__70690)),
+              v__70691);
             
             //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ret__46295 = v__46291;
+            ret__70695 = v__70691;
             
             //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ret__46295;
+            ret__70695;
             
             //#line 84 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__46296 =
+            ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__70696 =
               this;
             
             //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            x10_long l__46297 = l__46317;
-            x10_long m__46298 = ((l__46317) - (((x10_long)1ll)));
-            x10_double v__46299 = ((((fact) * (cosTheta))) * ((__extension__ ({
+            x10_long l__70697 = l__70717;
+            x10_long m__70698 = ((l__70717) - (((x10_long)1ll)));
+            x10_double v__70699 = ((((fact) * (cosTheta))) * ((__extension__ ({
                 
                 //#line 84 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__46300 =
+                ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__70700 =
                   this;
                 
                 //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                x10_long l__46301 = ((l__46317) - (((x10_long)1ll)));
-                x10_long m__46302 = ((l__46317) - (((x10_long)1ll)));
-                ::x10aux::nullCheck(::x10aux::nullCheck(this__46300)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                  ((((l__46301) * (((l__46301) + (((x10_long)1ll)))))) + (m__46302)));
+                x10_long l__70701 = ((l__70717) - (((x10_long)1ll)));
+                x10_long m__70702 = ((l__70717) - (((x10_long)1ll)));
+                ::x10aux::nullCheck(::x10aux::nullCheck(this__70700)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
+                  ((((l__70701) * (((l__70701) + (((x10_long)1ll)))))) + (m__70702)));
             }))
             ));
-            x10_double ret__46303;
+            x10_double ret__70703;
             
             //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ::x10aux::nullCheck(::x10aux::nullCheck(this__46296)->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
-              ((((l__46297) * (((l__46297) + (((x10_long)1ll)))))) + (m__46298)),
-              v__46299);
+            ::x10aux::nullCheck(::x10aux::nullCheck(this__70696)->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
+              ((((l__70697) * (((l__70697) + (((x10_long)1ll)))))) + (m__70698)),
+              v__70699);
             
             //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ret__46303 = v__46299;
+            ret__70703 = v__70699;
             
             //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ret__46303;
+            ret__70703;
             
             //#line 85 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            x10_long i__28842max__46304 = ((l__46317) - (((x10_long)2ll)));
+            x10_long i__63148max__70704 = ((l__70717) - (((x10_long)2ll)));
             {
-                x10_long i__46305;
-                for (i__46305 = ((x10_long)0ll); ((i__46305) <= (i__28842max__46304));
-                     i__46305 = ((i__46305) + (((x10_long)1ll))))
+                x10_long i__70705;
+                for (i__70705 = ((x10_long)0ll); ((i__70705) <= (i__63148max__70704));
+                     i__70705 = ((i__70705) + (((x10_long)1ll))))
                 {
-                    x10_long k__46306 = i__46305;
+                    x10_long k__70706 = i__70705;
                     
                     //#line 86 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                    ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__46277 =
+                    ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__70677 =
                       this;
                     
                     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                    x10_long l__46278 = l__46317;
-                    x10_long m__46279 = k__46306;
-                    x10_double v__46280 = ((((((((fact) * (cosTheta))) * ((__extension__ ({
+                    x10_long l__70678 = l__70717;
+                    x10_long m__70679 = k__70706;
+                    x10_double v__70680 = ((((((((fact) * (cosTheta))) * ((__extension__ ({
                         
                         //#line 86 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                        ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__46281 =
+                        ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__70681 =
                           this;
                         
                         //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                        x10_long l__46282 = ((l__46317) - (((x10_long)1ll)));
-                        x10_long m__46283 = k__46306;
-                        ::x10aux::nullCheck(::x10aux::nullCheck(this__46281)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                          ((((l__46282) * (((l__46282) + (((x10_long)1ll)))))) + (m__46283)));
+                        x10_long l__70682 = ((l__70717) - (((x10_long)1ll)));
+                        x10_long m__70683 = k__70706;
+                        ::x10aux::nullCheck(::x10aux::nullCheck(this__70681)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
+                          ((((l__70682) * (((l__70682) + (((x10_long)1ll)))))) + (m__70683)));
                     }))
-                    ))) - (((((x10_double) (((((l__46317) + (k__46306))) - (((x10_long)1ll)))))) * ((__extension__ ({
+                    ))) - (((((x10_double) (((((l__70717) + (k__70706))) - (((x10_long)1ll)))))) * ((__extension__ ({
                         
                         //#line 86 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                        ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__46284 =
+                        ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__70684 =
                           this;
                         
                         //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                        x10_long l__46285 = ((l__46317) - (((x10_long)2ll)));
-                        x10_long m__46286 = k__46306;
-                        ::x10aux::nullCheck(::x10aux::nullCheck(this__46284)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                          ((((l__46285) * (((l__46285) + (((x10_long)1ll)))))) + (m__46286)));
+                        x10_long l__70685 = ((l__70717) - (((x10_long)2ll)));
+                        x10_long m__70686 = k__70706;
+                        ::x10aux::nullCheck(::x10aux::nullCheck(this__70684)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
+                          ((((l__70685) * (((l__70685) + (((x10_long)1ll)))))) + (m__70686)));
                     }))
-                    ))))) / (((x10_double) (((l__46317) - (k__46306))))));
-                    x10_double ret__46287;
+                    ))))) / (((x10_double) (((l__70717) - (k__70706))))));
+                    x10_double ret__70687;
                     
                     //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                    ::x10aux::nullCheck(::x10aux::nullCheck(this__46277)->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
-                      ((((l__46278) * (((l__46278) + (((x10_long)1ll)))))) + (m__46279)),
-                      v__46280);
+                    ::x10aux::nullCheck(::x10aux::nullCheck(this__70677)->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
+                      ((((l__70678) * (((l__70678) + (((x10_long)1ll)))))) + (m__70679)),
+                      v__70680);
                     
                     //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                    ret__46287 = v__46280;
+                    ret__70687 = v__70680;
                     
                     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                    ret__46287;
+                    ret__70687;
                 }
             }
             
@@ -449,7 +449,7 @@ void au::edu::anu::mm::AssociatedLegendrePolynomial::getPlk(
     if (((::fabs(x)) > (1.0))) {
         
         //#line 99 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-        ::x10aux::throwException(::x10aux::nullCheck(::x10::lang::IllegalArgumentException::_make((&::au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__48621))));
+        ::x10aux::throwException(::x10aux::nullCheck(::x10::lang::IllegalArgumentException::_make((&::au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__73257))));
     }
     
     //#line 102 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
@@ -459,7 +459,7 @@ void au::edu::anu::mm::AssociatedLegendrePolynomial::getPlk(
       p);
     
     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    x10_double ret__46338;
+    x10_double ret__70738;
     
     //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
     ::x10aux::nullCheck(Plm->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
@@ -467,10 +467,10 @@ void au::edu::anu::mm::AssociatedLegendrePolynomial::getPlk(
       1.0);
     
     //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ret__46338 = 1.0;
+    ret__70738 = 1.0;
     
     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    ret__46338;
+    ret__70738;
     
     //#line 105 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
     x10_double somx2 = ::x10::lang::MathNatives::sqrt(((((1.0) - (x))) * (((1.0) + (x)))));
@@ -485,52 +485,52 @@ void au::edu::anu::mm::AssociatedLegendrePolynomial::getPlk(
         {
             
             //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            x10_long l__46318 = i;
-            x10_long m__46319 = i;
-            x10_double v__46320 = (((((-((__extension__ ({
+            x10_long l__70718 = i;
+            x10_long m__70719 = i;
+            x10_double v__70720 = (((((-((__extension__ ({
                 
                 //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                x10_long l__46321 = ((i) - (((x10_long)1ll)));
-                x10_long m__46322 = ((i) - (((x10_long)1ll)));
+                x10_long l__70721 = ((i) - (((x10_long)1ll)));
+                x10_long m__70722 = ((i) - (((x10_long)1ll)));
                 ::x10aux::nullCheck(Plm->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                  ((((l__46321) * (((l__46321) + (((x10_long)1ll)))))) + (m__46322)));
+                  ((((l__70721) * (((l__70721) + (((x10_long)1ll)))))) + (m__70722)));
             }))
             ))) * (fact))) * (somx2));
-            x10_double ret__46323;
+            x10_double ret__70723;
             
             //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
             ::x10aux::nullCheck(Plm->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
-              ((((l__46318) * (((l__46318) + (((x10_long)1ll)))))) + (m__46319)),
-              v__46320);
+              ((((l__70718) * (((l__70718) + (((x10_long)1ll)))))) + (m__70719)),
+              v__70720);
             
             //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ret__46323 = v__46320;
+            ret__70723 = v__70720;
             
             //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ret__46323;
-            x10_long l__46324 = i;
-            x10_long m__46325 = ((i) - (((x10_long)1ll)));
-            x10_double v__46326 = ((((x) * (fact))) * ((__extension__ ({
+            ret__70723;
+            x10_long l__70724 = i;
+            x10_long m__70725 = ((i) - (((x10_long)1ll)));
+            x10_double v__70726 = ((((x) * (fact))) * ((__extension__ ({
                 
                 //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                x10_long l__46327 = ((i) - (((x10_long)1ll)));
-                x10_long m__46328 = ((i) - (((x10_long)1ll)));
+                x10_long l__70727 = ((i) - (((x10_long)1ll)));
+                x10_long m__70728 = ((i) - (((x10_long)1ll)));
                 ::x10aux::nullCheck(Plm->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                  ((((l__46327) * (((l__46327) + (((x10_long)1ll)))))) + (m__46328)));
+                  ((((l__70727) * (((l__70727) + (((x10_long)1ll)))))) + (m__70728)));
             }))
             ));
-            x10_double ret__46329;
+            x10_double ret__70729;
             
             //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
             ::x10aux::nullCheck(Plm->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
-              ((((l__46324) * (((l__46324) + (((x10_long)1ll)))))) + (m__46325)),
-              v__46326);
+              ((((l__70724) * (((l__70724) + (((x10_long)1ll)))))) + (m__70725)),
+              v__70726);
             
             //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ret__46329 = v__46326;
+            ret__70729 = v__70726;
             
             //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            ret__46329;
+            ret__70729;
             
             //#line 110 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
             fact = ((fact) + (2.0));
@@ -550,37 +550,37 @@ void au::edu::anu::mm::AssociatedLegendrePolynomial::getPlk(
                      l = ((l) + (((x10_long)1ll)))) {
                     
                     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                    x10_long l__46330 = l;
-                    x10_long m__46331 = m;
-                    x10_double v__46332 = ((((((((x) * (((((2.0) * (((x10_double) (l))))) - (1.0))))) * ((__extension__ ({
+                    x10_long l__70730 = l;
+                    x10_long m__70731 = m;
+                    x10_double v__70732 = ((((((((x) * (((((2.0) * (((x10_double) (l))))) - (1.0))))) * ((__extension__ ({
                         
                         //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                        x10_long l__46333 = ((l) - (((x10_long)1ll)));
-                        x10_long m__46334 = m;
+                        x10_long l__70733 = ((l) - (((x10_long)1ll)));
+                        x10_long m__70734 = m;
                         ::x10aux::nullCheck(Plm->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                          ((((l__46333) * (((l__46333) + (((x10_long)1ll)))))) + (m__46334)));
+                          ((((l__70733) * (((l__70733) + (((x10_long)1ll)))))) + (m__70734)));
                     }))
                     ))) - (((((((x10_double) (((l) + (m))))) - (1.0))) * ((__extension__ ({
                         
                         //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                        x10_long l__46335 = ((l) - (((x10_long)2ll)));
-                        x10_long m__46336 = m;
+                        x10_long l__70735 = ((l) - (((x10_long)2ll)));
+                        x10_long m__70736 = m;
                         ::x10aux::nullCheck(Plm->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                          ((((l__46335) * (((l__46335) + (((x10_long)1ll)))))) + (m__46336)));
+                          ((((l__70735) * (((l__70735) + (((x10_long)1ll)))))) + (m__70736)));
                     }))
                     ))))) / (((x10_double) (((l) - (m))))));
-                    x10_double ret__46337;
+                    x10_double ret__70737;
                     
                     //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
                     ::x10aux::nullCheck(Plm->FMGL(terms))->x10::lang::Rail< x10_double >::__set(
-                      ((((l__46330) * (((l__46330) + (((x10_long)1ll)))))) + (m__46331)),
-                      v__46332);
+                      ((((l__70730) * (((l__70730) + (((x10_long)1ll)))))) + (m__70731)),
+                      v__70732);
                     
                     //#line 36 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                    ret__46337 = v__46332;
+                    ret__70737 = v__70732;
                     
                     //#line 34 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                    ret__46337;
+                    ret__70737;
                 }
             }
             
@@ -601,40 +601,40 @@ void au::edu::anu::mm::AssociatedLegendrePolynomial::getPlk(
     (s)->::x10::util::StringBuilder::_constructor();
     
     //#line 127 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-    x10_long i__28896max__46345 = this->FMGL(p);
+    x10_long i__63202max__70745 = this->FMGL(p);
     {
-        x10_long i__46346;
-        for (i__46346 = ((x10_long)0ll); ((i__46346) <= (i__28896max__46345));
-             i__46346 = ((i__46346) + (((x10_long)1ll))))
+        x10_long i__70746;
+        for (i__70746 = ((x10_long)0ll); ((i__70746) <= (i__63202max__70745));
+             i__70746 = ((i__70746) + (((x10_long)1ll))))
         {
-            x10_long i__46347 = i__46346;
+            x10_long i__70747 = i__70746;
             
             //#line 128 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            x10_long i__28878max__46342 = i__46347;
+            x10_long i__63184max__70742 = i__70747;
             {
-                x10_long i__46343;
-                for (i__46343 = ((x10_long)0ll); ((i__46343) <= (i__28878max__46342));
-                     i__46343 = ((i__46343) + (((x10_long)1ll))))
+                x10_long i__70743;
+                for (i__70743 = ((x10_long)0ll); ((i__70743) <= (i__63184max__70742));
+                     i__70743 = ((i__70743) + (((x10_long)1ll))))
                 {
-                    x10_long j__46344 = i__46343;
+                    x10_long j__70744 = i__70743;
                     
                     //#line 129 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                    s->add(::x10::lang::String::__plus(::x10::lang::String::__plus((&::au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__48622), (__extension__ ({
-                               ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__46339 =
+                    s->add(::x10::lang::String::__plus(::x10::lang::String::__plus((&::au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__73258), (__extension__ ({
+                               ::au::edu::anu::mm::AssociatedLegendrePolynomial* this__70739 =
                                  this;
                                
                                //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                               x10_long l__46340 = i__46347;
-                               x10_long m__46341 = j__46344;
-                               ::x10aux::nullCheck(::x10aux::nullCheck(this__46339)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                                 ((((l__46340) * (((l__46340) + (((x10_long)1ll)))))) + (m__46341)));
+                               x10_long l__70740 = i__70747;
+                               x10_long m__70741 = j__70744;
+                               ::x10aux::nullCheck(::x10aux::nullCheck(this__70739)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
+                                 ((((l__70740) * (((l__70740) + (((x10_long)1ll)))))) + (m__70741)));
                            }))
-                           ), (&::au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__48623)));
+                           ), (&::au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__73259)));
                 }
             }
             
             //#line 131 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-            s->add((&::au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__48624));
+            s->add((&::au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__73260));
         }
     }
     
@@ -681,10 +681,10 @@ void au::edu::anu::mm::AssociatedLegendrePolynomial::_initRTT() {
     rtt.initStageTwo("au.edu.anu.mm.AssociatedLegendrePolynomial",::x10aux::RuntimeType::class_kind, 0, parents, 0, NULL, NULL);
 }
 
-::x10::lang::String au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__48622("");
-::x10::lang::String au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__48623(" ");
-::x10::lang::String au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__48624("\n");
-::x10::lang::String au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__48621("abs(x) > 1: Associated Legendre functions are only defined on [-1, 1].");
+::x10::lang::String au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__73258("");
+::x10::lang::String au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__73259(" ");
+::x10::lang::String au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__73260("\n");
+::x10::lang::String au::edu::anu::mm::AssociatedLegendrePolynomial_Strings::sl__73257("abs(x) > 1: Associated Legendre functions are only defined on [-1, 1].");
 
 /* END of AssociatedLegendrePolynomial */
 /*************************************************/

@@ -27,7 +27,7 @@ namespace au { namespace edu { namespace anu { namespace mm {
 
 class Octant__SumReducer_Strings {
   public:
-    static ::x10::lang::String sl__48471;
+    static ::x10::lang::String sl__73107;
 };
 
 class Octant__SumReducer   {
@@ -78,7 +78,7 @@ class Octant__SumReducer   {
         
     }
     void _constructor() {
-        ::au::edu::anu::mm::Octant__SumReducer this__43800 = (*this);
+        ::au::edu::anu::mm::Octant__SumReducer this__70061 = (*this);
         
     }
     static ::au::edu::anu::mm::Octant__SumReducer _make() {

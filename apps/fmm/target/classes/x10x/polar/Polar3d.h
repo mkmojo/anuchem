@@ -39,10 +39,10 @@ namespace x10x { namespace polar {
 
 class Polar3d_Strings {
   public:
-    static ::x10::lang::String sl__48735;
-    static ::x10::lang::String sl__48736;
-    static ::x10::lang::String sl__48738;
-    static ::x10::lang::String sl__48737;
+    static ::x10::lang::String sl__73371;
+    static ::x10::lang::String sl__73372;
+    static ::x10::lang::String sl__73374;
+    static ::x10::lang::String sl__73373;
 };
 
 class Polar3d   {
@@ -72,7 +72,7 @@ class Polar3d   {
     void _constructor(x10_double r, x10_double theta, x10_double phi) {
         
         //#line 21 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/x10x/polar/Polar3d.x10"
-        ::x10x::polar::Polar3d this__48072 = (*this);
+        ::x10x::polar::Polar3d this__72472 = (*this);
         
         //#line 27 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/x10x/polar/Polar3d.x10"
         (*this)->FMGL(r) = r;

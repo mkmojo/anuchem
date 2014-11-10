@@ -28,7 +28,7 @@ void au::edu::anu::mm::LocalExpansion::_constructor(x10_long p) {
     //#line 28 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
     
     //#line 26 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-    ::au::edu::anu::mm::LocalExpansion* this__47442 = this;
+    ::au::edu::anu::mm::LocalExpansion* this__71842 = this;
     
 }
 ::au::edu::anu::mm::LocalExpansion* au::edu::anu::mm::LocalExpansion::_make(
@@ -49,7 +49,7 @@ void au::edu::anu::mm::LocalExpansion::_constructor(::au::edu::anu::mm::LocalExp
     //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
     
     //#line 26 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-    ::au::edu::anu::mm::LocalExpansion* this__47443 = this;
+    ::au::edu::anu::mm::LocalExpansion* this__71843 = this;
     
 }
 ::au::edu::anu::mm::LocalExpansion* au::edu::anu::mm::LocalExpansion::_make(
@@ -81,19 +81,19 @@ void au::edu::anu::mm::LocalExpansion::_constructor(::au::edu::anu::mm::LocalExp
     x10_double rfac0 = ((1.0) / (v_pole->FMGL(r)));
     
     //#line 46 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-    x10_complex v__47460 = x10_complex(rfac0,0.0);
-    x10_complex ret__47461;
+    x10_complex v__71860 = x10_complex(rfac0,0.0);
+    x10_complex ret__71861;
     
     //#line 47 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
     ::x10aux::nullCheck(exp->FMGL(terms))->x10::lang::Rail< x10_complex >::__set(
       ((((((x10_long)0ll)) * (((((x10_long)0ll)) + (((x10_long)1ll)))))) + (((x10_long)0ll))),
-      v__47460);
+      v__71860);
     
     //#line 48 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-    ret__47461 = v__47460;
+    ret__71861 = v__71860;
     
     //#line 46 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-    ret__47461;
+    ret__71861;
     
     //#line 50 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
     x10_complex phifac0 = x10_complex(::x10::lang::MathNatives::cos(v_pole->FMGL(phi)),::x10::lang::MathNatives::sin(v_pole->FMGL(phi)));
@@ -105,88 +105,88 @@ void au::edu::anu::mm::LocalExpansion::_constructor(::au::edu::anu::mm::LocalExp
     x10_double il = 1.0;
     
     //#line 53 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-    x10_long i__37824max__47462 = p;
+    x10_long i__47011max__71862 = p;
     {
-        x10_long i__47463;
-        for (i__47463 = ((x10_long)1ll); ((i__47463) <= (i__37824max__47462));
-             i__47463 = ((i__47463) + (((x10_long)1ll))))
+        x10_long i__71863;
+        for (i__71863 = ((x10_long)1ll); ((i__71863) <= (i__47011max__71862));
+             i__71863 = ((i__71863) + (((x10_long)1ll))))
         {
-            x10_long l__47464 = i__47463;
+            x10_long l__71864 = i__71863;
             
             //#line 54 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            il = ((il) * (((x10_double) (l__47464))));
+            il = ((il) * (((x10_double) (l__71864))));
             
             //#line 55 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            x10_double ilm__47458 = il;
+            x10_double ilm__71858 = il;
             
             //#line 56 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            x10_complex phifac__47459 = x10_complex(1.0,0.0);
+            x10_complex phifac__71859 = x10_complex(1.0,0.0);
             
             //#line 46 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-            x10_long l__47451 = l__47464;
-            x10_complex v__47452 = ::x10::lang::ComplexNatives::_times(phifac__47459, ((((rfac) * ((__extension__ ({
+            x10_long l__71851 = l__71864;
+            x10_complex v__71852 = ::x10::lang::ComplexNatives::_times(phifac__71859, ((((rfac) * ((__extension__ ({
                 
                 //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                x10_long l__47453 = l__47464;
+                x10_long l__71853 = l__71864;
                 ::x10aux::nullCheck(::x10aux::nullCheck(pplm)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                  ((((l__47453) * (((l__47453) + (((x10_long)1ll)))))) + (((x10_long)0ll))));
+                  ((((l__71853) * (((l__71853) + (((x10_long)1ll)))))) + (((x10_long)0ll))));
             }))
-            ))) * (ilm__47458)));
-            x10_complex ret__47454;
+            ))) * (ilm__71858)));
+            x10_complex ret__71854;
             
             //#line 47 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
             ::x10aux::nullCheck(exp->FMGL(terms))->x10::lang::Rail< x10_complex >::__set(
-              ((((l__47451) * (((l__47451) + (((x10_long)1ll)))))) + (((x10_long)0ll))),
-              v__47452);
+              ((((l__71851) * (((l__71851) + (((x10_long)1ll)))))) + (((x10_long)0ll))),
+              v__71852);
             
             //#line 48 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-            ret__47454 = v__47452;
+            ret__71854 = v__71852;
             
             //#line 46 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-            ret__47454;
+            ret__71854;
             
             //#line 58 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            x10_long i__37806max__47455 = l__47464;
+            x10_long i__46993max__71855 = l__71864;
             {
-                x10_long i__47456;
-                for (i__47456 = ((x10_long)1ll); ((i__47456) <= (i__37806max__47455));
-                     i__47456 = ((i__47456) + (((x10_long)1ll))))
+                x10_long i__71856;
+                for (i__71856 = ((x10_long)1ll); ((i__71856) <= (i__46993max__71855));
+                     i__71856 = ((i__71856) + (((x10_long)1ll))))
                 {
-                    x10_long m__47457 = i__47456;
+                    x10_long m__71857 = i__71856;
                     
                     //#line 59 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    ilm__47458 = ((ilm__47458) / (((x10_double) (((((l__47464) + (((x10_long)1ll)))) - (m__47457))))));
+                    ilm__71858 = ((ilm__71858) / (((x10_double) (((((l__71864) + (((x10_long)1ll)))) - (m__71857))))));
                     
                     //#line 60 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    phifac__47459 = ::x10::lang::ComplexNatives::_times(phifac__47459, phifac0);
+                    phifac__71859 = ::x10::lang::ComplexNatives::_times(phifac__71859, phifac0);
                     
                     //#line 61 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_complex M_lm__47448 = ::x10::lang::ComplexNatives::_times(phifac__47459, ((((rfac) * ((__extension__ ({
+                    x10_complex M_lm__71848 = ::x10::lang::ComplexNatives::_times(phifac__71859, ((((rfac) * ((__extension__ ({
                         
                         //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                        x10_long l__47449 = l__47464;
-                        x10_long m__47450 = m__47457;
+                        x10_long l__71849 = l__71864;
+                        x10_long m__71850 = m__71857;
                         ::x10aux::nullCheck(::x10aux::nullCheck(pplm)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                          ((((l__47449) * (((l__47449) + (((x10_long)1ll)))))) + (m__47450)));
+                          ((((l__71849) * (((l__71849) + (((x10_long)1ll)))))) + (m__71850)));
                     }))
-                    ))) * (ilm__47458)));
+                    ))) * (ilm__71858)));
                     
                     //#line 46 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                    x10_long l__47444 = l__47464;
-                    x10_long m__47445 = m__47457;
-                    x10_complex v__47446 = M_lm__47448;
-                    x10_complex ret__47447;
+                    x10_long l__71844 = l__71864;
+                    x10_long m__71845 = m__71857;
+                    x10_complex v__71846 = M_lm__71848;
+                    x10_complex ret__71847;
                     
                     //#line 47 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
                     ::x10aux::nullCheck(exp->FMGL(terms))->x10::lang::Rail< x10_complex >::__set(
-                      ((((l__47444) * (((l__47444) + (((x10_long)1ll)))))) + (m__47445)),
-                      v__47446);
+                      ((((l__71844) * (((l__71844) + (((x10_long)1ll)))))) + (m__71845)),
+                      v__71846);
                     
                     //#line 48 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                    ret__47447 = v__47446;
+                    ret__71847 = v__71846;
                     
                     //#line 46 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                    ret__47447;
+                    ret__71847;
                 }
             }
             
@@ -217,88 +217,88 @@ void au::edu::anu::mm::LocalExpansion::translateAndAddLocal(
                                         reinterpret_cast< ::au::edu::anu::mm::Expansion*>(scratch));
     
     //#line 85 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-    x10_long i__37896max__47485 = this->FMGL(p);
+    x10_long i__47083max__71885 = this->FMGL(p);
     {
-        x10_long i__47486;
-        for (i__47486 = ((x10_long)0ll); ((i__47486) <= (i__37896max__47485));
-             i__47486 = ((i__47486) + (((x10_long)1ll))))
+        x10_long i__71886;
+        for (i__71886 = ((x10_long)0ll); ((i__71886) <= (i__47083max__71885));
+             i__71886 = ((i__71886) + (((x10_long)1ll))))
         {
-            x10_long m__47487 = i__47486;
+            x10_long m__71887 = i__71886;
             
             //#line 86 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            x10_long i__37842min__47477 = m__47487;
-            x10_long i__37842max__47478 = this->FMGL(p);
+            x10_long i__47029min__71877 = m__71887;
+            x10_long i__47029max__71878 = this->FMGL(p);
             {
-                x10_long i__47479;
-                for (i__47479 = i__37842min__47477; ((i__47479) <= (i__37842max__47478));
-                     i__47479 = ((i__47479) + (((x10_long)1ll))))
+                x10_long i__71879;
+                for (i__71879 = i__47029min__71877; ((i__71879) <= (i__47029max__71878));
+                     i__71879 = ((i__71879) + (((x10_long)1ll))))
                 {
-                    x10_long l__47480 = i__47479;
+                    x10_long l__71880 = i__71879;
                     ::x10aux::nullCheck(temp)->x10::lang::Rail< x10_complex >::__set(
-                      l__47480, (__extension__ ({
+                      l__71880, (__extension__ ({
                           
                           //#line 44 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                          x10_long l__47465 = l__47480;
-                          x10_long m__47466 = m__47487;
+                          x10_long l__71865 = l__71880;
+                          x10_long m__71866 = m__71887;
                           ::x10aux::nullCheck(::x10aux::nullCheck(scratch)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
-                            ((((l__47465) * (((l__47465) + (((x10_long)1ll)))))) + (m__47466)));
+                            ((((l__71865) * (((l__71865) + (((x10_long)1ll)))))) + (m__71866)));
                       }))
                       );
                 }
             }
             
             //#line 88 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            x10_long i__37878min__47481 = m__47487;
-            x10_long i__37878max__47482 = this->FMGL(p);
+            x10_long i__47065min__71881 = m__71887;
+            x10_long i__47065max__71882 = this->FMGL(p);
             {
-                x10_long i__47483;
-                for (i__47483 = i__37878min__47481; ((i__47483) <= (i__37878max__47482));
-                     i__47483 = ((i__47483) + (((x10_long)1ll))))
+                x10_long i__71883;
+                for (i__71883 = i__47065min__71881; ((i__71883) <= (i__47065max__71882));
+                     i__71883 = ((i__71883) + (((x10_long)1ll))))
                 {
-                    x10_long l__47484 = i__47483;
+                    x10_long l__71884 = i__71883;
                     
                     //#line 89 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_complex M_lm__47475 = x10_complex(0.0,0.0);
+                    x10_complex M_lm__71875 = x10_complex(0.0,0.0);
                     
                     //#line 90 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_double F_lm__47476 = 1.0;
+                    x10_double F_lm__71876 = 1.0;
                     
                     //#line 91 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_long i__37860min__47467 = l__47484;
-                    x10_long i__37860max__47468 = this->FMGL(p);
+                    x10_long i__47047min__71867 = l__71884;
+                    x10_long i__47047max__71868 = this->FMGL(p);
                     {
-                        x10_long i__47469;
-                        for (i__47469 = i__37860min__47467;
-                             ((i__47469) <= (i__37860max__47468));
-                             i__47469 = ((i__47469) + (((x10_long)1ll))))
+                        x10_long i__71869;
+                        for (i__71869 = i__47047min__71867;
+                             ((i__71869) <= (i__47047max__71868));
+                             i__71869 = ((i__71869) + (((x10_long)1ll))))
                         {
-                            x10_long j__47470 = i__47469;
+                            x10_long j__71870 = i__71869;
                             
                             //#line 92 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                            M_lm__47475 = ::x10::lang::ComplexNatives::_plus(M_lm__47475, ::x10::lang::ComplexNatives::_times(::x10aux::nullCheck(temp)->x10::lang::Rail< x10_complex >::__apply(
-                                                                                                                                j__47470), F_lm__47476));
+                            M_lm__71875 = ::x10::lang::ComplexNatives::_plus(M_lm__71875, ::x10::lang::ComplexNatives::_times(::x10aux::nullCheck(temp)->x10::lang::Rail< x10_complex >::__apply(
+                                                                                                                                j__71870), F_lm__71876));
                             
                             //#line 93 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                            F_lm__47476 = ((((F_lm__47476) * (b))) / (((x10_double) (((((j__47470) - (l__47484))) + (((x10_long)1ll)))))));
+                            F_lm__71876 = ((((F_lm__71876) * (b))) / (((x10_double) (((((j__71870) - (l__71884))) + (((x10_long)1ll)))))));
                         }
                     }
                     
                     //#line 46 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                    x10_long l__47471 = l__47484;
-                    x10_long m__47472 = m__47487;
-                    x10_complex v__47473 = M_lm__47475;
-                    x10_complex ret__47474;
+                    x10_long l__71871 = l__71884;
+                    x10_long m__71872 = m__71887;
+                    x10_complex v__71873 = M_lm__71875;
+                    x10_complex ret__71874;
                     
                     //#line 47 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
                     ::x10aux::nullCheck(::x10aux::nullCheck(scratch)->FMGL(terms))->x10::lang::Rail< x10_complex >::__set(
-                      ((((l__47471) * (((l__47471) + (((x10_long)1ll)))))) + (m__47472)),
-                      v__47473);
+                      ((((l__71871) * (((l__71871) + (((x10_long)1ll)))))) + (m__71872)),
+                      v__71873);
                     
                     //#line 48 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                    ret__47474 = v__47473;
+                    ret__71874 = v__71873;
                     
                     //#line 46 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                    ret__47474;
+                    ret__71874;
                 }
             }
             
@@ -336,12 +336,12 @@ void au::edu::anu::mm::LocalExpansion::translateAndAddLocal(
                                source, (__extension__ ({
                                    
                                    //#line 192 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/WignerRotationMatrix.x10"
-                                   x10_double theta__47332 =
+                                   x10_double theta__71732 =
                                      polar->FMGL(theta);
-                                   x10_long numTerms__47333 =
+                                   x10_long numTerms__71733 =
                                      this->FMGL(p);
                                    ::au::edu::anu::mm::WignerRotationMatrix::getExpandedCollection(
-                                     theta__47332, numTerms__47333,
+                                     theta__71732, numTerms__71733,
                                      ((x10_int)2));
                                }))
                                );
@@ -370,115 +370,115 @@ void au::edu::anu::mm::LocalExpansion::transformAndAddToLocal(
     x10_double b_m_pow = 1.0;
     
     //#line 131 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-    x10_long i__37968max__47512 = this->FMGL(p);
+    x10_long i__47155max__71912 = this->FMGL(p);
     {
-        x10_long i__47513;
-        for (i__47513 = ((x10_long)0ll); ((i__47513) <= (i__37968max__47512));
-             i__47513 = ((i__47513) + (((x10_long)1ll))))
+        x10_long i__71913;
+        for (i__71913 = ((x10_long)0ll); ((i__71913) <= (i__47155max__71912));
+             i__71913 = ((i__71913) + (((x10_long)1ll))))
         {
-            x10_long m__47514 = i__47513;
+            x10_long m__71914 = i__71913;
             
             //#line 132 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            x10_long i__37914min__47501 = m__47514;
-            x10_long i__37914max__47502 = this->FMGL(p);
+            x10_long i__47101min__71901 = m__71914;
+            x10_long i__47101max__71902 = this->FMGL(p);
             {
-                x10_long i__47503;
-                for (i__47503 = i__37914min__47501; ((i__47503) <= (i__37914max__47502));
-                     i__47503 = ((i__47503) + (((x10_long)1ll))))
+                x10_long i__71903;
+                for (i__71903 = i__47101min__71901; ((i__71903) <= (i__47101max__71902));
+                     i__71903 = ((i__71903) + (((x10_long)1ll))))
                 {
-                    x10_long l__47504 = i__47503;
+                    x10_long l__71904 = i__71903;
                     
                     //#line 133 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
                     ::x10aux::nullCheck(temp)->x10::lang::Rail< x10_complex >::__set(
-                      l__47504, ::x10::lang::ComplexNatives::_times(m_sign, ::x10::lang::ComplexNatives::conj((__extension__ ({
+                      l__71904, ::x10::lang::ComplexNatives::_times(m_sign, ::x10::lang::ComplexNatives::conj((__extension__ ({
                           
                           //#line 44 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                          x10_long l__47488 = l__47504;
-                          x10_long m__47489 = m__47514;
+                          x10_long l__71888 = l__71904;
+                          x10_long m__71889 = m__71914;
                           ::x10aux::nullCheck(::x10aux::nullCheck(scratch)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
-                            ((((l__47488) * (((l__47488) + (((x10_long)1ll)))))) + (m__47489)));
+                            ((((l__71888) * (((l__71888) + (((x10_long)1ll)))))) + (m__71889)));
                       }))
                       )));
                 }
             }
             
             //#line 136 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            x10_double F_lm__47509 = (((((((__extension__ ({
+            x10_double F_lm__71909 = (((((((__extension__ ({
                 
                 //#line 30 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Factorial.x10"
-                x10_long i__47510 = ((m__47514) + (m__47514));
+                x10_long i__71910 = ((m__71914) + (m__71914));
                 ::au::edu::anu::mm::Factorial::FMGL(factorial__get)()->x10::lang::Rail< x10_double >::__apply(
-                  i__47510);
+                  i__71910);
             }))
             ) * (inv_b))) * (b_m_pow))) * (b_m_pow));
             
             //#line 137 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            x10_double ml__47511 = ((x10_double) (((((m__47514) + (m__47514))) + (((x10_long)1ll)))));
+            x10_double ml__71911 = ((x10_double) (((((m__71914) + (m__71914))) + (((x10_long)1ll)))));
             
             //#line 138 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            x10_long i__37950min__47505 = m__47514;
-            x10_long i__37950max__47506 = this->FMGL(p);
+            x10_long i__47137min__71905 = m__71914;
+            x10_long i__47137max__71906 = this->FMGL(p);
             {
-                x10_long i__47507;
-                for (i__47507 = i__37950min__47505; ((i__47507) <= (i__37950max__47506));
-                     i__47507 = ((i__47507) + (((x10_long)1ll))))
+                x10_long i__71907;
+                for (i__71907 = i__47137min__71905; ((i__71907) <= (i__47137max__71906));
+                     i__71907 = ((i__71907) + (((x10_long)1ll))))
                 {
-                    x10_long l__47508 = i__47507;
+                    x10_long l__71908 = i__71907;
                     
                     //#line 139 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_complex M_lm__47498 = x10_complex(0.0,0.0);
+                    x10_complex M_lm__71898 = x10_complex(0.0,0.0);
                     
                     //#line 140 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_double F_jl__47499 = F_lm__47509;
+                    x10_double F_jl__71899 = F_lm__71909;
                     
                     //#line 141 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_double jl__47500 = ml__47511;
+                    x10_double jl__71900 = ml__71911;
                     
                     //#line 143 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_long i__37932min__47490 = m__47514;
-                    x10_long i__37932max__47491 = this->FMGL(p);
+                    x10_long i__47119min__71890 = m__71914;
+                    x10_long i__47119max__71891 = this->FMGL(p);
                     {
-                        x10_long i__47492;
-                        for (i__47492 = i__37932min__47490;
-                             ((i__47492) <= (i__37932max__47491));
-                             i__47492 = ((i__47492) + (((x10_long)1ll))))
+                        x10_long i__71892;
+                        for (i__71892 = i__47119min__71890;
+                             ((i__71892) <= (i__47119max__71891));
+                             i__71892 = ((i__71892) + (((x10_long)1ll))))
                         {
-                            x10_long j__47493 = i__47492;
+                            x10_long j__71893 = i__71892;
                             
                             //#line 144 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                            M_lm__47498 = ::x10::lang::ComplexNatives::_plus(M_lm__47498, ::x10::lang::ComplexNatives::_times(::x10aux::nullCheck(temp)->x10::lang::Rail< x10_complex >::__apply(
-                                                                                                                                j__47493), F_jl__47499));
+                            M_lm__71898 = ::x10::lang::ComplexNatives::_plus(M_lm__71898, ::x10::lang::ComplexNatives::_times(::x10aux::nullCheck(temp)->x10::lang::Rail< x10_complex >::__apply(
+                                                                                                                                j__71893), F_jl__71899));
                             
                             //#line 145 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                            F_jl__47499 = ((((jl__47500) * (inv_b))) * (F_jl__47499));
+                            F_jl__71899 = ((((jl__71900) * (inv_b))) * (F_jl__71899));
                             
                             //#line 146 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                            jl__47500 = ((jl__47500) + (1.0));
+                            jl__71900 = ((jl__71900) + (1.0));
                         }
                     }
                     
                     //#line 46 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                    x10_long l__47494 = l__47508;
-                    x10_long m__47495 = m__47514;
-                    x10_complex v__47496 = M_lm__47498;
-                    x10_complex ret__47497;
+                    x10_long l__71894 = l__71908;
+                    x10_long m__71895 = m__71914;
+                    x10_complex v__71896 = M_lm__71898;
+                    x10_complex ret__71897;
                     
                     //#line 47 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
                     ::x10aux::nullCheck(::x10aux::nullCheck(scratch)->FMGL(terms))->x10::lang::Rail< x10_complex >::__set(
-                      ((((l__47494) * (((l__47494) + (((x10_long)1ll)))))) + (m__47495)),
-                      v__47496);
+                      ((((l__71894) * (((l__71894) + (((x10_long)1ll)))))) + (m__71895)),
+                      v__71896);
                     
                     //#line 48 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                    ret__47497 = v__47496;
+                    ret__71897 = v__71896;
                     
                     //#line 46 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                    ret__47497;
+                    ret__71897;
                     
                     //#line 149 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    F_lm__47509 = ((((ml__47511) * (inv_b))) * (F_lm__47509));
+                    F_lm__71909 = ((((ml__71911) * (inv_b))) * (F_lm__71909));
                     
                     //#line 150 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    ml__47511 = ((ml__47511) + (((x10_double) (((x10_long)1ll)))));
+                    ml__71911 = ((ml__71911) + (((x10_double) (((x10_long)1ll)))));
                 }
             }
             
@@ -521,12 +521,12 @@ void au::edu::anu::mm::LocalExpansion::transformAndAddToLocal(
                                  source, (__extension__ ({
                                      
                                      //#line 191 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/WignerRotationMatrix.x10"
-                                     x10_double theta__47376 =
+                                     x10_double theta__71776 =
                                        polar->FMGL(theta);
-                                     x10_long numTerms__47377 =
+                                     x10_long numTerms__71777 =
                                        this->FMGL(p);
                                      ::au::edu::anu::mm::WignerRotationMatrix::getExpandedCollection(
-                                       theta__47376, numTerms__47377,
+                                       theta__71776, numTerms__71777,
                                        ((x10_int)-1));
                                  }))
                                  );
@@ -537,136 +537,136 @@ void au::edu::anu::mm::LocalExpansion::transformAndAddToLocal(
   ::au::edu::anu::mm::LocalExpansion* transform, ::au::edu::anu::mm::MultipoleExpansion* source) {
     
     //#line 183 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-    x10_long i__38040max__47545 = this->FMGL(p);
+    x10_long i__47227max__71945 = this->FMGL(p);
     {
-        x10_long i__47546;
-        for (i__47546 = ((x10_long)0ll); ((i__47546) <= (i__38040max__47545));
-             i__47546 = ((i__47546) + (((x10_long)1ll))))
+        x10_long i__71946;
+        for (i__71946 = ((x10_long)0ll); ((i__71946) <= (i__47227max__71945));
+             i__71946 = ((i__71946) + (((x10_long)1ll))))
         {
-            x10_long j__47547 = i__47546;
+            x10_long j__71947 = i__71946;
             
             //#line 184 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            x10_double k_sign__47544 = ((x10_double) (((((x10_long)1ll)) - (((((((x10_long)2ll)) * (j__47547))) % ::x10aux::zeroCheck(((x10_long)2ll)))))));
+            x10_double k_sign__71944 = ((x10_double) (((((x10_long)1ll)) - (((((((x10_long)2ll)) * (j__71947))) % ::x10aux::zeroCheck(((x10_long)2ll)))))));
             
             //#line 185 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            x10_long i__38022min__47540 = (-(j__47547));
-            x10_long i__38022max__47541 = j__47547;
+            x10_long i__47209min__71940 = (-(j__71947));
+            x10_long i__47209max__71941 = j__71947;
             {
-                x10_long i__47542;
-                for (i__47542 = i__38022min__47540; ((i__47542) <= (i__38022max__47541));
-                     i__47542 = ((i__47542) + (((x10_long)1ll))))
+                x10_long i__71942;
+                for (i__71942 = i__47209min__71940; ((i__71942) <= (i__47209max__71941));
+                     i__71942 = ((i__71942) + (((x10_long)1ll))))
                 {
-                    x10_long k__47543 = i__47542;
+                    x10_long k__71943 = i__71942;
                     
                     //#line 186 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_complex O_jk__47535 = ((k__47543) < (((x10_long)0ll)))
-                      ? (::x10::lang::ComplexNatives::_times(k_sign__47544, ::x10::lang::ComplexNatives::conj((__extension__ ({
+                    x10_complex O_jk__71935 = ((k__71943) < (((x10_long)0ll)))
+                      ? (::x10::lang::ComplexNatives::_times(k_sign__71944, ::x10::lang::ComplexNatives::conj((__extension__ ({
                              
                              //#line 44 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                             x10_long l__47536 = j__47547;
-                             x10_long m__47537 = (-(k__47543));
+                             x10_long l__71936 = j__71947;
+                             x10_long m__71937 = (-(k__71943));
                              ::x10aux::nullCheck(::x10aux::nullCheck(source)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
-                               ((((l__47536) * (((l__47536) + (((x10_long)1ll)))))) + (m__47537)));
+                               ((((l__71936) * (((l__71936) + (((x10_long)1ll)))))) + (m__71937)));
                          }))
                          ))) : ((__extension__ ({
                                     
                                     //#line 44 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                                    x10_long l__47538 = j__47547;
-                                    x10_long m__47539 = k__47543;
+                                    x10_long l__71938 = j__71947;
+                                    x10_long m__71939 = k__71943;
                                     ::x10aux::nullCheck(::x10aux::nullCheck(source)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
-                                      ((((l__47538) * (((l__47538) + (((x10_long)1ll)))))) + (m__47539)));
+                                      ((((l__71938) * (((l__71938) + (((x10_long)1ll)))))) + (m__71939)));
                                 }))
                                 );
                     
                     //#line 187 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_long i__38004max__47532 = ((this->FMGL(p)) - (j__47547));
+                    x10_long i__47191max__71932 = ((this->FMGL(p)) - (j__71947));
                     {
-                        x10_long i__47533;
-                        for (i__47533 = ((x10_long)0ll); ((i__47533) <= (i__38004max__47532));
-                             i__47533 = ((i__47533) + (((x10_long)1ll))))
+                        x10_long i__71933;
+                        for (i__71933 = ((x10_long)0ll); ((i__71933) <= (i__47191max__71932));
+                             i__71933 = ((i__71933) + (((x10_long)1ll))))
                         {
-                            x10_long l__47534 = i__47533;
+                            x10_long l__71934 = i__71933;
                             
                             //#line 188 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                            x10_long i__37986max__47529 =
-                              l__47534;
+                            x10_long i__47173max__71929 =
+                              l__71934;
                             {
-                                x10_long i__47530;
-                                for (i__47530 = ((x10_long)0ll);
-                                     ((i__47530) <= (i__37986max__47529));
-                                     i__47530 = ((i__47530) + (((x10_long)1ll))))
+                                x10_long i__71930;
+                                for (i__71930 = ((x10_long)0ll);
+                                     ((i__71930) <= (i__47173max__71929));
+                                     i__71930 = ((i__71930) + (((x10_long)1ll))))
                                 {
-                                    x10_long m__47531 = i__47530;
+                                    x10_long m__71931 = i__71930;
                                     
                                     //#line 189 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                                    x10_long km__47523 = ((k__47543) + (m__47531));
+                                    x10_long km__71923 = ((k__71943) + (m__71931));
                                     
                                     //#line 190 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                                    if (((((x10_long)::llabs(km__47523))) <= (((j__47547) + (l__47534)))))
+                                    if (((((x10_long)::llabs(km__71923))) <= (((j__71947) + (l__71934)))))
                                     {
                                         
                                         //#line 191 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                                        x10_complex B_lmjk__47524 =
-                                          ((km__47523) < (((x10_long)0ll)))
-                                          ? (::x10::lang::ComplexNatives::_times(((x10_double) (((((x10_long)1ll)) - (((((((x10_long)2ll)) * (km__47523))) % ::x10aux::zeroCheck(((x10_long)2ll))))))), ::x10::lang::ComplexNatives::conj((__extension__ ({
+                                        x10_complex B_lmjk__71924 =
+                                          ((km__71923) < (((x10_long)0ll)))
+                                          ? (::x10::lang::ComplexNatives::_times(((x10_double) (((((x10_long)1ll)) - (((((((x10_long)2ll)) * (km__71923))) % ::x10aux::zeroCheck(((x10_long)2ll))))))), ::x10::lang::ComplexNatives::conj((__extension__ ({
                                                  
                                                  //#line 44 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                                                 x10_long l__47525 =
-                                                   ((j__47547) + (l__47534));
-                                                 x10_long m__47526 =
-                                                   (-(km__47523));
+                                                 x10_long l__71925 =
+                                                   ((j__71947) + (l__71934));
+                                                 x10_long m__71926 =
+                                                   (-(km__71923));
                                                  ::x10aux::nullCheck(::x10aux::nullCheck(transform)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
-                                                   ((((l__47525) * (((l__47525) + (((x10_long)1ll)))))) + (m__47526)));
+                                                   ((((l__71925) * (((l__71925) + (((x10_long)1ll)))))) + (m__71926)));
                                              }))
                                              ))) : ((__extension__ ({
                                                         
                                                         //#line 44 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                                                        x10_long l__47527 =
-                                                          ((j__47547) + (l__47534));
-                                                        x10_long m__47528 =
-                                                          km__47523;
+                                                        x10_long l__71927 =
+                                                          ((j__71947) + (l__71934));
+                                                        x10_long m__71928 =
+                                                          km__71923;
                                                         ::x10aux::nullCheck(::x10aux::nullCheck(transform)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
-                                                          ((((l__47527) * (((l__47527) + (((x10_long)1ll)))))) + (m__47528)));
+                                                          ((((l__71927) * (((l__71927) + (((x10_long)1ll)))))) + (m__71928)));
                                                     }))
                                                     );
                                         
                                         //#line 193 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                                        ::au::edu::anu::mm::Expansion* this__47515 =
+                                        ::au::edu::anu::mm::Expansion* this__71915 =
                                           reinterpret_cast< ::au::edu::anu::mm::Expansion*>(this);
                                         
                                         //#line 46 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                                        x10_long l__47516 =
-                                          l__47534;
-                                        x10_long m__47517 =
-                                          m__47531;
-                                        x10_complex v__47518 =
+                                        x10_long l__71916 =
+                                          l__71934;
+                                        x10_long m__71917 =
+                                          m__71931;
+                                        x10_complex v__71918 =
                                           ::x10::lang::ComplexNatives::_plus((__extension__ ({
                                             
                                             //#line 193 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                                            ::au::edu::anu::mm::Expansion* this__47519 =
+                                            ::au::edu::anu::mm::Expansion* this__71919 =
                                               reinterpret_cast< ::au::edu::anu::mm::Expansion*>(this);
                                             
                                             //#line 44 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                                            x10_long l__47520 =
-                                              l__47534;
-                                            x10_long m__47521 =
-                                              m__47531;
-                                            ::x10aux::nullCheck(::x10aux::nullCheck(this__47519)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
-                                              ((((l__47520) * (((l__47520) + (((x10_long)1ll)))))) + (m__47521)));
+                                            x10_long l__71920 =
+                                              l__71934;
+                                            x10_long m__71921 =
+                                              m__71931;
+                                            ::x10aux::nullCheck(::x10aux::nullCheck(this__71919)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
+                                              ((((l__71920) * (((l__71920) + (((x10_long)1ll)))))) + (m__71921)));
                                         }))
-                                        , ::x10::lang::ComplexNatives::_times(B_lmjk__47524, O_jk__47535));
-                                        x10_complex ret__47522;
+                                        , ::x10::lang::ComplexNatives::_times(B_lmjk__71924, O_jk__71935));
+                                        x10_complex ret__71922;
                                         
                                         //#line 47 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                                        ::x10aux::nullCheck(::x10aux::nullCheck(this__47515)->FMGL(terms))->x10::lang::Rail< x10_complex >::__set(
-                                          ((((l__47516) * (((l__47516) + (((x10_long)1ll)))))) + (m__47517)),
-                                          v__47518);
+                                        ::x10aux::nullCheck(::x10aux::nullCheck(this__71915)->FMGL(terms))->x10::lang::Rail< x10_complex >::__set(
+                                          ((((l__71916) * (((l__71916) + (((x10_long)1ll)))))) + (m__71917)),
+                                          v__71918);
                                         
                                         //#line 48 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                                        ret__47522 = v__47518;
+                                        ret__71922 = v__71918;
                                         
                                         //#line 46 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                                        ret__47522;
+                                        ret__71922;
                                     }
                                     
                                 }
@@ -676,7 +676,7 @@ void au::edu::anu::mm::LocalExpansion::transformAndAddToLocal(
                     }
                     
                     //#line 197 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    k_sign__47544 = (-(k_sign__47544));
+                    k_sign__71944 = (-(k_sign__71944));
                 }
             }
             
@@ -711,8 +711,8 @@ x10_double au::edu::anu::mm::LocalExpansion::calculatePotentialAndForces(
     
     //#line 220 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
     x10_double potential = ((q) * (((__extension__ ({
-        ::au::edu::anu::mm::Expansion* this__47397 = reinterpret_cast< ::au::edu::anu::mm::Expansion*>(this);
-        ::x10aux::nullCheck(::x10aux::nullCheck(this__47397)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
+        ::au::edu::anu::mm::Expansion* this__71797 = reinterpret_cast< ::au::edu::anu::mm::Expansion*>(this);
+        ::x10aux::nullCheck(::x10aux::nullCheck(this__71797)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
           ((((((x10_long)0ll)) * (((((x10_long)0ll)) + (((x10_long)1ll)))))) + (((x10_long)0ll))));
     }))
     ).real()));
@@ -730,162 +730,162 @@ x10_double au::edu::anu::mm::LocalExpansion::calculatePotentialAndForces(
     x10_double il = 1.0;
     
     //#line 226 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-    x10_long i__38076max__47582 = this->FMGL(p);
+    x10_long i__47263max__71982 = this->FMGL(p);
     {
-        x10_long i__47583;
-        for (i__47583 = ((x10_long)1ll); ((i__47583) <= (i__38076max__47582));
-             i__47583 = ((i__47583) + (((x10_long)1ll))))
+        x10_long i__71983;
+        for (i__71983 = ((x10_long)1ll); ((i__71983) <= (i__47263max__71982));
+             i__71983 = ((i__71983) + (((x10_long)1ll))))
         {
-            x10_long l__47584 = i__47583;
+            x10_long l__71984 = i__71983;
             
             //#line 227 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            x10_complex Ml__47572 = (__extension__ ({
-                ::au::edu::anu::mm::Expansion* this__47573 =
+            x10_complex Ml__71972 = (__extension__ ({
+                ::au::edu::anu::mm::Expansion* this__71973 =
                   reinterpret_cast< ::au::edu::anu::mm::Expansion*>(this);
                 
                 //#line 44 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                x10_long l__47574 = l__47584;
-                ::x10aux::nullCheck(::x10aux::nullCheck(this__47573)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
-                  ((((l__47574) * (((l__47574) + (((x10_long)1ll)))))) + (((x10_long)0ll))));
+                x10_long l__71974 = l__71984;
+                ::x10aux::nullCheck(::x10aux::nullCheck(this__71973)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
+                  ((((l__71974) * (((l__71974) + (((x10_long)1ll)))))) + (((x10_long)0ll))));
             }))
             ;
             
             //#line 228 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            il = ((il) * (((x10_double) (l__47584))));
+            il = ((il) * (((x10_double) (l__71984))));
             
             //#line 229 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            x10_complex F_lm__47575 = x10_complex(((1.0) / (il)),0.0);
+            x10_complex F_lm__71975 = x10_complex(((1.0) / (il)),0.0);
             
             //#line 230 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            potential = ((potential) + ((::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(Ml__47572, F_lm__47575), ((((q) * (rfac))) * ((__extension__ ({
+            potential = ((potential) + ((::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(Ml__71972, F_lm__71975), ((((q) * (rfac))) * ((__extension__ ({
                 
                 //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                x10_long l__47576 = l__47584;
+                x10_long l__71976 = l__71984;
                 ::x10aux::nullCheck(::x10aux::nullCheck(pplm)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                  ((((l__47576) * (((l__47576) + (((x10_long)1ll)))))) + (((x10_long)0ll))));
+                  ((((l__71976) * (((l__71976) + (((x10_long)1ll)))))) + (((x10_long)0ll))));
             }))
             )))).real()));
             
             //#line 231 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            dr = ((dr) + ((::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(Ml__47572, F_lm__47575), ((((((q) * (((x10_double) (l__47584))))) * (rfacPrev))) * ((__extension__ ({
+            dr = ((dr) + ((::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(Ml__71972, F_lm__71975), ((((((q) * (((x10_double) (l__71984))))) * (rfacPrev))) * ((__extension__ ({
                 
                 //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                x10_long l__47577 = l__47584;
+                x10_long l__71977 = l__71984;
                 ::x10aux::nullCheck(::x10aux::nullCheck(pplm)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                  ((((l__47577) * (((l__47577) + (((x10_long)1ll)))))) + (((x10_long)0ll))));
+                  ((((l__71977) * (((l__71977) + (((x10_long)1ll)))))) + (((x10_long)0ll))));
             }))
             )))).real()));
             
             //#line 232 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            dt = ((dt) + ((::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(Ml__47572, F_lm__47575), ((((q) * (rfacPrev))) * ((-((__extension__ ({
+            dt = ((dt) + ((::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(Ml__71972, F_lm__71975), ((((q) * (rfacPrev))) * ((-((__extension__ ({
                 
                 //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                x10_long l__47578 = l__47584;
+                x10_long l__71978 = l__71984;
                 ::x10aux::nullCheck(::x10aux::nullCheck(pplm)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                  ((((l__47578) * (((l__47578) + (((x10_long)1ll)))))) + (((x10_long)1ll))));
+                  ((((l__71978) * (((l__71978) + (((x10_long)1ll)))))) + (((x10_long)1ll))));
             }))
             )))))).real()));
             
             //#line 234 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            x10_long i__38058max__47569 = l__47584;
+            x10_long i__47245max__71969 = l__71984;
             {
-                x10_long i__47570;
-                for (i__47570 = ((x10_long)1ll); ((i__47570) <= (i__38058max__47569));
-                     i__47570 = ((i__47570) + (((x10_long)1ll))))
+                x10_long i__71970;
+                for (i__71970 = ((x10_long)1ll); ((i__71970) <= (i__47245max__71969));
+                     i__71970 = ((i__71970) + (((x10_long)1ll))))
                 {
-                    x10_long m__47571 = i__47570;
+                    x10_long m__71971 = i__71970;
                     
                     //#line 235 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    F_lm__47575 = ::x10::lang::ComplexNatives::_divide(::x10::lang::ComplexNatives::_times(F_lm__47575, phifac0), ((x10_double) (((l__47584) + (m__47571)))));
+                    F_lm__71975 = ::x10::lang::ComplexNatives::_divide(::x10::lang::ComplexNatives::_times(F_lm__71975, phifac0), ((x10_double) (((l__71984) + (m__71971)))));
                     
                     //#line 236 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_complex Olm__47548 = ::x10::lang::ComplexNatives::_times(F_lm__47575, ((((q) * (rfac))) * ((__extension__ ({
+                    x10_complex Olm__71948 = ::x10::lang::ComplexNatives::_times(F_lm__71975, ((((q) * (rfac))) * ((__extension__ ({
                         
                         //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                        x10_long l__47549 = l__47584;
-                        x10_long m__47550 = m__47571;
+                        x10_long l__71949 = l__71984;
+                        x10_long m__71950 = m__71971;
                         ::x10aux::nullCheck(::x10aux::nullCheck(pplm)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                          ((((l__47549) * (((l__47549) + (((x10_long)1ll)))))) + (m__47550)));
+                          ((((l__71949) * (((l__71949) + (((x10_long)1ll)))))) + (m__71950)));
                     }))
                     )));
                     
                     //#line 237 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_complex Mlm__47551 = (__extension__ ({
-                        ::au::edu::anu::mm::Expansion* this__47552 =
+                    x10_complex Mlm__71951 = (__extension__ ({
+                        ::au::edu::anu::mm::Expansion* this__71952 =
                           reinterpret_cast< ::au::edu::anu::mm::Expansion*>(this);
                         
                         //#line 44 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                        x10_long l__47553 = l__47584;
-                        x10_long m__47554 = m__47571;
-                        ::x10aux::nullCheck(::x10aux::nullCheck(this__47552)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
-                          ((((l__47553) * (((l__47553) + (((x10_long)1ll)))))) + (m__47554)));
+                        x10_long l__71953 = l__71984;
+                        x10_long m__71954 = m__71971;
+                        ::x10aux::nullCheck(::x10aux::nullCheck(this__71952)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
+                          ((((l__71953) * (((l__71953) + (((x10_long)1ll)))))) + (m__71954)));
                     }))
                     ;
                     
                     //#line 239 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    potential = ((potential) + (((((2.0) * ((((Mlm__47551).real()) * ((Olm__47548).real()))))) - (((2.0) * ((((Mlm__47551).imag()) * ((Olm__47548).imag()))))))));
+                    potential = ((potential) + (((((2.0) * ((((Mlm__71951).real()) * ((Olm__71948).real()))))) - (((2.0) * ((((Mlm__71951).imag()) * ((Olm__71948).imag()))))))));
                     
                     //#line 241 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_complex r_lm__47555 = ::x10::lang::ComplexNatives::_times(F_lm__47575, ((((((q) * (((x10_double) (l__47584))))) * (rfacPrev))) * ((__extension__ ({
+                    x10_complex r_lm__71955 = ::x10::lang::ComplexNatives::_times(F_lm__71975, ((((((q) * (((x10_double) (l__71984))))) * (rfacPrev))) * ((__extension__ ({
                         
                         //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                        x10_long l__47556 = l__47584;
-                        x10_long m__47557 = m__47571;
+                        x10_long l__71956 = l__71984;
+                        x10_long m__71957 = m__71971;
                         ::x10aux::nullCheck(::x10aux::nullCheck(pplm)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                          ((((l__47556) * (((l__47556) + (((x10_long)1ll)))))) + (m__47557)));
+                          ((((l__71956) * (((l__71956) + (((x10_long)1ll)))))) + (m__71957)));
                     }))
                     )));
                     
                     //#line 242 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    dr = ((dr) + (((((2.0) * ((((Mlm__47551).real()) * ((r_lm__47555).real()))))) - (((2.0) * ((((Mlm__47551).imag()) * ((r_lm__47555).imag()))))))));
+                    dr = ((dr) + (((((2.0) * ((((Mlm__71951).real()) * ((r_lm__71955).real()))))) - (((2.0) * ((((Mlm__71951).imag()) * ((r_lm__71955).imag()))))))));
                     
                     //#line 243 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_double Plm__47558 = ((m__47571) < (l__47584))
+                    x10_double Plm__71958 = ((m__71971) < (l__71984))
                       ? ((__extension__ ({
                              
                              //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                             x10_long l__47559 = l__47584;
-                             x10_long m__47560 = ((m__47571) + (((x10_long)1ll)));
+                             x10_long l__71959 = l__71984;
+                             x10_long m__71960 = ((m__71971) + (((x10_long)1ll)));
                              ::x10aux::nullCheck(::x10aux::nullCheck(pplm)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                               ((((l__47559) * (((l__47559) + (((x10_long)1ll)))))) + (m__47560)));
+                               ((((l__71959) * (((l__71959) + (((x10_long)1ll)))))) + (m__71960)));
                          }))
                          ) : (0.0);
                     
                     //#line 244 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_complex theta_lm__47561 = ::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(F_lm__47575, 0.5), q), rfacPrev), ((((((x10_double) (((((((l__47584) - (m__47571))) + (((x10_long)1ll)))) * (((l__47584) + (m__47571))))))) * ((__extension__ ({
+                    x10_complex theta_lm__71961 = ::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(F_lm__71975, 0.5), q), rfacPrev), ((((((x10_double) (((((((l__71984) - (m__71971))) + (((x10_long)1ll)))) * (((l__71984) + (m__71971))))))) * ((__extension__ ({
                         
                         //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                        x10_long l__47562 = l__47584;
-                        x10_long m__47563 = ((m__47571) - (((x10_long)1ll)));
+                        x10_long l__71962 = l__71984;
+                        x10_long m__71963 = ((m__71971) - (((x10_long)1ll)));
                         ::x10aux::nullCheck(::x10aux::nullCheck(pplm)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                          ((((l__47562) * (((l__47562) + (((x10_long)1ll)))))) + (m__47563)));
+                          ((((l__71962) * (((l__71962) + (((x10_long)1ll)))))) + (m__71963)));
                     }))
-                    ))) - (Plm__47558)));
+                    ))) - (Plm__71958)));
                     
                     //#line 245 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    dt = ((dt) + (((((2.0) * ((((Mlm__47551).real()) * ((theta_lm__47561).real()))))) - (((2.0) * ((((Mlm__47551).imag()) * ((theta_lm__47561).imag()))))))));
+                    dt = ((dt) + (((((2.0) * ((((Mlm__71951).real()) * ((theta_lm__71961).real()))))) - (((2.0) * ((((Mlm__71951).imag()) * ((theta_lm__71961).imag()))))))));
                     
                     //#line 246 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    x10_complex phi_lm__47564 = ::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(x10_complex(0.0,1.0), F_lm__47575), -0.5), q), rfacPrev), ((((((x10_double) (((((((l__47584) - (m__47571))) + (((x10_long)1ll)))) * (((((l__47584) - (m__47571))) + (((x10_long)2ll)))))))) * ((__extension__ ({
+                    x10_complex phi_lm__71964 = ::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(::x10::lang::ComplexNatives::_times(x10_complex(0.0,1.0), F_lm__71975), -0.5), q), rfacPrev), ((((((x10_double) (((((((l__71984) - (m__71971))) + (((x10_long)1ll)))) * (((((l__71984) - (m__71971))) + (((x10_long)2ll)))))))) * ((__extension__ ({
                         
                         //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                        x10_long l__47565 = ((l__47584) + (((x10_long)1ll)));
-                        x10_long m__47566 = ((m__47571) - (((x10_long)1ll)));
+                        x10_long l__71965 = ((l__71984) + (((x10_long)1ll)));
+                        x10_long m__71966 = ((m__71971) - (((x10_long)1ll)));
                         ::x10aux::nullCheck(::x10aux::nullCheck(pplm)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                          ((((l__47565) * (((l__47565) + (((x10_long)1ll)))))) + (m__47566)));
+                          ((((l__71965) * (((l__71965) + (((x10_long)1ll)))))) + (m__71966)));
                     }))
                     ))) + ((__extension__ ({
                         
                         //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/AssociatedLegendrePolynomial.x10"
-                        x10_long l__47567 = ((l__47584) + (((x10_long)1ll)));
-                        x10_long m__47568 = ((m__47571) + (((x10_long)1ll)));
+                        x10_long l__71967 = ((l__71984) + (((x10_long)1ll)));
+                        x10_long m__71968 = ((m__71971) + (((x10_long)1ll)));
                         ::x10aux::nullCheck(::x10aux::nullCheck(pplm)->FMGL(terms))->x10::lang::Rail< x10_double >::__apply(
-                          ((((l__47567) * (((l__47567) + (((x10_long)1ll)))))) + (m__47568)));
+                          ((((l__71967) * (((l__71967) + (((x10_long)1ll)))))) + (m__71968)));
                     }))
                     )));
                     
                     //#line 247 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                    dp = ((dp) + (((((2.0) * ((((Mlm__47551).real()) * ((phi_lm__47564).real()))))) - (((2.0) * ((((Mlm__47551).imag()) * ((phi_lm__47564).imag()))))))));
+                    dp = ((dp) + (((((2.0) * ((((Mlm__71951).real()) * ((phi_lm__71964).real()))))) - (((2.0) * ((((Mlm__71951).imag()) * ((phi_lm__71964).imag()))))))));
                 }
             }
             
@@ -899,31 +899,31 @@ x10_double au::edu::anu::mm::LocalExpansion::calculatePotentialAndForces(
     
     //#line 252 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
     ::x10aux::nullCheck(atom)->FMGL(force) = (__extension__ ({
-        ::x10x::vector::Vector3d this__47423 = ::x10aux::nullCheck(atom)->FMGL(force);
+        ::x10x::vector::Vector3d this__71823 = ::x10aux::nullCheck(atom)->FMGL(force);
         
         //#line 33 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-        ::x10x::vector::Vector3d that__47422 = v_pole->x10x::polar::Polar3d::getGradientVector(
+        ::x10x::vector::Vector3d that__71822 = v_pole->x10x::polar::Polar3d::getGradientVector(
                                                  dr, (-(dt)),
                                                  (-(dp)));
         (__extension__ ({
             
             //#line 37 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-            ::x10x::vector::Vector3d b__47424 = that__47422;
+            ::x10x::vector::Vector3d b__71824 = that__71822;
             (__extension__ ({
                 
                 //#line 38 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                ::x10x::vector::Vector3d alloc__47425 =  ::x10x::vector::Vector3d::_alloc();
+                ::x10x::vector::Vector3d alloc__71825 =  ::x10x::vector::Vector3d::_alloc();
                 
                 //#line 16 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                x10_double i__47579 = ((this__47423->FMGL(i)) + (b__47424->FMGL(i)));
-                x10_double j__47580 = ((this__47423->FMGL(j)) + (b__47424->FMGL(j)));
-                x10_double k__47581 = ((this__47423->FMGL(k)) + (b__47424->FMGL(k)));
+                x10_double i__71979 = ((this__71823->FMGL(i)) + (b__71824->FMGL(i)));
+                x10_double j__71980 = ((this__71823->FMGL(j)) + (b__71824->FMGL(j)));
+                x10_double k__71981 = ((this__71823->FMGL(k)) + (b__71824->FMGL(k)));
                 
                 //#line 17 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                alloc__47425->FMGL(i) = i__47579;
-                alloc__47425->FMGL(j) = j__47580;
-                alloc__47425->FMGL(k) = k__47581;
-                alloc__47425;
+                alloc__71825->FMGL(i) = i__71979;
+                alloc__71825->FMGL(j) = j__71980;
+                alloc__71825->FMGL(k) = k__71981;
+                alloc__71825;
             }))
             ;
         }))
@@ -954,13 +954,13 @@ x10_double au::edu::anu::mm::LocalExpansion::calculatePotentialAndForces(
                          ((x10_long)0ll)), ::x10aux::nullCheck((__extension__ ({
                                                
                                                //#line 192 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/WignerRotationMatrix.x10"
-                                               x10_double theta__47432 =
+                                               x10_double theta__71832 =
                                                  theta;
-                                               x10_long numTerms__47433 =
+                                               x10_long numTerms__71833 =
                                                  this->FMGL(p);
                                                ::au::edu::anu::mm::WignerRotationMatrix::getExpandedCollection(
-                                                 theta__47432,
-                                                 numTerms__47433,
+                                                 theta__71832,
+                                                 numTerms__71833,
                                                  ((x10_int)2));
                                            }))
                                            )->x10::lang::Rail< ::x10::lang::Rail< ::x10::regionarray::Array<x10_double>* >* >::__apply(
@@ -983,51 +983,51 @@ x10_double au::edu::anu::mm::LocalExpansion::calculatePotentialAndForces(
       this->FMGL(p));
     
     //#line 279 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-    x10_long i__38112max__47595 = this->FMGL(p);
+    x10_long i__47299max__71995 = this->FMGL(p);
     {
-        x10_long i__47596;
-        for (i__47596 = ((x10_long)0ll); ((i__47596) <= (i__38112max__47595));
-             i__47596 = ((i__47596) + (((x10_long)1ll))))
+        x10_long i__71996;
+        for (i__71996 = ((x10_long)0ll); ((i__71996) <= (i__47299max__71995));
+             i__71996 = ((i__71996) + (((x10_long)1ll))))
         {
-            x10_long l__47597 = i__47596;
+            x10_long l__71997 = i__71996;
             
             //#line 280 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-            x10_long i__38094max__47592 = l__47597;
+            x10_long i__47281max__71992 = l__71997;
             {
-                x10_long i__47593;
-                for (i__47593 = ((x10_long)0ll); ((i__47593) <= (i__38094max__47592));
-                     i__47593 = ((i__47593) + (((x10_long)1ll))))
+                x10_long i__71993;
+                for (i__71993 = ((x10_long)0ll); ((i__71993) <= (i__47281max__71992));
+                     i__71993 = ((i__71993) + (((x10_long)1ll))))
                 {
-                    x10_long m__47594 = i__47593;
+                    x10_long m__71994 = i__71993;
                     
                     //#line 46 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                    x10_long l__47585 = l__47597;
-                    x10_long m__47586 = m__47594;
-                    x10_complex v__47587 = ::x10::lang::ComplexNatives::_divide((__extension__ ({
+                    x10_long l__71985 = l__71997;
+                    x10_long m__71986 = m__71994;
+                    x10_complex v__71987 = ::x10::lang::ComplexNatives::_divide((__extension__ ({
                         
                         //#line 281 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LocalExpansion.x10"
-                        ::au::edu::anu::mm::Expansion* this__47588 =
+                        ::au::edu::anu::mm::Expansion* this__71988 =
                           reinterpret_cast< ::au::edu::anu::mm::Expansion*>(this);
                         
                         //#line 44 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                        x10_long l__47589 = l__47597;
-                        x10_long m__47590 = m__47594;
-                        ::x10aux::nullCheck(::x10aux::nullCheck(this__47588)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
-                          ((((l__47589) * (((l__47589) + (((x10_long)1ll)))))) + (m__47590)));
+                        x10_long l__71989 = l__71997;
+                        x10_long m__71990 = m__71994;
+                        ::x10aux::nullCheck(::x10aux::nullCheck(this__71988)->FMGL(terms))->x10::lang::Rail< x10_complex >::__apply(
+                          ((((l__71989) * (((l__71989) + (((x10_long)1ll)))))) + (m__71990)));
                     }))
-                    , ::x10::lang::Math::pow(3.0, ((l__47597) + (((x10_long)1ll)))));
-                    x10_complex ret__47591;
+                    , ::x10::lang::Math::pow(3.0, ((l__71997) + (((x10_long)1ll)))));
+                    x10_complex ret__71991;
                     
                     //#line 47 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
                     ::x10aux::nullCheck(parentExpansion->FMGL(terms))->x10::lang::Rail< x10_complex >::__set(
-                      ((((l__47585) * (((l__47585) + (((x10_long)1ll)))))) + (m__47586)),
-                      v__47587);
+                      ((((l__71985) * (((l__71985) + (((x10_long)1ll)))))) + (m__71986)),
+                      v__71987);
                     
                     //#line 48 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                    ret__47591 = v__47587;
+                    ret__71991 = v__71987;
                     
                     //#line 46 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Expansion.x10"
-                    ret__47591;
+                    ret__71991;
                 }
             }
             

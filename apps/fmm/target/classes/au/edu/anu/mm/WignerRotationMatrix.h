@@ -36,7 +36,7 @@ namespace au { namespace edu { namespace anu { namespace mm {
 
 class WignerRotationMatrix_Strings {
   public:
-    static ::x10::lang::String sl__48752;
+    static ::x10::lang::String sl__73388;
 };
 
 class WignerRotationMatrix : public ::x10::lang::X10Class   {

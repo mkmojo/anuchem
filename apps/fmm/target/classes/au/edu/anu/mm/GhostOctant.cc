@@ -46,9 +46,9 @@ class au_edu_anu_mm_GhostOctant__closure__1 : public ::x10::lang::Closure {
             return ::au::edu::anu::mm::GhostOctant::upwardRemote(mortonId);
             
         }
-        catch (::x10::lang::CheckedThrowable* __exc124) {
+        catch (::x10::lang::CheckedThrowable* __exc198) {
             {
-                ::x10::lang::CheckedThrowable* __lowerer__var__0__ = __exc124;
+                ::x10::lang::CheckedThrowable* __lowerer__var__0__ = __exc198;
                 {
                     ::au::edu::anu::mm::GhostOctant__GhostUpward* __lowerer__var__1__ =
                       ::x10::lang::Runtime::wrapAtChecked< ::au::edu::anu::mm::GhostOctant__GhostUpward* >(
@@ -110,9 +110,9 @@ class au_edu_anu_mm_GhostOctant__closure__2 : public ::x10::lang::Closure {
             return ::x10aux::nullCheck((target)->__apply())->downward(parentLocalExpansion);
             
         }
-        catch (::x10::lang::CheckedThrowable* __exc128) {
+        catch (::x10::lang::CheckedThrowable* __exc202) {
             {
-                ::x10::lang::CheckedThrowable* __lowerer__var__0__ = __exc128;
+                ::x10::lang::CheckedThrowable* __lowerer__var__0__ = __exc202;
                 {
                     x10_double __lowerer__var__1__ = ::x10aux::class_cast_unchecked<x10_double>(::x10::lang::Runtime::wrapAtChecked< x10_double >(
                                                                                                   __lowerer__var__0__));
@@ -182,9 +182,9 @@ void au::edu::anu::mm::GhostOctant::_constructor(::au::edu::anu::mm::OctantId id
     //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/GhostOctant.x10"
     
     //#line 22 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/GhostOctant.x10"
-    ::au::edu::anu::mm::GhostOctant* this__44590 = this;
-    ::x10aux::nullCheck(this__44590)->FMGL(target) = ::x10aux::zeroValue< ::x10::lang::GlobalRef< ::au::edu::anu::mm::Octant* > >();
-    ::x10aux::nullCheck(this__44590)->FMGL(numAtoms) = ((x10_long)0ll);
+    ::au::edu::anu::mm::GhostOctant* this__70337 = this;
+    ::x10aux::nullCheck(this__70337)->FMGL(target) = ::x10aux::zeroValue< ::x10::lang::GlobalRef< ::au::edu::anu::mm::Octant* > >();
+    ::x10aux::nullCheck(this__70337)->FMGL(numAtoms) = ((x10_long)0ll);
     
     //#line 37 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/GhostOctant.x10"
     this->FMGL(placeId) = placeId;
@@ -233,12 +233,12 @@ x10_long au::edu::anu::mm::GhostOctant::numAtoms() {
     //#line 64 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/GhostOctant.x10"
     ::au::edu::anu::mm::GhostOctant__GhostUpward* result = ::x10::lang::Runtime::evalAt< ::au::edu::anu::mm::GhostOctant__GhostUpward* >(
                                                              (__extension__ ({
-                                                                 ::x10::lang::Place alloc__44551 =
+                                                                 ::x10::lang::Place alloc__51745 =
                                                                    
                                                                  ::x10::lang::Place::_alloc();
-                                                                 (alloc__44551)->::x10::lang::Place::_constructor(
+                                                                 (alloc__51745)->::x10::lang::Place::_constructor(
                                                                    this->FMGL(placeId));
-                                                                 alloc__44551;
+                                                                 alloc__51745;
                                                              }))
                                                              ,
                                                              reinterpret_cast< ::x10::lang::Fun_0_0< ::au::edu::anu::mm::GhostOctant__GhostUpward*>*>((new (::x10aux::alloc< ::x10::lang::Fun_0_0< ::au::edu::anu::mm::GhostOctant__GhostUpward*> >(sizeof(au_edu_anu_mm_GhostOctant__closure__1)))au_edu_anu_mm_GhostOctant__closure__1(mortonId))),
@@ -255,41 +255,41 @@ x10_long au::edu::anu::mm::GhostOctant::numAtoms() {
         this->FMGL(target) = ::x10aux::nullCheck(result)->FMGL(target);
         
         //#line 69 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/GhostOctant.x10"
-        ::x10::util::Pair<x10_long, ::au::edu::anu::mm::MultipoleExpansion*> alloc__44594 =
+        ::x10::util::Pair<x10_long, ::au::edu::anu::mm::MultipoleExpansion*> alloc__70341 =
            ::x10::util::Pair<x10_long, ::au::edu::anu::mm::MultipoleExpansion*>::_alloc();
         
         //#line 21 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/util/Pair.x10"
-        x10_long first__44592 = ::x10aux::nullCheck(result)->FMGL(numAtoms);
-        ::au::edu::anu::mm::MultipoleExpansion* second__44593 =
+        x10_long first__70339 = ::x10aux::nullCheck(result)->FMGL(numAtoms);
+        ::au::edu::anu::mm::MultipoleExpansion* second__70340 =
           ::x10aux::nullCheck(result)->FMGL(multipoleExp);
         
         //#line 22 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/util/Pair.x10"
-        alloc__44594->FMGL(first) = first__44592;
+        alloc__70341->FMGL(first) = first__70339;
         
         //#line 23 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/util/Pair.x10"
-        alloc__44594->FMGL(second) = second__44593;
+        alloc__70341->FMGL(second) = second__70340;
         
         //#line 69 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/GhostOctant.x10"
-        return alloc__44594;
+        return alloc__70341;
         
     } else {
         
         //#line 71 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/GhostOctant.x10"
-        ::x10::util::Pair<x10_long, ::au::edu::anu::mm::MultipoleExpansion*> alloc__44596 =
+        ::x10::util::Pair<x10_long, ::au::edu::anu::mm::MultipoleExpansion*> alloc__70343 =
            ::x10::util::Pair<x10_long, ::au::edu::anu::mm::MultipoleExpansion*>::_alloc();
         
         //#line 21 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/util/Pair.x10"
-        ::au::edu::anu::mm::MultipoleExpansion* second__44595 =
+        ::au::edu::anu::mm::MultipoleExpansion* second__70342 =
           ::x10aux::class_cast_unchecked< ::au::edu::anu::mm::MultipoleExpansion*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL));
         
         //#line 22 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/util/Pair.x10"
-        alloc__44596->FMGL(first) = ((x10_long)0ll);
+        alloc__70343->FMGL(first) = ((x10_long)0ll);
         
         //#line 23 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/util/Pair.x10"
-        alloc__44596->FMGL(second) = (reinterpret_cast< ::au::edu::anu::mm::MultipoleExpansion*>(reinterpret_cast< ::au::edu::anu::mm::MultipoleExpansion*>(X10_NULL)));
+        alloc__70343->FMGL(second) = (reinterpret_cast< ::au::edu::anu::mm::MultipoleExpansion*>(reinterpret_cast< ::au::edu::anu::mm::MultipoleExpansion*>(X10_NULL)));
         
         //#line 71 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/GhostOctant.x10"
-        return alloc__44596;
+        return alloc__70343;
         
     }
     
@@ -311,7 +311,7 @@ x10_long au::edu::anu::mm::GhostOctant::numAtoms() {
             //#line 79 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/GhostOctant.x10"
             ::x10::lang::Runtime::ensureNotInAtomic();
             {
-                ::x10::lang::CheckedThrowable* throwable__44609 =
+                ::x10::lang::CheckedThrowable* throwable__70356 =
                   ::x10aux::class_cast_unchecked< ::x10::lang::CheckedThrowable*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL));
                 try {
                     {
@@ -330,33 +330,33 @@ x10_long au::edu::anu::mm::GhostOctant::numAtoms() {
                     }
                     ::x10::compiler::Finalization::plausibleThrow();
                 }
-                catch (::x10::lang::CheckedThrowable* __exc126) {
+                catch (::x10::lang::CheckedThrowable* __exc200) {
                     {
-                        ::x10::lang::CheckedThrowable* formal__44610 =
-                          __exc126;
+                        ::x10::lang::CheckedThrowable* formal__70357 =
+                          __exc200;
                         {
-                            throwable__44609 = formal__44610;
+                            throwable__70356 = formal__70357;
                         }
                     }
                 }
-                if ((!::x10aux::struct_equals(throwable__44609,
+                if ((!::x10aux::struct_equals(throwable__70356,
                                               reinterpret_cast< ::x10::lang::CheckedThrowable*>(X10_NULL))))
                 {
-                    if (::x10aux::instanceof< ::x10::compiler::Abort*>(throwable__44609))
+                    if (::x10aux::instanceof< ::x10::compiler::Abort*>(throwable__70356))
                     {
-                        ::x10aux::throwException(::x10aux::nullCheck(throwable__44609));
+                        ::x10aux::throwException(::x10aux::nullCheck(throwable__70356));
                     }
                     
                 }
                 if (true) {
                     ::x10::lang::Runtime::exitAtomic();
                 }
-                if ((!::x10aux::struct_equals(throwable__44609,
+                if ((!::x10aux::struct_equals(throwable__70356,
                                               reinterpret_cast< ::x10::lang::CheckedThrowable*>(X10_NULL))))
                 {
-                    if (!(::x10aux::instanceof< ::x10::compiler::Finalization*>(throwable__44609)))
+                    if (!(::x10aux::instanceof< ::x10::compiler::Finalization*>(throwable__70356)))
                     {
-                        ::x10aux::throwException(::x10aux::nullCheck(throwable__44609));
+                        ::x10aux::throwException(::x10aux::nullCheck(throwable__70356));
                     }
                     
                 }
@@ -365,23 +365,23 @@ x10_long au::edu::anu::mm::GhostOctant::numAtoms() {
         }
         
         //#line 81 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/GhostOctant.x10"
-        ::au::edu::anu::mm::GhostOctant__GhostUpward* alloc__44600 =
+        ::au::edu::anu::mm::GhostOctant__GhostUpward* alloc__70347 =
            (new (::x10aux::alloc_z< ::au::edu::anu::mm::GhostOctant__GhostUpward>()) ::au::edu::anu::mm::GhostOctant__GhostUpward());
         
         //#line 54 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/GhostOctant.x10"
-        x10_long numAtoms__44597 = ::x10aux::nullCheck(octant)->numAtoms();
-        ::au::edu::anu::mm::MultipoleExpansion* multipoleExp__44598 =
+        x10_long numAtoms__70344 = ::x10aux::nullCheck(octant)->numAtoms();
+        ::au::edu::anu::mm::MultipoleExpansion* multipoleExp__70345 =
           ::x10aux::nullCheck(octant)->FMGL(multipoleExp);
-        ::x10::lang::GlobalRef< ::au::edu::anu::mm::Octant* > target__44599 =
+        ::x10::lang::GlobalRef< ::au::edu::anu::mm::Octant* > target__70346 =
           ::x10::lang::GlobalRef< ::au::edu::anu::mm::Octant* >(octant);
         
         //#line 55 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/GhostOctant.x10"
-        alloc__44600->FMGL(numAtoms) = numAtoms__44597;
-        alloc__44600->FMGL(multipoleExp) = multipoleExp__44598;
-        alloc__44600->FMGL(target) = target__44599;
+        alloc__70347->FMGL(numAtoms) = numAtoms__70344;
+        alloc__70347->FMGL(multipoleExp) = multipoleExp__70345;
+        alloc__70347->FMGL(target) = target__70346;
         
         //#line 81 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/GhostOctant.x10"
-        return alloc__44600;
+        return alloc__70347;
         
     } else {
         
@@ -420,7 +420,7 @@ x10_double au::edu::anu::mm::GhostOctant::downward(::au::edu::anu::mm::LocalExpa
   ) {
     
     //#line 97 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/GhostOctant.x10"
-    return ::x10::lang::String::__plus((&::au::edu::anu::mm::GhostOctant_Strings::sl__48588), this->FMGL(id));
+    return ::x10::lang::String::__plus((&::au::edu::anu::mm::GhostOctant_Strings::sl__73224), this->FMGL(id));
     
 }
 
@@ -467,7 +467,7 @@ void au::edu::anu::mm::GhostOctant::_initRTT() {
     rtt.initStageTwo("au.edu.anu.mm.GhostOctant",::x10aux::RuntimeType::class_kind, 2, parents, 0, NULL, NULL);
 }
 
-::x10::lang::String au::edu::anu::mm::GhostOctant_Strings::sl__48588("GhostOctant ");
+::x10::lang::String au::edu::anu::mm::GhostOctant_Strings::sl__73224("GhostOctant ");
 
 ::x10::lang::Fun_0_0< ::au::edu::anu::mm::GhostOctant__GhostUpward*>::itable<au_edu_anu_mm_GhostOctant__closure__1>au_edu_anu_mm_GhostOctant__closure__1::_itable(&::x10::lang::Reference::equals, &::x10::lang::Closure::hashCode, &au_edu_anu_mm_GhostOctant__closure__1::__apply, &au_edu_anu_mm_GhostOctant__closure__1::toString, &::x10::lang::Closure::typeName);
 ::x10aux::itable_entry au_edu_anu_mm_GhostOctant__closure__1::_itables[2] = {::x10aux::itable_entry(&::x10aux::getRTT< ::x10::lang::Fun_0_0< ::au::edu::anu::mm::GhostOctant__GhostUpward*> >, &au_edu_anu_mm_GhostOctant__closure__1::_itable),::x10aux::itable_entry(NULL, NULL)};
@@ -510,7 +510,7 @@ void au::edu::anu::mm::GhostOctant__GhostUpward::_constructor(x10_long numAtoms,
     FMGL(target) = target;
     
     //#line 48 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/GhostOctant.x10"
-    ::au::edu::anu::mm::GhostOctant__GhostUpward* this__44591 = this;
+    ::au::edu::anu::mm::GhostOctant__GhostUpward* this__70338 = this;
     
 }
 ::au::edu::anu::mm::GhostOctant__GhostUpward* au::edu::anu::mm::GhostOctant__GhostUpward::_make(

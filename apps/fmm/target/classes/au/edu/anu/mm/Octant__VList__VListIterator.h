@@ -36,7 +36,7 @@ namespace au { namespace edu { namespace anu { namespace mm {
 
 class Octant__VList__VListIterator_Strings {
   public:
-    static ::x10::lang::String sl__48468;
+    static ::x10::lang::String sl__73104;
 };
 
 class Octant__VList__VListIterator : public ::x10::lang::X10Class   {

@@ -115,7 +115,7 @@ namespace au { namespace edu { namespace anu { namespace mm {
 
 class LeafOctant_Strings {
   public:
-    static ::x10::lang::String sl__48386;
+    static ::x10::lang::String sl__73022;
 };
 
 class LeafOctant : public ::au::edu::anu::mm::Octant   {

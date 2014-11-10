@@ -395,7 +395,7 @@ public class FastMultipoleMethod {
         timer.start(FmmLocalData.TIMER_INDEX_SORT);
         local.octants.clear();
 
-        val numBoxes = Math.pow(8.0, dMax) as Int;
+        val numBoxes = Math.pow(8.0, (dMax/1.0)) as Int;
 
         // histogram sort of atoms
         val octantLoads = local.octantLoads;

@@ -54,9 +54,9 @@ namespace au { namespace edu { namespace anu { namespace mm {
 
 class Expansion_Strings {
   public:
-    static ::x10::lang::String sl__48676;
-    static ::x10::lang::String sl__48677;
-    static ::x10::lang::String sl__48678;
+    static ::x10::lang::String sl__73312;
+    static ::x10::lang::String sl__73313;
+    static ::x10::lang::String sl__73314;
 };
 
 class Expansion : public ::x10::lang::X10Class   {

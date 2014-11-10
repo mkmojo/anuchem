@@ -125,29 +125,29 @@ void au::edu::anu::mm::Octant::_constructor(::au::edu::anu::mm::OctantId id,
                                             x10_ubyte dMax) {
     
     //#line 26 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
-    ::au::edu::anu::mm::Octant* this__43755 = this;
-    ::x10aux::nullCheck(this__43755)->FMGL(parent) = (::x10aux::class_cast_unchecked< ::au::edu::anu::mm::Octant*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
-    ::x10aux::nullCheck(this__43755)->FMGL(vList) = (::x10aux::class_cast_unchecked< ::au::edu::anu::mm::Octant__VList*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
-    ::x10aux::nullCheck(this__43755)->FMGL(multipoleReady) = false;
+    ::au::edu::anu::mm::Octant* this__70016 = this;
+    ::x10aux::nullCheck(this__70016)->FMGL(parent) = (::x10aux::class_cast_unchecked< ::au::edu::anu::mm::Octant*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
+    ::x10aux::nullCheck(this__70016)->FMGL(vList) = (::x10aux::class_cast_unchecked< ::au::edu::anu::mm::Octant__VList*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
+    ::x10aux::nullCheck(this__70016)->FMGL(multipoleReady) = false;
     
     //#line 51 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
     this->FMGL(id) = id;
     
     //#line 52 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
     this->FMGL(multipoleExp) = (__extension__ ({
-        ::au::edu::anu::mm::MultipoleExpansion* alloc__34601 =  (new (::x10aux::alloc_z< ::au::edu::anu::mm::MultipoleExpansion>()) ::au::edu::anu::mm::MultipoleExpansion());
-        (alloc__34601)->::au::edu::anu::mm::MultipoleExpansion::_constructor(
+        ::au::edu::anu::mm::MultipoleExpansion* alloc__43974 =  (new (::x10aux::alloc_z< ::au::edu::anu::mm::MultipoleExpansion>()) ::au::edu::anu::mm::MultipoleExpansion());
+        (alloc__43974)->::au::edu::anu::mm::MultipoleExpansion::_constructor(
           ((x10_long)(numTerms)));
-        alloc__34601;
+        alloc__43974;
     }))
     ;
     
     //#line 53 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
     this->FMGL(localExp) = (__extension__ ({
-        ::au::edu::anu::mm::LocalExpansion* alloc__34602 =  (new (::x10aux::alloc_z< ::au::edu::anu::mm::LocalExpansion>()) ::au::edu::anu::mm::LocalExpansion());
-        (alloc__34602)->::au::edu::anu::mm::LocalExpansion::_constructor(
+        ::au::edu::anu::mm::LocalExpansion* alloc__43975 =  (new (::x10aux::alloc_z< ::au::edu::anu::mm::LocalExpansion>()) ::au::edu::anu::mm::LocalExpansion());
+        (alloc__43975)->::au::edu::anu::mm::LocalExpansion::_constructor(
           ((x10_long)(numTerms)));
-        alloc__34602;
+        alloc__43975;
     }))
     ;
 }
@@ -157,10 +157,10 @@ void au::edu::anu::mm::Octant::_constructor(::au::edu::anu::mm::OctantId id,
 void au::edu::anu::mm::Octant::_constructor(::au::edu::anu::mm::OctantId id) {
     
     //#line 26 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
-    ::au::edu::anu::mm::Octant* this__43756 = this;
-    ::x10aux::nullCheck(this__43756)->FMGL(parent) = (::x10aux::class_cast_unchecked< ::au::edu::anu::mm::Octant*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
-    ::x10aux::nullCheck(this__43756)->FMGL(vList) = (::x10aux::class_cast_unchecked< ::au::edu::anu::mm::Octant__VList*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
-    ::x10aux::nullCheck(this__43756)->FMGL(multipoleReady) = false;
+    ::au::edu::anu::mm::Octant* this__70017 = this;
+    ::x10aux::nullCheck(this__70017)->FMGL(parent) = (::x10aux::class_cast_unchecked< ::au::edu::anu::mm::Octant*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
+    ::x10aux::nullCheck(this__70017)->FMGL(vList) = (::x10aux::class_cast_unchecked< ::au::edu::anu::mm::Octant__VList*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
+    ::x10aux::nullCheck(this__70017)->FMGL(multipoleReady) = false;
     
     //#line 60 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
     this->FMGL(id) = id;
@@ -194,20 +194,20 @@ x10_int au::edu::anu::mm::Octant::compareTo(::au::edu::anu::mm::Octant* b) {
     x10_double offset = ((0.5) * (size));
     
     //#line 73 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
-    ::x10x::vector::Point3d alloc__43760 =  ::x10x::vector::Point3d::_alloc();
+    ::x10x::vector::Point3d alloc__70021 =  ::x10x::vector::Point3d::_alloc();
     
     //#line 10 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Point3d.x10"
-    x10_double i__43757 = ((((((((x10_double) (this->FMGL(id)->FMGL(x)))) + (0.5))) * (sideLength))) - (offset));
-    x10_double j__43758 = ((((((((x10_double) (this->FMGL(id)->FMGL(y)))) + (0.5))) * (sideLength))) - (offset));
-    x10_double k__43759 = ((((((((x10_double) (this->FMGL(id)->FMGL(z)))) + (0.5))) * (sideLength))) - (offset));
+    x10_double i__70018 = ((((((((x10_double) (this->FMGL(id)->FMGL(x)))) + (0.5))) * (sideLength))) - (offset));
+    x10_double j__70019 = ((((((((x10_double) (this->FMGL(id)->FMGL(y)))) + (0.5))) * (sideLength))) - (offset));
+    x10_double k__70020 = ((((((((x10_double) (this->FMGL(id)->FMGL(z)))) + (0.5))) * (sideLength))) - (offset));
     
     //#line 11 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Point3d.x10"
-    alloc__43760->FMGL(i) = i__43757;
-    alloc__43760->FMGL(j) = j__43758;
-    alloc__43760->FMGL(k) = k__43759;
+    alloc__70021->FMGL(i) = i__70018;
+    alloc__70021->FMGL(j) = j__70019;
+    alloc__70021->FMGL(k) = k__70020;
     
     //#line 73 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
-    return alloc__43760;
+    return alloc__70021;
     
 }
 
@@ -247,10 +247,10 @@ void au::edu::anu::mm::Octant::multipolesToLocal() {
     
     //#line 103 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
     {
-        ::au::edu::anu::mm::Octant__VList__VListIterator* octantIndex2__34611;
-        for (octantIndex2__34611 = reinterpret_cast< ::au::edu::anu::mm::Octant__VList__VListIterator*>(::x10aux::nullCheck(this->FMGL(vList))->iterator());
-             octantIndex2__34611->hasNext(); ) {
-            ::au::edu::anu::mm::OctantId octantIndex2 = octantIndex2__34611->next();
+        ::au::edu::anu::mm::Octant__VList__VListIterator* octantIndex2__43984;
+        for (octantIndex2__43984 = reinterpret_cast< ::au::edu::anu::mm::Octant__VList__VListIterator*>(::x10aux::nullCheck(this->FMGL(vList))->iterator());
+             octantIndex2__43984->hasNext(); ) {
+            ::au::edu::anu::mm::OctantId octantIndex2 = octantIndex2__43984->next();
             
             //#line 104 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
             ::au::edu::anu::mm::MultipoleExpansion* box2MultipoleExp =
@@ -278,99 +278,99 @@ void au::edu::anu::mm::Octant::multipolesToLocal() {
                   (__extension__ ({
                       
                       //#line 112 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
-                      ::x10x::vector::Vector3d alloc__34604 =
+                      ::x10x::vector::Vector3d alloc__43977 =
                          ::x10x::vector::Vector3d::_alloc();
                       
                       //#line 16 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                      x10_double i__43761 = ((((x10_double) (dx2))) * (sideLength));
-                      x10_double j__43762 = ((((x10_double) (dy2))) * (sideLength));
-                      x10_double k__43763 = ((((x10_double) (dz2))) * (sideLength));
+                      x10_double i__70022 = ((((x10_double) (dx2))) * (sideLength));
+                      x10_double j__70023 = ((((x10_double) (dy2))) * (sideLength));
+                      x10_double k__70024 = ((((x10_double) (dz2))) * (sideLength));
                       
                       //#line 17 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                      alloc__34604->FMGL(i) = i__43761;
-                      alloc__34604->FMGL(j) = j__43762;
-                      alloc__34604->FMGL(k) = k__43763;
-                      alloc__34604;
+                      alloc__43977->FMGL(i) = i__70022;
+                      alloc__43977->FMGL(j) = j__70023;
+                      alloc__43977->FMGL(k) = k__70024;
+                      alloc__43977;
                   }))
                   , (__extension__ ({
                       
                       //#line 487 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                      x10_long i__43367 = dx2;
-                      x10_long i__43368 = dy2;
-                      x10_long i__43369 = dz2;
-                      ::x10::lang::Rail< ::x10::lang::Rail< x10_complex >* >* ret__43370;
+                      x10_long i__69882 = dx2;
+                      x10_long i__69883 = dy2;
+                      x10_long i__69884 = dz2;
+                      ::x10::lang::Rail< ::x10::lang::Rail< x10_complex >* >* ret__69885;
                       
                       //#line 491 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                      ret__43370 = ::x10aux::nullCheck(myComplexK)->FMGL(raw)->x10::lang::Rail< ::x10::lang::Rail< ::x10::lang::Rail< x10_complex >* >* >::__apply(
+                      ret__69885 = ::x10aux::nullCheck(myComplexK)->FMGL(raw)->x10::lang::Rail< ::x10::lang::Rail< ::x10::lang::Rail< x10_complex >* >* >::__apply(
                                      (__extension__ ({
                                          
                                          //#line 1206 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                         x10_long i__43765 =
-                                           i__43367;
-                                         x10_long i__43766 =
-                                           i__43368;
-                                         x10_long i__43767 =
-                                           i__43369;
-                                         x10_long ret__43768;
+                                         x10_long i__70026 =
+                                           i__69882;
+                                         x10_long i__70027 =
+                                           i__69883;
+                                         x10_long i__70028 =
+                                           i__69884;
+                                         x10_long ret__70029;
                                          
                                          //#line 1207 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                         x10_long offset__43764 =
-                                           ((i__43765) - (::x10aux::nullCheck(myComplexK)->FMGL(layout_min0)));
+                                         x10_long offset__70025 =
+                                           ((i__70026) - (::x10aux::nullCheck(myComplexK)->FMGL(layout_min0)));
                                          
                                          //#line 1208 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                         offset__43764 = ((((((offset__43764) * (::x10aux::nullCheck(myComplexK)->FMGL(layout_stride1)))) + (i__43766))) - (::x10aux::nullCheck(myComplexK)->FMGL(layout_min1)));
+                                         offset__70025 = ((((((offset__70025) * (::x10aux::nullCheck(myComplexK)->FMGL(layout_stride1)))) + (i__70027))) - (::x10aux::nullCheck(myComplexK)->FMGL(layout_min1)));
                                          
                                          //#line 1209 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                         offset__43764 = ((((((offset__43764) * (::x10aux::nullCheck(::x10aux::nullCheck(myComplexK)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
-                                                                                   ((x10_long)0ll))))) + (i__43767))) - (::x10aux::nullCheck(::x10aux::nullCheck(myComplexK)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
+                                         offset__70025 = ((((((offset__70025) * (::x10aux::nullCheck(::x10aux::nullCheck(myComplexK)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
+                                                                                   ((x10_long)0ll))))) + (i__70028))) - (::x10aux::nullCheck(::x10aux::nullCheck(myComplexK)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
                                                                                                                            ((x10_long)1ll))));
                                          
                                          //#line 1210 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                         ret__43768 = offset__43764;
-                                         ret__43768;
+                                         ret__70029 = offset__70025;
+                                         ret__70029;
                                      }))
                                      );
-                      ret__43370;
+                      ret__69885;
                   }))
                   , box2MultipoleExp, (__extension__ ({
                       
                       //#line 487 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                      x10_long i__43378 = dx2;
-                      x10_long i__43379 = dy2;
-                      x10_long i__43380 = dz2;
-                      ::x10::lang::Rail< ::x10::lang::Rail< ::x10::regionarray::Array<x10_double>* >* >* ret__43381;
+                      x10_long i__69893 = dx2;
+                      x10_long i__69894 = dy2;
+                      x10_long i__69895 = dz2;
+                      ::x10::lang::Rail< ::x10::lang::Rail< ::x10::regionarray::Array<x10_double>* >* >* ret__69896;
                       
                       //#line 491 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                      ret__43381 = ::x10aux::nullCheck(myWignerB)->FMGL(raw)->x10::lang::Rail< ::x10::lang::Rail< ::x10::lang::Rail< ::x10::regionarray::Array<x10_double>* >* >* >::__apply(
+                      ret__69896 = ::x10aux::nullCheck(myWignerB)->FMGL(raw)->x10::lang::Rail< ::x10::lang::Rail< ::x10::lang::Rail< ::x10::regionarray::Array<x10_double>* >* >* >::__apply(
                                      (__extension__ ({
                                          
                                          //#line 1206 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                         x10_long i__43770 =
-                                           i__43378;
-                                         x10_long i__43771 =
-                                           i__43379;
-                                         x10_long i__43772 =
-                                           i__43380;
-                                         x10_long ret__43773;
+                                         x10_long i__70031 =
+                                           i__69893;
+                                         x10_long i__70032 =
+                                           i__69894;
+                                         x10_long i__70033 =
+                                           i__69895;
+                                         x10_long ret__70034;
                                          
                                          //#line 1207 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                         x10_long offset__43769 =
-                                           ((i__43770) - (::x10aux::nullCheck(myWignerB)->FMGL(layout_min0)));
+                                         x10_long offset__70030 =
+                                           ((i__70031) - (::x10aux::nullCheck(myWignerB)->FMGL(layout_min0)));
                                          
                                          //#line 1208 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                         offset__43769 = ((((((offset__43769) * (::x10aux::nullCheck(myWignerB)->FMGL(layout_stride1)))) + (i__43771))) - (::x10aux::nullCheck(myWignerB)->FMGL(layout_min1)));
+                                         offset__70030 = ((((((offset__70030) * (::x10aux::nullCheck(myWignerB)->FMGL(layout_stride1)))) + (i__70032))) - (::x10aux::nullCheck(myWignerB)->FMGL(layout_min1)));
                                          
                                          //#line 1209 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                         offset__43769 = ((((((offset__43769) * (::x10aux::nullCheck(::x10aux::nullCheck(myWignerB)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
-                                                                                   ((x10_long)0ll))))) + (i__43772))) - (::x10aux::nullCheck(::x10aux::nullCheck(myWignerB)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
+                                         offset__70030 = ((((((offset__70030) * (::x10aux::nullCheck(::x10aux::nullCheck(myWignerB)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
+                                                                                   ((x10_long)0ll))))) + (i__70033))) - (::x10aux::nullCheck(::x10aux::nullCheck(myWignerB)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
                                                                                                                            ((x10_long)1ll))));
                                          
                                          //#line 1210 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                         ret__43773 = offset__43769;
-                                         ret__43773;
+                                         ret__70034 = offset__70030;
+                                         ret__70034;
                                      }))
                                      );
-                      ret__43381;
+                      ret__69896;
                   }))
                   );
             }
@@ -422,92 +422,92 @@ void au::edu::anu::mm::Octant::addParentExpansion(::au::edu::anu::mm::LocalExpan
           (__extension__ ({
               
               //#line 133 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
-              ::x10x::vector::Vector3d alloc__34605 =  ::x10x::vector::Vector3d::_alloc();
+              ::x10x::vector::Vector3d alloc__43978 =  ::x10x::vector::Vector3d::_alloc();
               
               //#line 16 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-              x10_double i__43774 = ((((((x10_double) (dx))) * (0.5))) * (sideLength));
-              x10_double j__43775 = ((((((x10_double) (dy))) * (0.5))) * (sideLength));
-              x10_double k__43776 = ((((((x10_double) (dz))) * (0.5))) * (sideLength));
+              x10_double i__70035 = ((((((x10_double) (dx))) * (0.5))) * (sideLength));
+              x10_double j__70036 = ((((((x10_double) (dy))) * (0.5))) * (sideLength));
+              x10_double k__70037 = ((((((x10_double) (dz))) * (0.5))) * (sideLength));
               
               //#line 17 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-              alloc__34605->FMGL(i) = i__43774;
-              alloc__34605->FMGL(j) = j__43775;
-              alloc__34605->FMGL(k) = k__43776;
-              alloc__34605;
+              alloc__43978->FMGL(i) = i__70035;
+              alloc__43978->FMGL(j) = j__70036;
+              alloc__43978->FMGL(k) = k__70037;
+              alloc__43978;
           }))
           , (__extension__ ({
               
               //#line 487 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-              x10_long i__43395 = dx;
-              x10_long i__43396 = dy;
-              x10_long i__43397 = dz;
-              ::x10::lang::Rail< ::x10::lang::Rail< x10_complex >* >* ret__43398;
+              x10_long i__69910 = dx;
+              x10_long i__69911 = dy;
+              x10_long i__69912 = dz;
+              ::x10::lang::Rail< ::x10::lang::Rail< x10_complex >* >* ret__69913;
               
               //#line 491 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-              ret__43398 = ::x10aux::nullCheck(myComplexK)->FMGL(raw)->x10::lang::Rail< ::x10::lang::Rail< ::x10::lang::Rail< x10_complex >* >* >::__apply(
+              ret__69913 = ::x10aux::nullCheck(myComplexK)->FMGL(raw)->x10::lang::Rail< ::x10::lang::Rail< ::x10::lang::Rail< x10_complex >* >* >::__apply(
                              (__extension__ ({
                                  
                                  //#line 1206 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                 x10_long i__43778 = i__43395;
-                                 x10_long i__43779 = i__43396;
-                                 x10_long i__43780 = i__43397;
-                                 x10_long ret__43781;
+                                 x10_long i__70039 = i__69910;
+                                 x10_long i__70040 = i__69911;
+                                 x10_long i__70041 = i__69912;
+                                 x10_long ret__70042;
                                  
                                  //#line 1207 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                 x10_long offset__43777 =
-                                   ((i__43778) - (::x10aux::nullCheck(myComplexK)->FMGL(layout_min0)));
+                                 x10_long offset__70038 =
+                                   ((i__70039) - (::x10aux::nullCheck(myComplexK)->FMGL(layout_min0)));
                                  
                                  //#line 1208 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                 offset__43777 = ((((((offset__43777) * (::x10aux::nullCheck(myComplexK)->FMGL(layout_stride1)))) + (i__43779))) - (::x10aux::nullCheck(myComplexK)->FMGL(layout_min1)));
+                                 offset__70038 = ((((((offset__70038) * (::x10aux::nullCheck(myComplexK)->FMGL(layout_stride1)))) + (i__70040))) - (::x10aux::nullCheck(myComplexK)->FMGL(layout_min1)));
                                  
                                  //#line 1209 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                 offset__43777 = ((((((offset__43777) * (::x10aux::nullCheck(::x10aux::nullCheck(myComplexK)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
-                                                                           ((x10_long)0ll))))) + (i__43780))) - (::x10aux::nullCheck(::x10aux::nullCheck(myComplexK)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
+                                 offset__70038 = ((((((offset__70038) * (::x10aux::nullCheck(::x10aux::nullCheck(myComplexK)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
+                                                                           ((x10_long)0ll))))) + (i__70041))) - (::x10aux::nullCheck(::x10aux::nullCheck(myComplexK)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
                                                                                                                    ((x10_long)1ll))));
                                  
                                  //#line 1210 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                 ret__43781 = offset__43777;
-                                 ret__43781;
+                                 ret__70042 = offset__70038;
+                                 ret__70042;
                              }))
                              );
-              ret__43398;
+              ret__69913;
           }))
           , parentLocalExpansion, (__extension__ ({
               
               //#line 487 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-              x10_long i__43406 = ((((dx) + (((x10_long)1ll)))) / ::x10aux::zeroCheck(((x10_long)2ll)));
-              x10_long i__43407 = ((((dy) + (((x10_long)1ll)))) / ::x10aux::zeroCheck(((x10_long)2ll)));
-              x10_long i__43408 = ((((dz) + (((x10_long)1ll)))) / ::x10aux::zeroCheck(((x10_long)2ll)));
-              ::x10::lang::Rail< ::x10::lang::Rail< ::x10::regionarray::Array<x10_double>* >* >* ret__43409;
+              x10_long i__69921 = ((((dx) + (((x10_long)1ll)))) / ::x10aux::zeroCheck(((x10_long)2ll)));
+              x10_long i__69922 = ((((dy) + (((x10_long)1ll)))) / ::x10aux::zeroCheck(((x10_long)2ll)));
+              x10_long i__69923 = ((((dz) + (((x10_long)1ll)))) / ::x10aux::zeroCheck(((x10_long)2ll)));
+              ::x10::lang::Rail< ::x10::lang::Rail< ::x10::regionarray::Array<x10_double>* >* >* ret__69924;
               
               //#line 491 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-              ret__43409 = ::x10aux::nullCheck(myWignerC)->FMGL(raw)->x10::lang::Rail< ::x10::lang::Rail< ::x10::lang::Rail< ::x10::regionarray::Array<x10_double>* >* >* >::__apply(
+              ret__69924 = ::x10aux::nullCheck(myWignerC)->FMGL(raw)->x10::lang::Rail< ::x10::lang::Rail< ::x10::lang::Rail< ::x10::regionarray::Array<x10_double>* >* >* >::__apply(
                              (__extension__ ({
                                  
                                  //#line 1206 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                 x10_long i__43783 = i__43406;
-                                 x10_long i__43784 = i__43407;
-                                 x10_long i__43785 = i__43408;
-                                 x10_long ret__43786;
+                                 x10_long i__70044 = i__69921;
+                                 x10_long i__70045 = i__69922;
+                                 x10_long i__70046 = i__69923;
+                                 x10_long ret__70047;
                                  
                                  //#line 1207 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                 x10_long offset__43782 =
-                                   ((i__43783) - (::x10aux::nullCheck(myWignerC)->FMGL(layout_min0)));
+                                 x10_long offset__70043 =
+                                   ((i__70044) - (::x10aux::nullCheck(myWignerC)->FMGL(layout_min0)));
                                  
                                  //#line 1208 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                 offset__43782 = ((((((offset__43782) * (::x10aux::nullCheck(myWignerC)->FMGL(layout_stride1)))) + (i__43784))) - (::x10aux::nullCheck(myWignerC)->FMGL(layout_min1)));
+                                 offset__70043 = ((((((offset__70043) * (::x10aux::nullCheck(myWignerC)->FMGL(layout_stride1)))) + (i__70045))) - (::x10aux::nullCheck(myWignerC)->FMGL(layout_min1)));
                                  
                                  //#line 1209 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                 offset__43782 = ((((((offset__43782) * (::x10aux::nullCheck(::x10aux::nullCheck(myWignerC)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
-                                                                           ((x10_long)0ll))))) + (i__43785))) - (::x10aux::nullCheck(::x10aux::nullCheck(myWignerC)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
+                                 offset__70043 = ((((((offset__70043) * (::x10aux::nullCheck(::x10aux::nullCheck(myWignerC)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
+                                                                           ((x10_long)0ll))))) + (i__70046))) - (::x10aux::nullCheck(::x10aux::nullCheck(myWignerC)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
                                                                                                                    ((x10_long)1ll))));
                                  
                                  //#line 1210 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                 ret__43786 = offset__43782;
-                                 ret__43786;
+                                 ret__70047 = offset__70043;
+                                 ret__70047;
                              }))
                              );
-              ret__43409;
+              ret__69924;
           }))
           );
     }
@@ -537,10 +537,10 @@ void au::edu::anu::mm::Octant::sendMultipole() {
         
         //#line 146 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
         {
-            ::au::edu::anu::mm::Octant__VList__VListIterator* octantId__34613;
-            for (octantId__34613 = reinterpret_cast< ::au::edu::anu::mm::Octant__VList__VListIterator*>(::x10aux::nullCheck(this->FMGL(vList))->iterator());
-                 octantId__34613->hasNext(); ) {
-                ::au::edu::anu::mm::OctantId octantId = octantId__34613->next();
+            ::au::edu::anu::mm::Octant__VList__VListIterator* octantId__43986;
+            for (octantId__43986 = reinterpret_cast< ::au::edu::anu::mm::Octant__VList__VListIterator*>(::x10aux::nullCheck(this->FMGL(vList))->iterator());
+                 octantId__43986->hasNext(); ) {
+                ::au::edu::anu::mm::OctantId octantId = octantId__43986->next();
                 
                 //#line 147 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
                 x10_long placeId = local->getPlaceId(octantId->au::edu::anu::mm::OctantId::getAnchor(
@@ -559,11 +559,11 @@ void au::edu::anu::mm::Octant::sendMultipole() {
         
         //#line 153 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
         {
-            ::x10::lang::Iterator<x10_long>* placeId__34615;
-            for (placeId__34615 = vListPlaces->iterator();
-                 ::x10::lang::Iterator<x10_long>::hasNext(::x10aux::nullCheck(placeId__34615));
+            ::x10::lang::Iterator<x10_long>* placeId__43988;
+            for (placeId__43988 = vListPlaces->iterator();
+                 ::x10::lang::Iterator<x10_long>::hasNext(::x10aux::nullCheck(placeId__43988));
                  ) {
-                x10_long placeId = ::x10::lang::Iterator<x10_long>::next(::x10aux::nullCheck(placeId__34615));
+                x10_long placeId = ::x10::lang::Iterator<x10_long>::next(::x10aux::nullCheck(placeId__43988));
                 
                 //#line 154 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
                 if ((::x10aux::struct_equals(placeId, ::x10::lang::Place::_make(::x10aux::here)->FMGL(id))))
@@ -576,12 +576,12 @@ void au::edu::anu::mm::Octant::sendMultipole() {
                     
                     //#line 157 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
                     ::x10::lang::Runtime::runAsync((__extension__ ({
-                                                       ::x10::lang::Place alloc__34606 =
+                                                       ::x10::lang::Place alloc__43979 =
                                                          
                                                        ::x10::lang::Place::_alloc();
-                                                       (alloc__34606)->::x10::lang::Place::_constructor(
+                                                       (alloc__43979)->::x10::lang::Place::_constructor(
                                                          placeId);
-                                                       alloc__34606;
+                                                       alloc__43979;
                                                    }))
                                                    , reinterpret_cast< ::x10::lang::VoidFun_0_0*>((new (::x10aux::alloc< ::x10::lang::VoidFun_0_0>(sizeof(au_edu_anu_mm_Octant__closure__1)))au_edu_anu_mm_Octant__closure__1(mortonId, multipoleExp))),
                                                    ::x10aux::class_cast_unchecked< ::x10::lang::Runtime__Profile*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
@@ -648,8 +648,8 @@ x10_int au::edu::anu::mm::Octant::estimateVListSize(::au::edu::anu::mm::OctantId
     x10_int nearMinX = (__extension__ ({
         
         //#line 463 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int b__43672 = ((x) - (ws));
-        ((((x10_int)0)) < (b__43672)) ? (b__43672) : (((x10_int)0));
+        x10_int b__69933 = ((x) - (ws));
+        ((((x10_int)0)) < (b__69933)) ? (b__69933) : (((x10_int)0));
     }))
     ;
     
@@ -657,9 +657,9 @@ x10_int au::edu::anu::mm::Octant::estimateVListSize(::au::edu::anu::mm::OctantId
     x10_int nearMaxX = (__extension__ ({
         
         //#line 467 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int a__43673 = maxExtent;
-        x10_int b__43674 = ((x) + (ws));
-        ((a__43673) < (b__43674)) ? (a__43673) : (b__43674);
+        x10_int a__69934 = maxExtent;
+        x10_int b__69935 = ((x) + (ws));
+        ((a__69934) < (b__69935)) ? (a__69934) : (b__69935);
     }))
     ;
     
@@ -667,8 +667,8 @@ x10_int au::edu::anu::mm::Octant::estimateVListSize(::au::edu::anu::mm::OctantId
     x10_int nearMinY = (__extension__ ({
         
         //#line 463 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int b__43676 = ((y) - (ws));
-        ((((x10_int)0)) < (b__43676)) ? (b__43676) : (((x10_int)0));
+        x10_int b__69937 = ((y) - (ws));
+        ((((x10_int)0)) < (b__69937)) ? (b__69937) : (((x10_int)0));
     }))
     ;
     
@@ -676,9 +676,9 @@ x10_int au::edu::anu::mm::Octant::estimateVListSize(::au::edu::anu::mm::OctantId
     x10_int nearMaxY = (__extension__ ({
         
         //#line 467 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int a__43677 = maxExtent;
-        x10_int b__43678 = ((y) + (ws));
-        ((a__43677) < (b__43678)) ? (a__43677) : (b__43678);
+        x10_int a__69938 = maxExtent;
+        x10_int b__69939 = ((y) + (ws));
+        ((a__69938) < (b__69939)) ? (a__69938) : (b__69939);
     }))
     ;
     
@@ -686,8 +686,8 @@ x10_int au::edu::anu::mm::Octant::estimateVListSize(::au::edu::anu::mm::OctantId
     x10_int nearMinZ = (__extension__ ({
         
         //#line 463 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int b__43680 = ((z) - (ws));
-        ((((x10_int)0)) < (b__43680)) ? (b__43680) : (((x10_int)0));
+        x10_int b__69941 = ((z) - (ws));
+        ((((x10_int)0)) < (b__69941)) ? (b__69941) : (((x10_int)0));
     }))
     ;
     
@@ -695,9 +695,9 @@ x10_int au::edu::anu::mm::Octant::estimateVListSize(::au::edu::anu::mm::OctantId
     x10_int nearMaxZ = (__extension__ ({
         
         //#line 467 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int a__43681 = maxExtent;
-        x10_int b__43682 = ((z) + (ws));
-        ((a__43681) < (b__43682)) ? (a__43681) : (b__43682);
+        x10_int a__69942 = maxExtent;
+        x10_int b__69943 = ((z) + (ws));
+        ((a__69942) < (b__69943)) ? (a__69942) : (b__69943);
     }))
     ;
     
@@ -711,8 +711,8 @@ x10_int au::edu::anu::mm::Octant::estimateVListSize(::au::edu::anu::mm::OctantId
     x10_int farMinX = (__extension__ ({
         
         //#line 463 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int b__43684 = ((((x) + (xOffset))) - (farExtent));
-        ((((x10_int)0)) < (b__43684)) ? (b__43684) : (((x10_int)0));
+        x10_int b__69945 = ((((x) + (xOffset))) - (farExtent));
+        ((((x10_int)0)) < (b__69945)) ? (b__69945) : (((x10_int)0));
     }))
     ;
     
@@ -720,9 +720,9 @@ x10_int au::edu::anu::mm::Octant::estimateVListSize(::au::edu::anu::mm::OctantId
     x10_int farMaxX = (__extension__ ({
         
         //#line 467 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int a__43685 = maxExtent;
-        x10_int b__43686 = ((((((x) + (xOffset))) + (farExtent))) + (((x10_int)1)));
-        ((a__43685) < (b__43686)) ? (a__43685) : (b__43686);
+        x10_int a__69946 = maxExtent;
+        x10_int b__69947 = ((((((x) + (xOffset))) + (farExtent))) + (((x10_int)1)));
+        ((a__69946) < (b__69947)) ? (a__69946) : (b__69947);
     }))
     ;
     
@@ -730,8 +730,8 @@ x10_int au::edu::anu::mm::Octant::estimateVListSize(::au::edu::anu::mm::OctantId
     x10_int farMinY = (__extension__ ({
         
         //#line 463 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int b__43688 = ((((y) + (yOffset))) - (farExtent));
-        ((((x10_int)0)) < (b__43688)) ? (b__43688) : (((x10_int)0));
+        x10_int b__69949 = ((((y) + (yOffset))) - (farExtent));
+        ((((x10_int)0)) < (b__69949)) ? (b__69949) : (((x10_int)0));
     }))
     ;
     
@@ -739,9 +739,9 @@ x10_int au::edu::anu::mm::Octant::estimateVListSize(::au::edu::anu::mm::OctantId
     x10_int farMaxY = (__extension__ ({
         
         //#line 467 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int a__43689 = maxExtent;
-        x10_int b__43690 = ((((((y) + (yOffset))) + (farExtent))) + (((x10_int)1)));
-        ((a__43689) < (b__43690)) ? (a__43689) : (b__43690);
+        x10_int a__69950 = maxExtent;
+        x10_int b__69951 = ((((((y) + (yOffset))) + (farExtent))) + (((x10_int)1)));
+        ((a__69950) < (b__69951)) ? (a__69950) : (b__69951);
     }))
     ;
     
@@ -749,8 +749,8 @@ x10_int au::edu::anu::mm::Octant::estimateVListSize(::au::edu::anu::mm::OctantId
     x10_int farMinZ = (__extension__ ({
         
         //#line 463 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int b__43692 = ((((z) + (zOffset))) - (farExtent));
-        ((((x10_int)0)) < (b__43692)) ? (b__43692) : (((x10_int)0));
+        x10_int b__69953 = ((((z) + (zOffset))) - (farExtent));
+        ((((x10_int)0)) < (b__69953)) ? (b__69953) : (((x10_int)0));
     }))
     ;
     
@@ -758,9 +758,9 @@ x10_int au::edu::anu::mm::Octant::estimateVListSize(::au::edu::anu::mm::OctantId
     x10_int farMaxZ = (__extension__ ({
         
         //#line 467 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int a__43693 = maxExtent;
-        x10_int b__43694 = ((((((z) + (zOffset))) + (farExtent))) + (((x10_int)1)));
-        ((a__43693) < (b__43694)) ? (a__43693) : (b__43694);
+        x10_int a__69954 = maxExtent;
+        x10_int b__69955 = ((((((z) + (zOffset))) + (farExtent))) + (((x10_int)1)));
+        ((a__69954) < (b__69955)) ? (a__69954) : (b__69955);
     }))
     ;
     
@@ -777,11 +777,11 @@ void au::edu::anu::mm::Octant::createVList(x10_int ws, x10_ubyte dMax) {
     
     //#line 206 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
     this->FMGL(vList) = (__extension__ ({
-        ::au::edu::anu::mm::Octant__VList* alloc__34607 =
+        ::au::edu::anu::mm::Octant__VList* alloc__43980 =
            (new (::x10aux::alloc_z< ::au::edu::anu::mm::Octant__VList>()) ::au::edu::anu::mm::Octant__VList());
-        (alloc__34607)->::au::edu::anu::mm::Octant__VList::_constructor(
+        (alloc__43980)->::au::edu::anu::mm::Octant__VList::_constructor(
           this, this->FMGL(id), ws, dMax);
-        alloc__34607;
+        alloc__43980;
     }))
     ;
 }
@@ -818,11 +818,11 @@ x10_long au::edu::anu::mm::Octant::estimateVListCost(x10_int numTerms) {
     
     //#line 221 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
     {
-        x10_long i__43794;
-        for (i__43794 = ((x10_long)1ll); ((i__43794) <= (((x10_long)10ll)));
-             i__43794 = ((i__43794) + (((x10_long)1ll))))
+        x10_long i__70055;
+        for (i__70055 = ((x10_long)1ll); ((i__70055) <= (((x10_long)10ll)));
+             i__70055 = ((i__70055) + (((x10_long)1ll))))
         {
-            x10_long i__43795 = i__43794;
+            x10_long i__70056 = i__70055;
             
             //#line 222 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
             localExp->transformAndAddToLocal(::x10aux::nullCheck(scratch)->FMGL(exp),
@@ -830,88 +830,88 @@ x10_long au::edu::anu::mm::Octant::estimateVListCost(x10_int numTerms) {
                                              (__extension__ ({
                                                  
                                                  //#line 223 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
-                                                 ::x10x::vector::Vector3d alloc__43791 =
+                                                 ::x10x::vector::Vector3d alloc__70052 =
                                                     ::x10x::vector::Vector3d::_alloc();
                                                  
                                                  //#line 17 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                                                 alloc__43791->FMGL(i) =
+                                                 alloc__70052->FMGL(i) =
                                                    1.0;
-                                                 alloc__43791->FMGL(j) =
+                                                 alloc__70052->FMGL(j) =
                                                    1.0;
-                                                 alloc__43791->FMGL(k) =
+                                                 alloc__70052->FMGL(k) =
                                                    1.0;
-                                                 alloc__43791;
+                                                 alloc__70052;
                                              }))
                                              , (__extension__ ({
                                                  
                                                  //#line 487 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                                 ::x10::lang::Rail< ::x10::lang::Rail< x10_complex >* >* ret__43792;
+                                                 ::x10::lang::Rail< ::x10::lang::Rail< x10_complex >* >* ret__70053;
                                                  
                                                  //#line 491 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                                 ret__43792 =
+                                                 ret__70053 =
                                                    ::x10aux::nullCheck(myComplexK)->FMGL(raw)->x10::lang::Rail< ::x10::lang::Rail< ::x10::lang::Rail< x10_complex >* >* >::__apply(
                                                      (__extension__ ({
                                                          
                                                          //#line 1206 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                                         x10_long ret__43788;
+                                                         x10_long ret__70049;
                                                          
                                                          //#line 1207 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                                         x10_long offset__43787 =
+                                                         x10_long offset__70048 =
                                                            ((((x10_long)1ll)) - (::x10aux::nullCheck(myComplexK)->FMGL(layout_min0)));
                                                          
                                                          //#line 1208 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                                         offset__43787 =
-                                                           ((((((offset__43787) * (::x10aux::nullCheck(myComplexK)->FMGL(layout_stride1)))) + (((x10_long)1ll)))) - (::x10aux::nullCheck(myComplexK)->FMGL(layout_min1)));
+                                                         offset__70048 =
+                                                           ((((((offset__70048) * (::x10aux::nullCheck(myComplexK)->FMGL(layout_stride1)))) + (((x10_long)1ll)))) - (::x10aux::nullCheck(myComplexK)->FMGL(layout_min1)));
                                                          
                                                          //#line 1209 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                                         offset__43787 =
-                                                           ((((((offset__43787) * (::x10aux::nullCheck(::x10aux::nullCheck(myComplexK)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
+                                                         offset__70048 =
+                                                           ((((((offset__70048) * (::x10aux::nullCheck(::x10aux::nullCheck(myComplexK)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
                                                                                      ((x10_long)0ll))))) + (((x10_long)1ll)))) - (::x10aux::nullCheck(::x10aux::nullCheck(myComplexK)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
                                                                                                                                     ((x10_long)1ll))));
                                                          
                                                          //#line 1210 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                                         ret__43788 =
-                                                           offset__43787;
-                                                         ret__43788;
+                                                         ret__70049 =
+                                                           offset__70048;
+                                                         ret__70049;
                                                      }))
                                                      );
-                                                 ret__43792;
+                                                 ret__70053;
                                              }))
                                              , randomExp,
                                              (__extension__ ({
                                                  
                                                  //#line 487 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                                 ::x10::lang::Rail< ::x10::lang::Rail< ::x10::regionarray::Array<x10_double>* >* >* ret__43793;
+                                                 ::x10::lang::Rail< ::x10::lang::Rail< ::x10::regionarray::Array<x10_double>* >* >* ret__70054;
                                                  
                                                  //#line 491 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                                 ret__43793 =
+                                                 ret__70054 =
                                                    ::x10aux::nullCheck(myWignerB)->FMGL(raw)->x10::lang::Rail< ::x10::lang::Rail< ::x10::lang::Rail< ::x10::regionarray::Array<x10_double>* >* >* >::__apply(
                                                      (__extension__ ({
                                                          
                                                          //#line 1206 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                                         x10_long ret__43790;
+                                                         x10_long ret__70051;
                                                          
                                                          //#line 1207 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                                         x10_long offset__43789 =
+                                                         x10_long offset__70050 =
                                                            ((((x10_long)1ll)) - (::x10aux::nullCheck(myWignerB)->FMGL(layout_min0)));
                                                          
                                                          //#line 1208 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                                         offset__43789 =
-                                                           ((((((offset__43789) * (::x10aux::nullCheck(myWignerB)->FMGL(layout_stride1)))) + (((x10_long)1ll)))) - (::x10aux::nullCheck(myWignerB)->FMGL(layout_min1)));
+                                                         offset__70050 =
+                                                           ((((((offset__70050) * (::x10aux::nullCheck(myWignerB)->FMGL(layout_stride1)))) + (((x10_long)1ll)))) - (::x10aux::nullCheck(myWignerB)->FMGL(layout_min1)));
                                                          
                                                          //#line 1209 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                                         offset__43789 =
-                                                           ((((((offset__43789) * (::x10aux::nullCheck(::x10aux::nullCheck(myWignerB)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
+                                                         offset__70050 =
+                                                           ((((((offset__70050) * (::x10aux::nullCheck(::x10aux::nullCheck(myWignerB)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
                                                                                      ((x10_long)0ll))))) + (((x10_long)1ll)))) - (::x10aux::nullCheck(::x10aux::nullCheck(myWignerB)->FMGL(layout))->x10::lang::Rail< x10_long >::__apply(
                                                                                                                                     ((x10_long)1ll))));
                                                          
                                                          //#line 1210 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/regionarray/Array.x10"
-                                                         ret__43790 =
-                                                           offset__43789;
-                                                         ret__43790;
+                                                         ret__70051 =
+                                                           offset__70050;
+                                                         ret__70051;
                                                      }))
                                                      );
-                                                 ret__43793;
+                                                 ret__70054;
                                              }))
                                              );
         }
@@ -932,7 +932,7 @@ x10_long au::edu::anu::mm::Octant::estimateVListCost(x10_int numTerms) {
 ::x10::lang::String* au::edu::anu::mm::Octant::toString() {
     
     //#line 237 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
-    return ::x10::lang::String::__plus((&::au::edu::anu::mm::Octant_Strings::sl__48442), this->FMGL(id));
+    return ::x10::lang::String::__plus((&::au::edu::anu::mm::Octant_Strings::sl__73078), this->FMGL(id));
     
 }
 
@@ -974,7 +974,7 @@ void au::edu::anu::mm::Octant::_initRTT() {
     rtt.initStageTwo("au.edu.anu.mm.Octant",::x10aux::RuntimeType::class_kind, 1, parents, 0, NULL, NULL);
 }
 
-::x10::lang::String au::edu::anu::mm::Octant_Strings::sl__48442("Octant ");
+::x10::lang::String au::edu::anu::mm::Octant_Strings::sl__73078("Octant ");
 
 ::x10::lang::VoidFun_0_0::itable<au_edu_anu_mm_Octant__closure__1>au_edu_anu_mm_Octant__closure__1::_itable(&::x10::lang::Reference::equals, &::x10::lang::Closure::hashCode, &au_edu_anu_mm_Octant__closure__1::__apply, &au_edu_anu_mm_Octant__closure__1::toString, &::x10::lang::Closure::typeName);
 ::x10aux::itable_entry au_edu_anu_mm_Octant__closure__1::_itables[2] = {::x10aux::itable_entry(&::x10aux::getRTT< ::x10::lang::VoidFun_0_0>, &au_edu_anu_mm_Octant__closure__1::_itable),::x10aux::itable_entry(NULL, NULL)};
@@ -1022,10 +1022,10 @@ void au::edu::anu::mm::Octant__VList__VListIterator::_constructor(::au::edu::anu
     //#line 287 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
     
     //#line 283 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
-    ::au::edu::anu::mm::Octant__VList__VListIterator* this__43803 = this;
-    ::x10aux::nullCheck(this__43803)->FMGL(x) = ((x10_ubyte)0);
-    ::x10aux::nullCheck(this__43803)->FMGL(y) = ((x10_ubyte)0);
-    ::x10aux::nullCheck(this__43803)->FMGL(z) = ((x10_ubyte)0);
+    ::au::edu::anu::mm::Octant__VList__VListIterator* this__70064 = this;
+    ::x10aux::nullCheck(this__70064)->FMGL(x) = ((x10_ubyte)0);
+    ::x10aux::nullCheck(this__70064)->FMGL(y) = ((x10_ubyte)0);
+    ::x10aux::nullCheck(this__70064)->FMGL(z) = ((x10_ubyte)0);
     
     //#line 288 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
     this->FMGL(x) = ::x10aux::nullCheck(this->FMGL(out__))->FMGL(minX);
@@ -1101,16 +1101,16 @@ x10_boolean au::edu::anu::mm::Octant__VList__VListIterator::hasNext(
         ::au::edu::anu::mm::OctantId res =  ::au::edu::anu::mm::OctantId::_alloc();
         
         //#line 26 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-        x10_ubyte x__43804 = this->FMGL(x);
-        x10_ubyte y__43805 = this->FMGL(y);
-        x10_ubyte z__43806 = this->FMGL(z);
-        x10_ubyte level__43807 = ::x10aux::nullCheck(this->FMGL(out__))->FMGL(level);
+        x10_ubyte x__70065 = this->FMGL(x);
+        x10_ubyte y__70066 = this->FMGL(y);
+        x10_ubyte z__70067 = this->FMGL(z);
+        x10_ubyte level__70068 = ::x10aux::nullCheck(this->FMGL(out__))->FMGL(level);
         
         //#line 27 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-        res->FMGL(x) = x__43804;
-        res->FMGL(y) = y__43805;
-        res->FMGL(z) = z__43806;
-        res->FMGL(level) = level__43807;
+        res->FMGL(x) = x__70065;
+        res->FMGL(y) = y__70066;
+        res->FMGL(z) = z__70067;
+        res->FMGL(level) = level__70068;
         
         //#line 308 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
         this->moveToNext();
@@ -1121,7 +1121,7 @@ x10_boolean au::edu::anu::mm::Octant__VList__VListIterator::hasNext(
     } else {
         
         //#line 311 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
-        ::x10aux::throwException(::x10aux::nullCheck(::x10::lang::UnsupportedOperationException::_make(::x10::lang::String::__plus((&::au::edu::anu::mm::Octant__VList__VListIterator_Strings::sl__48468), ::x10aux::nullCheck(::x10aux::nullCheck(this->FMGL(out__))->FMGL(out__))->FMGL(id)))));
+        ::x10aux::throwException(::x10aux::nullCheck(::x10::lang::UnsupportedOperationException::_make(::x10::lang::String::__plus((&::au::edu::anu::mm::Octant__VList__VListIterator_Strings::sl__73104), ::x10aux::nullCheck(::x10aux::nullCheck(this->FMGL(out__))->FMGL(out__))->FMGL(id)))));
     }
     
 }
@@ -1223,7 +1223,7 @@ void au::edu::anu::mm::Octant__VList__VListIterator::_initRTT() {
     rtt.initStageTwo("au.edu.anu.mm.Octant.VList.VListIterator",::x10aux::RuntimeType::class_kind, 1, parents, 0, NULL, NULL);
 }
 
-::x10::lang::String au::edu::anu::mm::Octant__VList__VListIterator_Strings::sl__48468("reached end of vList for ");
+::x10::lang::String au::edu::anu::mm::Octant__VList__VListIterator_Strings::sl__73104("reached end of vList for ");
 
 /* END of Octant$VList$VListIterator */
 /*************************************************/
@@ -1305,7 +1305,7 @@ x10_double au::edu::anu::mm::Octant__SumReducer::__apply(x10_double a, x10_doubl
     return ::x10aux::type_name((*this));
 }
 ::x10::lang::String* au::edu::anu::mm::Octant__SumReducer::toString() {
-    return (&::au::edu::anu::mm::Octant__SumReducer_Strings::sl__48471);
+    return (&::au::edu::anu::mm::Octant__SumReducer_Strings::sl__73107);
     
 }
 x10_boolean au::edu::anu::mm::Octant__SumReducer::equals(::x10::lang::Any* other) {
@@ -1314,8 +1314,8 @@ x10_boolean au::edu::anu::mm::Octant__SumReducer::equals(::x10::lang::Any* other
         return false;
         
     }
-    ::au::edu::anu::mm::Octant__SumReducer this__43796 = (*this);
-    ::au::edu::anu::mm::Octant__SumReducer other__43797 = ::x10aux::class_cast< ::au::edu::anu::mm::Octant__SumReducer>(other);
+    ::au::edu::anu::mm::Octant__SumReducer this__70057 = (*this);
+    ::au::edu::anu::mm::Octant__SumReducer other__70058 = ::x10aux::class_cast< ::au::edu::anu::mm::Octant__SumReducer>(other);
     return true;
     
 }
@@ -1325,8 +1325,8 @@ x10_boolean au::edu::anu::mm::Octant__SumReducer::_struct_equals(::x10::lang::An
         return false;
         
     }
-    ::au::edu::anu::mm::Octant__SumReducer this__43798 = (*this);
-    ::au::edu::anu::mm::Octant__SumReducer other__43799 = ::x10aux::class_cast< ::au::edu::anu::mm::Octant__SumReducer>(other);
+    ::au::edu::anu::mm::Octant__SumReducer this__70059 = (*this);
+    ::au::edu::anu::mm::Octant__SumReducer other__70060 = ::x10aux::class_cast< ::au::edu::anu::mm::Octant__SumReducer>(other);
     return true;
     
 }
@@ -1348,7 +1348,7 @@ void au::edu::anu::mm::Octant__SumReducer::_initRTT() {
     rtt.containsPtrs = false;
 }
 
-::x10::lang::String au::edu::anu::mm::Octant__SumReducer_Strings::sl__48471("struct au.edu.anu.mm.Octant.SumReducer");
+::x10::lang::String au::edu::anu::mm::Octant__SumReducer_Strings::sl__73107("struct au.edu.anu.mm.Octant.SumReducer");
 
 /* END of Octant$SumReducer */
 /*************************************************/
@@ -1400,7 +1400,7 @@ void au::edu::anu::mm::Octant__VList::_constructor(::au::edu::anu::mm::Octant* o
     //#line 254 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
     
     //#line 244 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
-    ::au::edu::anu::mm::Octant__VList* this__43801 = this;
+    ::au::edu::anu::mm::Octant__VList* this__70062 = this;
     
     //#line 255 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
     x10_ubyte levelDim = ((x10_ubyte) ((((x10_ubyte)1)) << (0x7 & (x10_int)(((x10_long)(id->FMGL(level)))))));
@@ -1427,8 +1427,8 @@ void au::edu::anu::mm::Octant__VList::_constructor(::au::edu::anu::mm::Octant* o
     this->FMGL(minX) = ((x10_ubyte) ((__extension__ ({
         
         //#line 477 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_long b__43734 = ((((((x10_long)(id->FMGL(x)))) + (xOffset))) - (extent));
-        ((((x10_long)0ll)) < (b__43734)) ? (b__43734) : (((x10_long)0ll));
+        x10_long b__69995 = ((((((x10_long)(id->FMGL(x)))) + (xOffset))) - (extent));
+        ((((x10_long)0ll)) < (b__69995)) ? (b__69995) : (((x10_long)0ll));
     }))
     ));
     
@@ -1436,9 +1436,9 @@ void au::edu::anu::mm::Octant__VList::_constructor(::au::edu::anu::mm::Octant* o
     this->FMGL(maxX) = ((x10_ubyte) ((__extension__ ({
         
         //#line 481 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_long a__43735 = ((((x10_long)(levelDim))) - (((x10_long)1ll)));
-        x10_long b__43736 = ((((((((x10_long)(id->FMGL(x)))) + (xOffset))) + (extent))) + (((x10_long)1ll)));
-        ((a__43735) < (b__43736)) ? (a__43735) : (b__43736);
+        x10_long a__69996 = ((((x10_long)(levelDim))) - (((x10_long)1ll)));
+        x10_long b__69997 = ((((((((x10_long)(id->FMGL(x)))) + (xOffset))) + (extent))) + (((x10_long)1ll)));
+        ((a__69996) < (b__69997)) ? (a__69996) : (b__69997);
     }))
     ));
     
@@ -1446,8 +1446,8 @@ void au::edu::anu::mm::Octant__VList::_constructor(::au::edu::anu::mm::Octant* o
     this->FMGL(minY) = ((x10_ubyte) ((__extension__ ({
         
         //#line 477 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_long b__43738 = ((((((x10_long)(id->FMGL(y)))) + (yOffset))) - (extent));
-        ((((x10_long)0ll)) < (b__43738)) ? (b__43738) : (((x10_long)0ll));
+        x10_long b__69999 = ((((((x10_long)(id->FMGL(y)))) + (yOffset))) - (extent));
+        ((((x10_long)0ll)) < (b__69999)) ? (b__69999) : (((x10_long)0ll));
     }))
     ));
     
@@ -1455,9 +1455,9 @@ void au::edu::anu::mm::Octant__VList::_constructor(::au::edu::anu::mm::Octant* o
     this->FMGL(maxY) = ((x10_ubyte) ((__extension__ ({
         
         //#line 481 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_long a__43739 = ((((x10_long)(levelDim))) - (((x10_long)1ll)));
-        x10_long b__43740 = ((((((((x10_long)(id->FMGL(y)))) + (yOffset))) + (extent))) + (((x10_long)1ll)));
-        ((a__43739) < (b__43740)) ? (a__43739) : (b__43740);
+        x10_long a__70000 = ((((x10_long)(levelDim))) - (((x10_long)1ll)));
+        x10_long b__70001 = ((((((((x10_long)(id->FMGL(y)))) + (yOffset))) + (extent))) + (((x10_long)1ll)));
+        ((a__70000) < (b__70001)) ? (a__70000) : (b__70001);
     }))
     ));
     
@@ -1465,8 +1465,8 @@ void au::edu::anu::mm::Octant__VList::_constructor(::au::edu::anu::mm::Octant* o
     this->FMGL(minZ) = ((x10_ubyte) ((__extension__ ({
         
         //#line 477 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_long b__43742 = ((((((x10_long)(id->FMGL(z)))) + (zOffset))) - (extent));
-        ((((x10_long)0ll)) < (b__43742)) ? (b__43742) : (((x10_long)0ll));
+        x10_long b__70003 = ((((((x10_long)(id->FMGL(z)))) + (zOffset))) - (extent));
+        ((((x10_long)0ll)) < (b__70003)) ? (b__70003) : (((x10_long)0ll));
     }))
     ));
     
@@ -1474,9 +1474,9 @@ void au::edu::anu::mm::Octant__VList::_constructor(::au::edu::anu::mm::Octant* o
     this->FMGL(maxZ) = ((x10_ubyte) ((__extension__ ({
         
         //#line 481 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_long a__43743 = ((((x10_long)(levelDim))) - (((x10_long)1ll)));
-        x10_long b__43744 = ((((((((x10_long)(id->FMGL(z)))) + (zOffset))) + (extent))) + (((x10_long)1ll)));
-        ((a__43743) < (b__43744)) ? (a__43743) : (b__43744);
+        x10_long a__70004 = ((((x10_long)(levelDim))) - (((x10_long)1ll)));
+        x10_long b__70005 = ((((((((x10_long)(id->FMGL(z)))) + (zOffset))) + (extent))) + (((x10_long)1ll)));
+        ((a__70004) < (b__70005)) ? (a__70004) : (b__70005);
     }))
     ));
     
@@ -1510,11 +1510,11 @@ x10_boolean au::edu::anu::mm::Octant__VList::wellSeparated(
 //#line 281 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/Octant.x10"
 ::x10::lang::Iterator< ::au::edu::anu::mm::OctantId>* au::edu::anu::mm::Octant__VList::iterator(
   ) {
-    ::au::edu::anu::mm::Octant__VList__VListIterator* alloc__43802 =
+    ::au::edu::anu::mm::Octant__VList__VListIterator* alloc__70063 =
        (new (::x10aux::alloc_z< ::au::edu::anu::mm::Octant__VList__VListIterator>()) ::au::edu::anu::mm::Octant__VList__VListIterator());
-    (alloc__43802)->::au::edu::anu::mm::Octant__VList__VListIterator::_constructor(
+    (alloc__70063)->::au::edu::anu::mm::Octant__VList__VListIterator::_constructor(
       this);
-    return reinterpret_cast< ::x10::lang::Iterator< ::au::edu::anu::mm::OctantId>*>(alloc__43802);
+    return reinterpret_cast< ::x10::lang::Iterator< ::au::edu::anu::mm::OctantId>*>(alloc__70063);
     
 }
 

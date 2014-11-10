@@ -1,0 +1,79 @@
+Buildfile: /localdisk/qqiu/workspace/anuchem/build.xml
+
+xla:
+Warning: 'file:./build-user.xml' in /localdisk/qqiu/workspace/anuchem/xla/build.xml should be expressed simply as './build-user.xml' for compliance with other XML tools
+
+init:
+
+check-lib:
+
+buildx10lib:
+     [echo] Building source tree
+     [echo] x10c++ -O -NO_CHECKS -VERBOSE_CHECKS=true -sourcepath . -buildx10lib ../. x10x/matrix/Matrix.x10 x10x/vector/Point3d.x10 x10x/vector/Tuple3d.x10 x10x/vector/Vector.x10 x10x/vector/Vector3d.x10 x10x/xla/Diagonalizer.x10 x10x/xla/GaussianElimination.x10 x10x/xla/JacobiDiagonalizer.x10 x10x/xla/LinearEquationSolver.x10 -d ../include -o xla
+     [exec] Executing post-compiler g++ -I/u/qqiu/workspace/x10-trunk/x10.dist/include -I/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/include -I../include -I. -O2 -finline-functions -DNO_TRACING -Wno-long-long -Wno-unused-parameter -DNO_CHECKS -DHOMOGENEOUS -DX10_USE_BDWGC -shared -fPIC -Wl,--no-as-needed -pthread -o /localdisk/qqiu/workspace/anuchem/xla/src/.././lib/libxla.so x10x/matrix/Matrix.cc x10x/vector/Point3d.cc x10x/vector/Tuple3d.cc x10x/vector/Vector.cc x10x/vector/Vector3d.cc x10x/xla/Diagonalizer.cc x10x/xla/GaussianElimination.cc x10x/xla/JacobiDiagonalizer.cc x10x/xla/LinearEquationSolver.cc -L/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/lib -lx10 -lgc -lm -lpthread -lrt -ldl -L/u/qqiu/workspace/x10-trunk/x10.dist/lib -lx10rt_sockets -lrt -Wl,--rpath -Wl,/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/lib -Wl,--rpath -Wl,/u/qqiu/workspace/x10-trunk/x10.dist/lib -Wl,-export-dynamic 
+
+dist:
+
+build:
+
+anu-chem:
+
+init:
+
+init-src:
+
+check-src-cpp:
+
+buildx10lib:
+     [echo] Building source tree
+     [echo] x10c++ -O -NO_CHECKS -DEBUG  -x10lib /localdisk/qqiu/workspace/anuchem/xla/xla.properties -sourcepath . -buildx10lib ../. au/edu/anu/chem/Atom.x10 au/edu/anu/chem/AtomInfo.x10 au/edu/anu/chem/BondType.x10 au/edu/anu/chem/ConnectivityBuilder.x10 au/edu/anu/chem/Molecule.x10 au/edu/anu/chem/PointCharge.x10 au/edu/anu/chem/Ring.x10 au/edu/anu/chem/mm/ElectrostaticDirectMethod.x10 au/edu/anu/chem/mm/GromacsStructureFileReader.x10 au/edu/anu/chem/mm/MMAtom.x10 au/edu/anu/chem/mm/SimpleElectrostaticDirectMethod.x10 au/edu/anu/chem/mm/TestElectrostatic.x10 au/edu/anu/util/ExecutionEnvironment.x10 au/edu/anu/util/SharedCounter.x10 au/edu/anu/util/StatisticalTimer.x10 au/edu/anu/util/StringSplitter.x10 au/edu/anu/util/Timer.x10 -d ../include -o anuchem
+     [exec] Executing post-compiler g++ -g -I/u/qqiu/workspace/x10-trunk/x10.dist/include -I/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/include-dbg -I/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/include -I/localdisk/qqiu/workspace/anuchem/xla/include-dbg -I/localdisk/qqiu/workspace/anuchem/xla/include -I../include -I. -O2 -finline-functions -DNO_TRACING -Wno-long-long -Wno-unused-parameter -DNO_CHECKS -DHOMOGENEOUS -DX10_USE_BDWGC -shared -fPIC -Wl,--no-as-needed -pthread -o /localdisk/qqiu/workspace/anuchem/anu-chem/src/.././lib/libanuchem.so au/edu/anu/chem/Atom.cc au/edu/anu/chem/AtomInfo.cc au/edu/anu/chem/BondType.cc au/edu/anu/chem/ConnectivityBuilder.cc au/edu/anu/chem/Molecule.cc au/edu/anu/chem/PointCharge.cc au/edu/anu/chem/Ring.cc au/edu/anu/chem/mm/ElectrostaticDirectMethod.cc au/edu/anu/chem/mm/GromacsStructureFileReader.cc au/edu/anu/chem/mm/MMAtom.cc au/edu/anu/chem/mm/SimpleElectrostaticDirectMethod.cc au/edu/anu/chem/mm/TestElectrostatic.cc au/edu/anu/util/ExecutionEnvironment.cc au/edu/anu/util/SharedCounter.cc au/edu/anu/util/StatisticalTimer.cc au/edu/anu/util/StringSplitter.cc au/edu/anu/util/Timer.cc -L/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/lib-dbg -L/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/lib -lx10 -lgc -lm -lpthread -lrt -ldl -L/localdisk/qqiu/workspace/anuchem/xla/lib-dbg -L/localdisk/qqiu/workspace/anuchem/xla/lib -lxla -L/u/qqiu/workspace/x10-trunk/x10.dist/lib -lx10rt_sockets -lrt -Wl,--rpath -Wl,/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/lib-dbg -Wl,--rpath -Wl,/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/lib -Wl,--rpath -Wl,/localdisk/qqiu/workspace/anuchem/xla/lib-dbg -Wl,--rpath -Wl,/localdisk/qqiu/workspace/anuchem/xla/lib -Wl,--rpath -Wl,/u/qqiu/workspace/x10-trunk/x10.dist/lib -Wl,-export-dynamic 
+     [exec] x10c++: Failed to copy omp.h from /localdisk/qqiu/workspace/anuchem/anu-chem/src/au/edu/anu/util/ to ../include/au/edu/anu/util/
+
+dist:
+
+build:
+
+fmm:
+Warning: 'file:./build-user.xml' in /localdisk/qqiu/workspace/anuchem/apps/fmm/build.xml should be expressed simply as './build-user.xml' for compliance with other XML tools
+
+init:
+
+init-src:
+
+check-src-cpp:
+
+build-src-cpp:
+     [echo] Building source tree
+     [echo] x10c++ -x10rt sockets -O -NO_CHECKS -VERBOSE_CHECKS=true   -DEBUG     -x10lib /localdisk/qqiu/workspace/anuchem/xla/xla.properties -x10lib /localdisk/qqiu/workspace/anuchem/anu-chem/anuchem.properties  -sourcepath . '/localdisk/qqiu/workspace/anuchem/apps/fmm/test/au/edu/anu/mm/TestFastMultipoleMethod.x10'
+     [exec] Executing post-compiler g++ -g -I/u/qqiu/workspace/x10-trunk/x10.dist/include -I/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/include-dbg -I/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/include -I/localdisk/qqiu/workspace/anuchem/xla/include-dbg -I/localdisk/qqiu/workspace/anuchem/xla/include -I/localdisk/qqiu/workspace/anuchem/anu-chem/include-dbg -I/localdisk/qqiu/workspace/anuchem/anu-chem/include -I/localdisk/qqiu/workspace/anuchem/apps/fmm/target/classes -I. -O2 -finline-functions -DNO_TRACING -Wno-long-long -Wno-unused-parameter -DNO_CHECKS -DHOMOGENEOUS -DX10_USE_BDWGC -Wl,--no-as-needed -pthread au/edu/anu/mm/TestFastMultipoleMethod.cc au/edu/anu/mm/FastMultipoleMethod.cc au/edu/anu/mm/FmmLocalData.cc au/edu/anu/mm/FmmOperators.cc au/edu/anu/mm/FmmScratch.cc au/edu/anu/mm/LeafOctant.cc au/edu/anu/mm/Octant.cc au/edu/anu/mm/OctantId.cc au/edu/anu/mm/ParentOctant.cc au/edu/anu/mm/GhostOctant.cc au/edu/anu/mm/LET.cc au/edu/anu/mm/AssociatedLegendrePolynomial.cc au/edu/anu/mm/LocalExpansion.cc au/edu/anu/mm/Expansion.cc au/edu/anu/mm/MultipoleExpansion.cc au/edu/anu/mm/Factorial.cc x10x/polar/Polar3d.cc au/edu/anu/mm/WignerRotationMatrix.cc xxx_main_xxx.cc -L/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/lib-dbg -L/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/lib -lx10 -lgc -lm -lpthread -lrt -ldl -L/localdisk/qqiu/workspace/anuchem/xla/lib-dbg -L/localdisk/qqiu/workspace/anuchem/xla/lib -lxla -L/localdisk/qqiu/workspace/anuchem/anu-chem/lib-dbg -L/localdisk/qqiu/workspace/anuchem/anu-chem/lib -lanuchem -L/u/qqiu/workspace/x10-trunk/x10.dist/lib -lx10rt_sockets -Wl,--rpath -Wl,/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/lib-dbg -Wl,--rpath -Wl,/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/lib -Wl,--rpath -Wl,/localdisk/qqiu/workspace/anuchem/xla/lib-dbg -Wl,--rpath -Wl,/localdisk/qqiu/workspace/anuchem/xla/lib -Wl,--rpath -Wl,/localdisk/qqiu/workspace/anuchem/anu-chem/lib-dbg -Wl,--rpath -Wl,/localdisk/qqiu/workspace/anuchem/anu-chem/lib -Wl,--rpath -Wl,/u/qqiu/workspace/x10-trunk/x10.dist/lib -Wl,-export-dynamic 
+     [exec] /localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/FmmOperators.x10:61: Expression 'this(:au.edu.anu.mm.FmmOperators).precomputeWignerA(numTerms)' was cast to type x10.regionarray.Array[x10.lang.Rail[x10.lang.Rail[x10.regionarray.Array[x10.lang.Double]{self.rect==true, self.rank==2L}]]]{self.rect==true, self.zeroBased==true, self.rank==3L, self.region.rank==3L, self.region.rect==true, self.region.zeroBased==true, self.region!=null, self.rail==self.region.rail}.
+     [exec] /localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/FmmOperators.x10:63: Expression 'this(:au.edu.anu.mm.FmmOperators).precomputeWignerC(numTerms)' was cast to type x10.regionarray.Array[x10.lang.Rail[x10.lang.Rail[x10.regionarray.Array[x10.lang.Double]{self.rect==true, self.rank==2L}]]]{self.rect==true, self.zeroBased==true, self.rank==3L, self.region.rank==3L, self.region.rect==true, self.region.zeroBased==true, self.region!=null, self.rail==self.region.rail}.
+
+exe:
+     [copy] Copying 1 file to /localdisk/qqiu/workspace/anuchem/apps/fmm/bin
+
+build:
+
+test-fmm:
+     [exec] Uncaught exception at place 0: x10.lang.MultipleExceptions
+     [exec] x10.lang.IllegalArgumentException: 1 is not a valid Place id
+     [exec] 	at x10aux::throwException(x10::lang::CheckedThrowable*)
+     [exec] 	at x10::lang::Place::_constructor(long)
+     [exec] 	at au::edu::anu::mm::FastMultipoleMethod::redistributeOctantsLocal(x10::util::ArrayList<x10::util::Pair<unsigned int, x10::util::ArrayList<au::edu::anu::chem::mm::MMAtom*>*> >*)
+     [exec] 	at au_edu_anu_mm_FastMultipoleMethod__closure__10::__apply()
+     [exec] 	at x10_lang_Runtime__closure__15::__apply()
+     [exec] 	at x10::lang::Activity::run()
+     [exec] 	at x10::lang::Runtime__Worker::loop()
+     [exec] 	at x10::lang::Runtime__Worker::__apply()
+     [exec] 	at x10::lang::Thread::thread_start_routine(void*)
+     [exec] 	at GC_inner_start_routine
+     [exec] 	at GC_call_with_stack_base
+     [exec] 	at /lib64/libpthread.so.0() [0x3f01407c53]
+     [exec] 	at clone
+     [exec] N:        4 
+
+BUILD FAILED
+/localdisk/qqiu/workspace/anuchem/build.xml:43: exec returned: 1
+
+Total time: 4 minutes 33 seconds

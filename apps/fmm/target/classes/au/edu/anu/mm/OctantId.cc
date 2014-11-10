@@ -91,21 +91,21 @@ x10_int au::edu::anu::mm::OctantId::compareTo(::au::edu::anu::mm::OctantId b) {
         x10_ubyte cX = (__extension__ ({
             
             //#line 57 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            x10_ubyte p__43814 = ((x10_ubyte) (((*this)->FMGL(x)) ^ (b->FMGL(x))));
-            x10_ubyte ret__43816;
+            x10_ubyte p__70075 = ((x10_ubyte) (((*this)->FMGL(x)) ^ (b->FMGL(x))));
+            x10_ubyte ret__70077;
             
             //#line 58 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            x10_ubyte i__43863 = ((x10_ubyte)0);
+            x10_ubyte i__70124 = ((x10_ubyte)0);
             
             //#line 59 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            while (((p__43814) > (((x10_ubyte)1)))) {
-                p__43814 = ((x10_ubyte) ((p__43814) >> (0x7 & (x10_int)(((x10_long)1ll)))));
-                i__43863 = ((x10_ubyte) ((i__43863) + (((x10_ubyte)1))));
+            while (((p__70075) > (((x10_ubyte)1)))) {
+                p__70075 = ((x10_ubyte) ((p__70075) >> (0x7 & (x10_int)(((x10_long)1ll)))));
+                i__70124 = ((x10_ubyte) ((i__70124) + (((x10_ubyte)1))));
             }
             
             //#line 60 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            ret__43816 = i__43863;
-            ret__43816;
+            ret__70077 = i__70124;
+            ret__70077;
         }))
         ;
         
@@ -113,21 +113,21 @@ x10_int au::edu::anu::mm::OctantId::compareTo(::au::edu::anu::mm::OctantId b) {
         x10_ubyte cY = (__extension__ ({
             
             //#line 57 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            x10_ubyte p__43818 = ((x10_ubyte) (((*this)->FMGL(y)) ^ (b->FMGL(y))));
-            x10_ubyte ret__43820;
+            x10_ubyte p__70079 = ((x10_ubyte) (((*this)->FMGL(y)) ^ (b->FMGL(y))));
+            x10_ubyte ret__70081;
             
             //#line 58 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            x10_ubyte i__43864 = ((x10_ubyte)0);
+            x10_ubyte i__70125 = ((x10_ubyte)0);
             
             //#line 59 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            while (((p__43818) > (((x10_ubyte)1)))) {
-                p__43818 = ((x10_ubyte) ((p__43818) >> (0x7 & (x10_int)(((x10_long)1ll)))));
-                i__43864 = ((x10_ubyte) ((i__43864) + (((x10_ubyte)1))));
+            while (((p__70079) > (((x10_ubyte)1)))) {
+                p__70079 = ((x10_ubyte) ((p__70079) >> (0x7 & (x10_int)(((x10_long)1ll)))));
+                i__70125 = ((x10_ubyte) ((i__70125) + (((x10_ubyte)1))));
             }
             
             //#line 60 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            ret__43820 = i__43864;
-            ret__43820;
+            ret__70081 = i__70125;
+            ret__70081;
         }))
         ;
         
@@ -135,21 +135,21 @@ x10_int au::edu::anu::mm::OctantId::compareTo(::au::edu::anu::mm::OctantId b) {
         x10_ubyte cZ = (__extension__ ({
             
             //#line 57 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            x10_ubyte p__43822 = ((x10_ubyte) (((*this)->FMGL(z)) ^ (b->FMGL(z))));
-            x10_ubyte ret__43824;
+            x10_ubyte p__70083 = ((x10_ubyte) (((*this)->FMGL(z)) ^ (b->FMGL(z))));
+            x10_ubyte ret__70085;
             
             //#line 58 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            x10_ubyte i__43865 = ((x10_ubyte)0);
+            x10_ubyte i__70126 = ((x10_ubyte)0);
             
             //#line 59 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            while (((p__43822) > (((x10_ubyte)1)))) {
-                p__43822 = ((x10_ubyte) ((p__43822) >> (0x7 & (x10_int)(((x10_long)1ll)))));
-                i__43865 = ((x10_ubyte) ((i__43865) + (((x10_ubyte)1))));
+            while (((p__70083) > (((x10_ubyte)1)))) {
+                p__70083 = ((x10_ubyte) ((p__70083) >> (0x7 & (x10_int)(((x10_long)1ll)))));
+                i__70126 = ((x10_ubyte) ((i__70126) + (((x10_ubyte)1))));
             }
             
             //#line 60 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            ret__43824 = i__43865;
-            ret__43824;
+            ret__70085 = i__70126;
+            ret__70085;
         }))
         ;
         
@@ -243,60 +243,60 @@ x10_boolean au::edu::anu::mm::OctantId::__ge(::au::edu::anu::mm::OctantId x) {
 x10_uint au::edu::anu::mm::OctantId::getMortonId() {
     
     //#line 76 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    x10_uint x__43873 = ((x10_uint) ((*this)->FMGL(x)));
-    x10_uint y__43874 = ((x10_uint) ((*this)->FMGL(y)));
-    x10_uint z__43875 = ((x10_uint) ((*this)->FMGL(z)));
-    x10_uint level__43876 = ((x10_uint) ((*this)->FMGL(level)));
-    x10_uint ret__43877;
+    x10_uint x__70134 = ((x10_uint) ((*this)->FMGL(x)));
+    x10_uint y__70135 = ((x10_uint) ((*this)->FMGL(y)));
+    x10_uint z__70136 = ((x10_uint) ((*this)->FMGL(z)));
+    x10_uint level__70137 = ((x10_uint) ((*this)->FMGL(level)));
+    x10_uint ret__70138;
     
     //#line 78 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    x10_uint id__43870 = ((x10_uint)0u);
+    x10_uint id__70131 = ((x10_uint)0u);
     
     //#line 79 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    x10_uint bitmask__43871 = ((x10_uint)1u);
+    x10_uint bitmask__70132 = ((x10_uint)1u);
     
     //#line 80 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    x10_int shift__43872 = ((x10_int)0);
+    x10_int shift__70133 = ((x10_int)0);
     
     //#line 81 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
     {
-        x10_long i__43868;
-        for (i__43868 = ((x10_long)0ll); ((i__43868) <= (((x10_long)7ll)));
-             i__43868 = ((i__43868) + (((x10_long)1ll)))) {
-            x10_long i__43869 = i__43868;
+        x10_long i__70129;
+        for (i__70129 = ((x10_long)0ll); ((i__70129) <= (((x10_long)7ll)));
+             i__70129 = ((i__70129) + (((x10_long)1ll)))) {
+            x10_long i__70130 = i__70129;
             
             //#line 82 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            id__43870 = ((x10_uint) ((id__43870) | (((x10_uint) ((((x10_uint) ((bitmask__43871) & (z__43875)))) << (x10_int)(0x1f & (((x10_long)((__extension__ ({
-                x10_int pre__43866 = shift__43872;
-                shift__43872 = ((shift__43872) + (((x10_int)1)));
-                pre__43866;
+            id__70131 = ((x10_uint) ((id__70131) | (((x10_uint) ((((x10_uint) ((bitmask__70132) & (z__70136)))) << (x10_int)(0x1f & (((x10_long)((__extension__ ({
+                x10_int pre__70127 = shift__70133;
+                shift__70133 = ((shift__70133) + (((x10_int)1)));
+                pre__70127;
             }))
             )))))))));
             
             //#line 83 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            id__43870 = ((x10_uint) ((id__43870) | (((x10_uint) ((((x10_uint) ((bitmask__43871) & (y__43874)))) << (x10_int)(0x1f & (((x10_long)((__extension__ ({
-                x10_int pre__43867 = shift__43872;
-                shift__43872 = ((shift__43872) + (((x10_int)1)));
-                pre__43867;
+            id__70131 = ((x10_uint) ((id__70131) | (((x10_uint) ((((x10_uint) ((bitmask__70132) & (y__70135)))) << (x10_int)(0x1f & (((x10_long)((__extension__ ({
+                x10_int pre__70128 = shift__70133;
+                shift__70133 = ((shift__70133) + (((x10_int)1)));
+                pre__70128;
             }))
             )))))))));
             
             //#line 84 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            id__43870 = ((x10_uint) ((id__43870) | (((x10_uint) ((((x10_uint) ((bitmask__43871) & (x__43873)))) << (x10_int)(0x1f & (((x10_long)(shift__43872)))))))));
+            id__70131 = ((x10_uint) ((id__70131) | (((x10_uint) ((((x10_uint) ((bitmask__70132) & (x__70134)))) << (x10_int)(0x1f & (((x10_long)(shift__70133)))))))));
             
             //#line 85 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            bitmask__43871 = ((x10_uint) ((bitmask__43871) << (x10_int)(0x1f & (((x10_long)1ll)))));
+            bitmask__70132 = ((x10_uint) ((bitmask__70132) << (x10_int)(0x1f & (((x10_long)1ll)))));
         }
     }
     
     //#line 87 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    id__43870 = ((x10_uint) ((id__43870) | (((x10_uint) ((level__43876) << (x10_int)(0x1f & (((x10_long)24ll))))))));
+    id__70131 = ((x10_uint) ((id__70131) | (((x10_uint) ((level__70137) << (x10_int)(0x1f & (((x10_long)24ll))))))));
     
     //#line 89 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    ret__43877 = id__43870;
+    ret__70138 = id__70131;
     
     //#line 73 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    return ret__43877;
+    return ret__70138;
     
 }
 
@@ -315,24 +315,24 @@ x10_uint au::edu::anu::mm::OctantId::getMortonId(x10_uint x, x10_uint y, x10_uin
     
     //#line 81 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
     {
-        x10_long i__43880;
-        for (i__43880 = ((x10_long)0ll); ((i__43880) <= (((x10_long)7ll)));
-             i__43880 = ((i__43880) + (((x10_long)1ll)))) {
-            x10_long i__43881 = i__43880;
+        x10_long i__70141;
+        for (i__70141 = ((x10_long)0ll); ((i__70141) <= (((x10_long)7ll)));
+             i__70141 = ((i__70141) + (((x10_long)1ll)))) {
+            x10_long i__70142 = i__70141;
             
             //#line 82 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
             id = ((x10_uint) ((id) | (((x10_uint) ((((x10_uint) ((bitmask) & (z)))) << (x10_int)(0x1f & (((x10_long)((__extension__ ({
-                x10_int pre__43878 = shift;
+                x10_int pre__70139 = shift;
                 shift = ((shift) + (((x10_int)1)));
-                pre__43878;
+                pre__70139;
             }))
             )))))))));
             
             //#line 83 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
             id = ((x10_uint) ((id) | (((x10_uint) ((((x10_uint) ((bitmask) & (y)))) << (x10_int)(0x1f & (((x10_long)((__extension__ ({
-                x10_int pre__43879 = shift;
+                x10_int pre__70140 = shift;
                 shift = ((shift) + (((x10_int)1)));
-                pre__43879;
+                pre__70140;
             }))
             )))))))));
             
@@ -376,25 +376,25 @@ x10_uint au::edu::anu::mm::OctantId::getMortonId(x10_uint x, x10_uint y, x10_uin
     
     //#line 100 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
     {
-        x10_long i__43888;
-        for (i__43888 = ((x10_long)0ll); ((i__43888) <= (((x10_long)7ll)));
-             i__43888 = ((i__43888) + (((x10_long)1ll)))) {
-            x10_long i__43889 = i__43888;
+        x10_long i__70149;
+        for (i__70149 = ((x10_long)0ll); ((i__70149) <= (((x10_long)7ll)));
+             i__70149 = ((i__70149) + (((x10_long)1ll)))) {
+            x10_long i__70150 = i__70149;
             
             //#line 101 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
             x = ((x10_uint) ((x) | (((x10_uint) ((((x10_uint) ((mortonId) & (bitmask)))) >> (0x1f & (x10_int)(((x10_long)((__extension__ ({
-                x10_int pre__43882 = shift;
+                x10_int pre__70143 = shift;
                 shift = ((shift) - (((x10_int)1)));
-                pre__43882;
+                pre__70143;
             }))
             )))))))));
             bitmask = ((x10_uint) ((bitmask) >> (0x1f & (x10_int)(((x10_long)1ll)))));
             
             //#line 102 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
             y = ((x10_uint) ((y) | (((x10_uint) ((((x10_uint) ((mortonId) & (bitmask)))) >> (0x1f & (x10_int)(((x10_long)((__extension__ ({
-                x10_int pre__43883 = shift;
+                x10_int pre__70144 = shift;
                 shift = ((shift) - (((x10_int)1)));
-                pre__43883;
+                pre__70144;
             }))
             )))))))));
             bitmask = ((x10_uint) ((bitmask) >> (0x1f & (x10_int)(((x10_long)1ll)))));
@@ -406,22 +406,22 @@ x10_uint au::edu::anu::mm::OctantId::getMortonId(x10_uint x, x10_uint y, x10_uin
     }
     
     //#line 106 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    ::au::edu::anu::mm::OctantId alloc__43890 =  ::au::edu::anu::mm::OctantId::_alloc();
+    ::au::edu::anu::mm::OctantId alloc__70151 =  ::au::edu::anu::mm::OctantId::_alloc();
     
     //#line 26 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    x10_ubyte x__43884 = ((x10_ubyte) (x));
-    x10_ubyte y__43885 = ((x10_ubyte) (y));
-    x10_ubyte z__43886 = ((x10_ubyte) (z));
-    x10_ubyte level__43887 = ((x10_ubyte) (level));
+    x10_ubyte x__70145 = ((x10_ubyte) (x));
+    x10_ubyte y__70146 = ((x10_ubyte) (y));
+    x10_ubyte z__70147 = ((x10_ubyte) (z));
+    x10_ubyte level__70148 = ((x10_ubyte) (level));
     
     //#line 27 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    alloc__43890->FMGL(x) = x__43884;
-    alloc__43890->FMGL(y) = y__43885;
-    alloc__43890->FMGL(z) = z__43886;
-    alloc__43890->FMGL(level) = level__43887;
+    alloc__70151->FMGL(x) = x__70145;
+    alloc__70151->FMGL(y) = y__70146;
+    alloc__70151->FMGL(z) = z__70147;
+    alloc__70151->FMGL(level) = level__70148;
     
     //#line 106 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    return alloc__43890;
+    return alloc__70151;
     
 }
 
@@ -448,24 +448,24 @@ x10_uint au::edu::anu::mm::OctantId::getLeafMortonId() {
     
     //#line 121 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
     {
-        x10_long i__43893;
-        for (i__43893 = ((x10_long)0ll); ((i__43893) <= (((x10_long)7ll)));
-             i__43893 = ((i__43893) + (((x10_long)1ll)))) {
-            x10_long i__43894 = i__43893;
+        x10_long i__70154;
+        for (i__70154 = ((x10_long)0ll); ((i__70154) <= (((x10_long)7ll)));
+             i__70154 = ((i__70154) + (((x10_long)1ll)))) {
+            x10_long i__70155 = i__70154;
             
             //#line 122 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
             id = ((x10_uint) ((id) | (((x10_uint) ((((x10_uint) ((bitmask) & (z)))) << (x10_int)(0x1f & (((x10_long)((__extension__ ({
-                x10_int pre__43891 = shift;
+                x10_int pre__70152 = shift;
                 shift = ((shift) + (((x10_int)1)));
-                pre__43891;
+                pre__70152;
             }))
             )))))))));
             
             //#line 123 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
             id = ((x10_uint) ((id) | (((x10_uint) ((((x10_uint) ((bitmask) & (y)))) << (x10_int)(0x1f & (((x10_long)((__extension__ ({
-                x10_int pre__43892 = shift;
+                x10_int pre__70153 = shift;
                 shift = ((shift) + (((x10_int)1)));
-                pre__43892;
+                pre__70153;
             }))
             )))))))));
             
@@ -507,25 +507,25 @@ x10_uint au::edu::anu::mm::OctantId::getLeafMortonId(::x10x::vector::Point3d ato
     
     //#line 139 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
     {
-        x10_long i__43897;
-        for (i__43897 = ((x10_long)0ll); ((i__43897) <= (((x10_long)7ll)));
-             i__43897 = ((i__43897) + (((x10_long)1ll))))
+        x10_long i__70158;
+        for (i__70158 = ((x10_long)0ll); ((i__70158) <= (((x10_long)7ll)));
+             i__70158 = ((i__70158) + (((x10_long)1ll))))
         {
-            x10_long i__43898 = i__43897;
+            x10_long i__70159 = i__70158;
             
             //#line 140 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
             id = ((x10_uint) ((id) | (((x10_uint) ((((x10_uint) ((bitmask) & (z)))) << (x10_int)(0x1f & (((x10_long)((__extension__ ({
-                x10_int pre__43895 = shift;
+                x10_int pre__70156 = shift;
                 shift = ((shift) + (((x10_int)1)));
-                pre__43895;
+                pre__70156;
             }))
             )))))))));
             
             //#line 141 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
             id = ((x10_uint) ((id) | (((x10_uint) ((((x10_uint) ((bitmask) & (y)))) << (x10_int)(0x1f & (((x10_long)((__extension__ ({
-                x10_int pre__43896 = shift;
+                x10_int pre__70157 = shift;
                 shift = ((shift) + (((x10_int)1)));
-                pre__43896;
+                pre__70157;
             }))
             )))))))));
             
@@ -547,22 +547,22 @@ x10_uint au::edu::anu::mm::OctantId::getLeafMortonId(::x10x::vector::Point3d ato
   ) {
     
     //#line 151 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    ::au::edu::anu::mm::OctantId alloc__43903 =  ::au::edu::anu::mm::OctantId::_alloc();
+    ::au::edu::anu::mm::OctantId alloc__70164 =  ::au::edu::anu::mm::OctantId::_alloc();
     
     //#line 26 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    x10_ubyte x__43899 = ((x10_ubyte) (((*this)->FMGL(x)) / ::x10aux::zeroCheck(((x10_ubyte)2))));
-    x10_ubyte y__43900 = ((x10_ubyte) (((*this)->FMGL(y)) / ::x10aux::zeroCheck(((x10_ubyte)2))));
-    x10_ubyte z__43901 = ((x10_ubyte) (((*this)->FMGL(z)) / ::x10aux::zeroCheck(((x10_ubyte)2))));
-    x10_ubyte level__43902 = ((x10_ubyte) (((*this)->FMGL(level)) - (((x10_ubyte)1))));
+    x10_ubyte x__70160 = ((x10_ubyte) (((*this)->FMGL(x)) / ::x10aux::zeroCheck(((x10_ubyte)2))));
+    x10_ubyte y__70161 = ((x10_ubyte) (((*this)->FMGL(y)) / ::x10aux::zeroCheck(((x10_ubyte)2))));
+    x10_ubyte z__70162 = ((x10_ubyte) (((*this)->FMGL(z)) / ::x10aux::zeroCheck(((x10_ubyte)2))));
+    x10_ubyte level__70163 = ((x10_ubyte) (((*this)->FMGL(level)) - (((x10_ubyte)1))));
     
     //#line 27 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    alloc__43903->FMGL(x) = x__43899;
-    alloc__43903->FMGL(y) = y__43900;
-    alloc__43903->FMGL(z) = z__43901;
-    alloc__43903->FMGL(level) = level__43902;
+    alloc__70164->FMGL(x) = x__70160;
+    alloc__70164->FMGL(y) = y__70161;
+    alloc__70164->FMGL(z) = z__70162;
+    alloc__70164->FMGL(level) = level__70163;
     
     //#line 151 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    return alloc__43903;
+    return alloc__70164;
     
 }
 
@@ -581,22 +581,22 @@ x10_uint au::edu::anu::mm::OctantId::getLeafMortonId(::x10x::vector::Point3d ato
     x10_ubyte shift = ((x10_ubyte) ((dMax) - ((*this)->FMGL(level))));
     
     //#line 158 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    ::au::edu::anu::mm::OctantId alloc__43908 =  ::au::edu::anu::mm::OctantId::_alloc();
+    ::au::edu::anu::mm::OctantId alloc__70169 =  ::au::edu::anu::mm::OctantId::_alloc();
     
     //#line 26 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    x10_ubyte x__43904 = ((x10_ubyte) (((*this)->FMGL(x)) << (0x7 & (x10_int)(((x10_long)(shift))))));
-    x10_ubyte y__43905 = ((x10_ubyte) (((*this)->FMGL(y)) << (0x7 & (x10_int)(((x10_long)(shift))))));
-    x10_ubyte z__43906 = ((x10_ubyte) (((*this)->FMGL(z)) << (0x7 & (x10_int)(((x10_long)(shift))))));
-    x10_ubyte level__43907 = dMax;
+    x10_ubyte x__70165 = ((x10_ubyte) (((*this)->FMGL(x)) << (0x7 & (x10_int)(((x10_long)(shift))))));
+    x10_ubyte y__70166 = ((x10_ubyte) (((*this)->FMGL(y)) << (0x7 & (x10_int)(((x10_long)(shift))))));
+    x10_ubyte z__70167 = ((x10_ubyte) (((*this)->FMGL(z)) << (0x7 & (x10_int)(((x10_long)(shift))))));
+    x10_ubyte level__70168 = dMax;
     
     //#line 27 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    alloc__43908->FMGL(x) = x__43904;
-    alloc__43908->FMGL(y) = y__43905;
-    alloc__43908->FMGL(z) = z__43906;
-    alloc__43908->FMGL(level) = level__43907;
+    alloc__70169->FMGL(x) = x__70165;
+    alloc__70169->FMGL(y) = y__70166;
+    alloc__70169->FMGL(z) = z__70167;
+    alloc__70169->FMGL(level) = level__70168;
     
     //#line 158 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    return alloc__43908;
+    return alloc__70169;
     
 }
 
@@ -614,7 +614,7 @@ x10_int au::edu::anu::mm::OctantId::getChildIndex(x10_ubyte dMax,
   ) {
     
     //#line 167 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-    return ::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus((&::au::edu::anu::mm::OctantId_Strings::sl__48516), (*this)->FMGL(level)), (&::au::edu::anu::mm::OctantId_Strings::sl__48517)), (*this)->FMGL(x)), (&::au::edu::anu::mm::OctantId_Strings::sl__48518)), (*this)->FMGL(y)), (&::au::edu::anu::mm::OctantId_Strings::sl__48518)), (*this)->FMGL(z)), (&::au::edu::anu::mm::OctantId_Strings::sl__48519));
+    return ::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus((&::au::edu::anu::mm::OctantId_Strings::sl__73152), (*this)->FMGL(level)), (&::au::edu::anu::mm::OctantId_Strings::sl__73153)), (*this)->FMGL(x)), (&::au::edu::anu::mm::OctantId_Strings::sl__73154)), (*this)->FMGL(y)), (&::au::edu::anu::mm::OctantId_Strings::sl__73154)), (*this)->FMGL(z)), (&::au::edu::anu::mm::OctantId_Strings::sl__73155));
     
 }
 
@@ -675,10 +675,10 @@ void au::edu::anu::mm::OctantId::_initRTT() {
     rtt.containsPtrs = false;
 }
 
-::x10::lang::String au::edu::anu::mm::OctantId_Strings::sl__48516("");
-::x10::lang::String au::edu::anu::mm::OctantId_Strings::sl__48517(":(");
-::x10::lang::String au::edu::anu::mm::OctantId_Strings::sl__48519(")");
-::x10::lang::String au::edu::anu::mm::OctantId_Strings::sl__48518(",");
+::x10::lang::String au::edu::anu::mm::OctantId_Strings::sl__73152("");
+::x10::lang::String au::edu::anu::mm::OctantId_Strings::sl__73153(":(");
+::x10::lang::String au::edu::anu::mm::OctantId_Strings::sl__73155(")");
+::x10::lang::String au::edu::anu::mm::OctantId_Strings::sl__73154(",");
 
 /* END of OctantId */
 /*************************************************/

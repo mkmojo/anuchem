@@ -38,18 +38,18 @@
 void au::edu::anu::mm::LET::_constructor(::x10::lang::Rail< x10_uint >* combinedUList) {
     
     //#line 24 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LET.x10"
-    ::au::edu::anu::mm::LET* this__45962 = this;
+    ::au::edu::anu::mm::LET* this__70362 = this;
     
     //#line 48 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LET.x10"
     this->FMGL(combinedUList) = combinedUList;
     
     //#line 49 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LET.x10"
     this->FMGL(multipoleCopies) = (__extension__ ({
-        ::x10::util::HashMap<x10_uint, ::au::edu::anu::mm::MultipoleExpansion*>* alloc__38143 =
+        ::x10::util::HashMap<x10_uint, ::au::edu::anu::mm::MultipoleExpansion*>* alloc__52261 =
            (new (::x10aux::alloc_z< ::x10::util::HashMap<x10_uint, ::au::edu::anu::mm::MultipoleExpansion*> >()) ::x10::util::HashMap<x10_uint, ::au::edu::anu::mm::MultipoleExpansion*>());
-        (alloc__38143)->::x10::util::HashMap<x10_uint, ::au::edu::anu::mm::MultipoleExpansion*>::_constructor(
+        (alloc__52261)->::x10::util::HashMap<x10_uint, ::au::edu::anu::mm::MultipoleExpansion*>::_constructor(
           (x10_long)(::x10aux::nullCheck(combinedUList)->FMGL(size)));
-        alloc__38143;
+        alloc__52261;
     }))
     ;
     

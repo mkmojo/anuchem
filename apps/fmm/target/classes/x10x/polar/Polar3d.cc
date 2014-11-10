@@ -54,20 +54,20 @@ public:
     x10_double sineTheta = ::x10::lang::MathNatives::sin((*this)->FMGL(theta));
     
     //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/x10x/polar/Polar3d.x10"
-    ::x10x::vector::Point3d alloc__48076 =  ::x10x::vector::Point3d::_alloc();
+    ::x10x::vector::Point3d alloc__72476 =  ::x10x::vector::Point3d::_alloc();
     
     //#line 10 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Point3d.x10"
-    x10_double i__48073 = (((((*this)->FMGL(r)) * (sineTheta))) * (::x10::lang::MathNatives::cos((*this)->FMGL(phi))));
-    x10_double j__48074 = (((((*this)->FMGL(r)) * (sineTheta))) * (::x10::lang::MathNatives::sin((*this)->FMGL(phi))));
-    x10_double k__48075 = (((*this)->FMGL(r)) * (::x10::lang::MathNatives::cos((*this)->FMGL(theta))));
+    x10_double i__72473 = (((((*this)->FMGL(r)) * (sineTheta))) * (::x10::lang::MathNatives::cos((*this)->FMGL(phi))));
+    x10_double j__72474 = (((((*this)->FMGL(r)) * (sineTheta))) * (::x10::lang::MathNatives::sin((*this)->FMGL(phi))));
+    x10_double k__72475 = (((*this)->FMGL(r)) * (::x10::lang::MathNatives::cos((*this)->FMGL(theta))));
     
     //#line 11 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Point3d.x10"
-    alloc__48076->FMGL(i) = i__48073;
-    alloc__48076->FMGL(j) = j__48074;
-    alloc__48076->FMGL(k) = k__48075;
+    alloc__72476->FMGL(i) = i__72473;
+    alloc__72476->FMGL(j) = j__72474;
+    alloc__72476->FMGL(k) = k__72475;
     
     //#line 35 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/x10x/polar/Polar3d.x10"
-    return alloc__48076;
+    return alloc__72476;
     
 }
 
@@ -89,20 +89,20 @@ public:
     x10_double sinPhi = ::x10::lang::MathNatives::sin((*this)->FMGL(phi));
     
     //#line 56 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/x10x/polar/Polar3d.x10"
-    ::x10x::vector::Vector3d alloc__48080 =  ::x10x::vector::Vector3d::_alloc();
+    ::x10x::vector::Vector3d alloc__72480 =  ::x10x::vector::Vector3d::_alloc();
     
     //#line 16 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-    x10_double i__48077 = ((((((((dr) * (sinTheta))) * (cosPhi))) + (((((dt) * (cosTheta))) * (cosPhi))))) - (((dp) * (sinPhi))));
-    x10_double j__48078 = ((((((((dr) * (sinTheta))) * (sinPhi))) + (((((dt) * (cosTheta))) * (sinPhi))))) + (((dp) * (cosPhi))));
-    x10_double k__48079 = ((((dr) * (cosTheta))) - (((dt) * (sinTheta))));
+    x10_double i__72477 = ((((((((dr) * (sinTheta))) * (cosPhi))) + (((((dt) * (cosTheta))) * (cosPhi))))) - (((dp) * (sinPhi))));
+    x10_double j__72478 = ((((((((dr) * (sinTheta))) * (sinPhi))) + (((((dt) * (cosTheta))) * (sinPhi))))) + (((dp) * (cosPhi))));
+    x10_double k__72479 = ((((dr) * (cosTheta))) - (((dt) * (sinTheta))));
     
     //#line 17 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-    alloc__48080->FMGL(i) = i__48077;
-    alloc__48080->FMGL(j) = j__48078;
-    alloc__48080->FMGL(k) = k__48079;
+    alloc__72480->FMGL(i) = i__72477;
+    alloc__72480->FMGL(j) = j__72478;
+    alloc__72480->FMGL(k) = k__72479;
     
     //#line 56 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/x10x/polar/Polar3d.x10"
-    return alloc__48080;
+    return alloc__72480;
     
 }
 
@@ -165,9 +165,9 @@ public:
     }
     
     //#line 85 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/x10x/polar/Polar3d.x10"
-    ::x10x::polar::Polar3d alloc__48081 =  ::x10x::polar::Polar3d::_alloc();
-    (alloc__48081)->::x10x::polar::Polar3d::_constructor(r, theta, phi);
-    return alloc__48081;
+    ::x10x::polar::Polar3d alloc__72481 =  ::x10x::polar::Polar3d::_alloc();
+    (alloc__72481)->::x10x::polar::Polar3d::_constructor(r, theta, phi);
+    return alloc__72481;
     
 }
 
@@ -219,10 +219,10 @@ public:
     }
     
     //#line 118 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/x10x/polar/Polar3d.x10"
-    ::x10x::polar::Polar3d alloc__48082 =  ::x10x::polar::Polar3d::_alloc();
-    (alloc__48082)->::x10x::polar::Polar3d::_constructor(
+    ::x10x::polar::Polar3d alloc__72482 =  ::x10x::polar::Polar3d::_alloc();
+    (alloc__72482)->::x10x::polar::Polar3d::_constructor(
       (*this)->FMGL(r), newTheta, newPhi);
-    return alloc__48082;
+    return alloc__72482;
     
 }
 
@@ -230,7 +230,7 @@ public:
 ::x10::lang::String* x10x::polar::Polar3d::toString() {
     
     //#line 122 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/x10x/polar/Polar3d.x10"
-    return ::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus((&::x10x::polar::Polar3d_Strings::sl__48735), (*this)->FMGL(r)), (&::x10x::polar::Polar3d_Strings::sl__48736)), (*this)->FMGL(theta)), (&::x10x::polar::Polar3d_Strings::sl__48737)), (*this)->FMGL(phi)), (&::x10x::polar::Polar3d_Strings::sl__48738));
+    return ::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus(::x10::lang::String::__plus((&::x10x::polar::Polar3d_Strings::sl__73371), (*this)->FMGL(r)), (&::x10x::polar::Polar3d_Strings::sl__73372)), (*this)->FMGL(theta)), (&::x10x::polar::Polar3d_Strings::sl__73373)), (*this)->FMGL(phi)), (&::x10x::polar::Polar3d_Strings::sl__73374));
     
 }
 
@@ -287,10 +287,10 @@ void x10x::polar::Polar3d::_initRTT() {
     rtt.containsPtrs = false;
 }
 
-::x10::lang::String x10x::polar::Polar3d_Strings::sl__48735("(r:");
-::x10::lang::String x10x::polar::Polar3d_Strings::sl__48736(",theta:");
-::x10::lang::String x10x::polar::Polar3d_Strings::sl__48738(")");
-::x10::lang::String x10x::polar::Polar3d_Strings::sl__48737(",phi:");
+::x10::lang::String x10x::polar::Polar3d_Strings::sl__73371("(r:");
+::x10::lang::String x10x::polar::Polar3d_Strings::sl__73372(",theta:");
+::x10::lang::String x10x::polar::Polar3d_Strings::sl__73374(")");
+::x10::lang::String x10x::polar::Polar3d_Strings::sl__73373(",phi:");
 
 /* END of Polar3d */
 /*************************************************/

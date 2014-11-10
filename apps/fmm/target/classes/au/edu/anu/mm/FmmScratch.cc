@@ -17,17 +17,17 @@
 void au::edu::anu::mm::FmmScratch::_constructor(x10_long numTerms) {
     
     //#line 17 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/FmmScratch.x10"
-    ::au::edu::anu::mm::FmmScratch* this__32848 = this;
-    ::x10aux::nullCheck(this__32848)->FMGL(exp) = (::x10aux::class_cast_unchecked< ::au::edu::anu::mm::MultipoleExpansion*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
-    ::x10aux::nullCheck(this__32848)->FMGL(array) = (::x10aux::class_cast_unchecked< ::x10::lang::Rail< x10_complex >*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
-    ::x10aux::nullCheck(this__32848)->FMGL(plm) = (::x10aux::class_cast_unchecked< ::au::edu::anu::mm::AssociatedLegendrePolynomial*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
+    ::au::edu::anu::mm::FmmScratch* this__67153 = this;
+    ::x10aux::nullCheck(this__67153)->FMGL(exp) = (::x10aux::class_cast_unchecked< ::au::edu::anu::mm::MultipoleExpansion*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
+    ::x10aux::nullCheck(this__67153)->FMGL(array) = (::x10aux::class_cast_unchecked< ::x10::lang::Rail< x10_complex >*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
+    ::x10aux::nullCheck(this__67153)->FMGL(plm) = (::x10aux::class_cast_unchecked< ::au::edu::anu::mm::AssociatedLegendrePolynomial*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
     
     //#line 28 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/FmmScratch.x10"
     this->FMGL(exp) = (__extension__ ({
-        ::au::edu::anu::mm::MultipoleExpansion* alloc__27478 =  (new (::x10aux::alloc_z< ::au::edu::anu::mm::MultipoleExpansion>()) ::au::edu::anu::mm::MultipoleExpansion());
-        (alloc__27478)->::au::edu::anu::mm::MultipoleExpansion::_constructor(
+        ::au::edu::anu::mm::MultipoleExpansion* alloc__41928 =  (new (::x10aux::alloc_z< ::au::edu::anu::mm::MultipoleExpansion>()) ::au::edu::anu::mm::MultipoleExpansion());
+        (alloc__41928)->::au::edu::anu::mm::MultipoleExpansion::_constructor(
           numTerms);
-        alloc__27478;
+        alloc__41928;
     }))
     ;
     
@@ -36,11 +36,11 @@ void au::edu::anu::mm::FmmScratch::_constructor(x10_long numTerms) {
     
     //#line 30 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/FmmScratch.x10"
     this->FMGL(plm) = (__extension__ ({
-        ::au::edu::anu::mm::AssociatedLegendrePolynomial* alloc__27479 = 
+        ::au::edu::anu::mm::AssociatedLegendrePolynomial* alloc__41929 = 
         (new (::x10aux::alloc_z< ::au::edu::anu::mm::AssociatedLegendrePolynomial>()) ::au::edu::anu::mm::AssociatedLegendrePolynomial());
-        (alloc__27479)->::au::edu::anu::mm::AssociatedLegendrePolynomial::_constructor(
+        (alloc__41929)->::au::edu::anu::mm::AssociatedLegendrePolynomial::_constructor(
           ((numTerms) + (((x10_long)1ll))));
-        alloc__27479;
+        alloc__41929;
     }))
     ;
 }
@@ -58,8 +58,8 @@ void au::edu::anu::mm::FmmScratch::_constructor(x10_long numTerms) {
 void au::edu::anu::mm::FmmScratch::FMGL(store__do_init)() {
     FMGL(store__status) = ::x10aux::StaticInitController::INITIALIZING;
     _SI_("Doing static initialization for field: au::edu::anu::mm::FmmScratch.store");
-    ::x10::lang::Rail< ::au::edu::anu::mm::FmmScratch* >* __var6__ = ::x10::lang::Rail< ::au::edu::anu::mm::FmmScratch* >::_make(((x10_long)(::x10::lang::Runtime::FMGL(MAX_THREADS__get)())));
-    FMGL(store) = __var6__;
+    ::x10::lang::Rail< ::au::edu::anu::mm::FmmScratch* >* __var80__ = ::x10::lang::Rail< ::au::edu::anu::mm::FmmScratch* >::_make(((x10_long)(::x10::lang::Runtime::FMGL(MAX_THREADS__get)())));
+    FMGL(store) = __var80__;
     FMGL(store__status) = ::x10aux::StaticInitController::INITIALIZED;
 }
 void au::edu::anu::mm::FmmScratch::FMGL(store__init)() {
@@ -93,17 +93,17 @@ void au::edu::anu::mm::FmmScratch::setWorkerLocal(::au::edu::anu::mm::FmmScratch
 void au::edu::anu::mm::FmmScratch::init(::x10::lang::Fun_0_0< ::au::edu::anu::mm::FmmScratch*>* func) {
     
     //#line 44 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/FmmScratch.x10"
-    x10_long i__27481max__32849 = (((x10_long)(::x10aux::nullCheck(::au::edu::anu::mm::FmmScratch::FMGL(store__get)())->FMGL(size))) - (((x10_long)1ll)));
+    x10_long i__41931max__67154 = (((x10_long)(::x10aux::nullCheck(::au::edu::anu::mm::FmmScratch::FMGL(store__get)())->FMGL(size))) - (((x10_long)1ll)));
     {
-        x10_long i__32850;
-        for (i__32850 = ((x10_long)0ll); ((i__32850) <= (i__27481max__32849));
-             i__32850 = ((i__32850) + (((x10_long)1ll))))
+        x10_long i__67155;
+        for (i__67155 = ((x10_long)0ll); ((i__67155) <= (i__41931max__67154));
+             i__67155 = ((i__67155) + (((x10_long)1ll))))
         {
-            x10_long i__32851 = i__32850;
+            x10_long i__67156 = i__67155;
             
             //#line 45 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/FmmScratch.x10"
             ::x10aux::nullCheck(::au::edu::anu::mm::FmmScratch::FMGL(store__get)())->x10::lang::Rail< ::au::edu::anu::mm::FmmScratch* >::__set(
-              i__32851, ::x10::lang::Fun_0_0< ::au::edu::anu::mm::FmmScratch*>::__apply(::x10aux::nullCheck(func)));
+              i__67156, ::x10::lang::Fun_0_0< ::au::edu::anu::mm::FmmScratch*>::__apply(::x10aux::nullCheck(func)));
         }
     }
     

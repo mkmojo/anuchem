@@ -39,7 +39,7 @@ namespace au { namespace edu { namespace anu { namespace mm {
 
 class LeafOctant__UList__UListIterator_Strings {
   public:
-    static ::x10::lang::String sl__48437;
+    static ::x10::lang::String sl__73073;
 };
 
 class LeafOctant__UList__UListIterator : public ::x10::lang::X10Class   {

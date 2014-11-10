@@ -120,10 +120,10 @@ void au::edu::anu::mm::LeafOctant::_constructor(::au::edu::anu::mm::OctantId id,
     //#line 40 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
     
     //#line 32 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-    ::au::edu::anu::mm::LeafOctant* this__43154 = this;
-    ::x10aux::nullCheck(this__43154)->FMGL(atoms) = (::x10aux::class_cast_unchecked< ::x10::util::ArrayList< ::au::edu::anu::chem::mm::MMAtom*>*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
-    ::x10aux::nullCheck(this__43154)->FMGL(sources) = (::x10aux::class_cast_unchecked< ::x10::lang::Rail< x10_double >*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
-    ::x10aux::nullCheck(this__43154)->FMGL(uList) = (::x10aux::class_cast_unchecked< ::au::edu::anu::mm::LeafOctant__UList*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
+    ::au::edu::anu::mm::LeafOctant* this__69669 = this;
+    ::x10aux::nullCheck(this__69669)->FMGL(atoms) = (::x10aux::class_cast_unchecked< ::x10::util::ArrayList< ::au::edu::anu::chem::mm::MMAtom*>*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
+    ::x10aux::nullCheck(this__69669)->FMGL(sources) = (::x10aux::class_cast_unchecked< ::x10::lang::Rail< x10_double >*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
+    ::x10aux::nullCheck(this__69669)->FMGL(uList) = (::x10aux::class_cast_unchecked< ::au::edu::anu::mm::LeafOctant__UList*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL)));
 }
 ::au::edu::anu::mm::LeafOctant* au::edu::anu::mm::LeafOctant::_make(::au::edu::anu::mm::OctantId id,
                                                                     x10_int numTerms,
@@ -144,37 +144,37 @@ void au::edu::anu::mm::LeafOctant::makeSources() {
     this->FMGL(sources) = ::x10::lang::Rail< x10_double >::_make(((::x10aux::nullCheck(this->FMGL(atoms))->size()) * (((x10_long)4ll))));
     
     //#line 46 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-    x10_long i__33558max__43157 = ((::x10aux::nullCheck(this->FMGL(atoms))->size()) - (((x10_long)1ll)));
+    x10_long i__50613max__69672 = ((::x10aux::nullCheck(this->FMGL(atoms))->size()) - (((x10_long)1ll)));
     {
-        x10_long i__43158;
-        for (i__43158 = ((x10_long)0ll); ((i__43158) <= (i__33558max__43157));
-             i__43158 = ((i__43158) + (((x10_long)1ll))))
+        x10_long i__69673;
+        for (i__69673 = ((x10_long)0ll); ((i__69673) <= (i__50613max__69672));
+             i__69673 = ((i__69673) + (((x10_long)1ll))))
         {
-            x10_long i__43159 = i__43158;
+            x10_long i__69674 = i__69673;
             
             //#line 47 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            ::au::edu::anu::chem::mm::MMAtom* atom__43155 =
+            ::au::edu::anu::chem::mm::MMAtom* atom__69670 =
               ::x10aux::nullCheck(this->FMGL(atoms))->__apply(
-                i__43159);
+                i__69674);
             
             //#line 48 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            x10_long idx__43156 = ((i__43159) * (((x10_long)4ll)));
+            x10_long idx__69671 = ((i__69674) * (((x10_long)4ll)));
             
             //#line 49 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
             ::x10aux::nullCheck(this->FMGL(sources))->x10::lang::Rail< x10_double >::__set(
-              idx__43156, ::x10aux::nullCheck(atom__43155)->FMGL(centre)->FMGL(i));
+              idx__69671, ::x10aux::nullCheck(atom__69670)->FMGL(centre)->FMGL(i));
             
             //#line 50 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
             ::x10aux::nullCheck(this->FMGL(sources))->x10::lang::Rail< x10_double >::__set(
-              ((idx__43156) + (((x10_long)1ll))), ::x10aux::nullCheck(atom__43155)->FMGL(centre)->FMGL(j));
+              ((idx__69671) + (((x10_long)1ll))), ::x10aux::nullCheck(atom__69670)->FMGL(centre)->FMGL(j));
             
             //#line 51 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
             ::x10aux::nullCheck(this->FMGL(sources))->x10::lang::Rail< x10_double >::__set(
-              ((idx__43156) + (((x10_long)2ll))), ::x10aux::nullCheck(atom__43155)->FMGL(centre)->FMGL(k));
+              ((idx__69671) + (((x10_long)2ll))), ::x10aux::nullCheck(atom__69670)->FMGL(centre)->FMGL(k));
             
             //#line 52 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
             ::x10aux::nullCheck(this->FMGL(sources))->x10::lang::Rail< x10_double >::__set(
-              ((idx__43156) + (((x10_long)3ll))), ::x10aux::nullCheck(atom__43155)->FMGL(charge));
+              ((idx__69671) + (((x10_long)3ll))), ::x10aux::nullCheck(atom__69670)->FMGL(charge));
         }
     }
     
@@ -233,41 +233,41 @@ x10_int au::edu::anu::mm::LeafOctant::ghostOctants() {
           ::x10aux::nullCheck(::au::edu::anu::mm::FmmScratch::getWorkerLocal())->FMGL(plm);
         
         //#line 79 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-        x10_long i__33576max__43169 = ((::x10aux::nullCheck(this->FMGL(atoms))->size()) - (((x10_long)1ll)));
+        x10_long i__50631max__69684 = ((::x10aux::nullCheck(this->FMGL(atoms))->size()) - (((x10_long)1ll)));
         {
-            x10_long i__43170;
-            for (i__43170 = ((x10_long)0ll); ((i__43170) <= (i__33576max__43169));
-                 i__43170 = ((i__43170) + (((x10_long)1ll))))
+            x10_long i__69685;
+            for (i__69685 = ((x10_long)0ll); ((i__69685) <= (i__50631max__69684));
+                 i__69685 = ((i__69685) + (((x10_long)1ll))))
             {
-                x10_long i__43171 = i__43170;
+                x10_long i__69686 = i__69685;
                 
                 //#line 80 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                ::au::edu::anu::chem::mm::MMAtom* atom__43163 =
+                ::au::edu::anu::chem::mm::MMAtom* atom__69678 =
                   ::x10aux::nullCheck(this->FMGL(atoms))->__apply(
-                    i__43171);
+                    i__69686);
                 
                 //#line 81 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                ::x10x::vector::Vector3d atomLocation__43164 =
+                ::x10x::vector::Vector3d atomLocation__69679 =
                   (__extension__ ({
                     
                     //#line 57 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Point3d.x10"
-                    ::x10x::vector::Point3d b__43165 = ::x10aux::nullCheck(atom__43163)->FMGL(centre);
+                    ::x10x::vector::Point3d b__69680 = ::x10aux::nullCheck(atom__69678)->FMGL(centre);
                     (__extension__ ({
                         
                         //#line 58 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Point3d.x10"
-                        ::x10x::vector::Vector3d alloc__43166 =
+                        ::x10x::vector::Vector3d alloc__69681 =
                            ::x10x::vector::Vector3d::_alloc();
                         
                         //#line 16 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                        x10_double i__43160 = ((centre->FMGL(i)) - (b__43165->FMGL(i)));
-                        x10_double j__43161 = ((centre->FMGL(j)) - (b__43165->FMGL(j)));
-                        x10_double k__43162 = ((centre->FMGL(k)) - (b__43165->FMGL(k)));
+                        x10_double i__69675 = ((centre->FMGL(i)) - (b__69680->FMGL(i)));
+                        x10_double j__69676 = ((centre->FMGL(j)) - (b__69680->FMGL(j)));
+                        x10_double k__69677 = ((centre->FMGL(k)) - (b__69680->FMGL(k)));
                         
                         //#line 17 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                        alloc__43166->FMGL(i) = i__43160;
-                        alloc__43166->FMGL(j) = j__43161;
-                        alloc__43166->FMGL(k) = k__43162;
-                        alloc__43166;
+                        alloc__69681->FMGL(i) = i__69675;
+                        alloc__69681->FMGL(j) = j__69676;
+                        alloc__69681->FMGL(k) = k__69677;
+                        alloc__69681;
                     }))
                     ;
                 }))
@@ -275,14 +275,14 @@ x10_int au::edu::anu::mm::LeafOctant::ghostOctants() {
                 
                 //#line 83 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
                 ::x10aux::nullCheck(this->FMGL(multipoleExp))->addOlm(
-                  ::x10aux::nullCheck(atom__43163)->FMGL(charge),
-                  atomLocation__43164, plm);
+                  ::x10aux::nullCheck(atom__69678)->FMGL(charge),
+                  atomLocation__69679, plm);
             }
         }
         {
             
             //#line 86 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            ::x10::lang::CheckedThrowable* throwable__43346 =
+            ::x10::lang::CheckedThrowable* throwable__69861 =
               ::x10aux::class_cast_unchecked< ::x10::lang::CheckedThrowable*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL));
             try {
                 {
@@ -293,33 +293,33 @@ x10_int au::edu::anu::mm::LeafOctant::ghostOctants() {
                 }
                 ::x10::compiler::Finalization::plausibleThrow();
             }
-            catch (::x10::lang::CheckedThrowable* __exc18) {
+            catch (::x10::lang::CheckedThrowable* __exc92) {
                 {
-                    ::x10::lang::CheckedThrowable* formal__43347 =
-                      __exc18;
+                    ::x10::lang::CheckedThrowable* formal__69862 =
+                      __exc92;
                     {
-                        throwable__43346 = formal__43347;
+                        throwable__69861 = formal__69862;
                     }
                 }
             }
-            if ((!::x10aux::struct_equals(throwable__43346,
+            if ((!::x10aux::struct_equals(throwable__69861,
                                           reinterpret_cast< ::x10::lang::CheckedThrowable*>(X10_NULL))))
             {
-                if (::x10aux::instanceof< ::x10::compiler::Abort*>(throwable__43346))
+                if (::x10aux::instanceof< ::x10::compiler::Abort*>(throwable__69861))
                 {
-                    ::x10aux::throwException(::x10aux::nullCheck(throwable__43346));
+                    ::x10aux::throwException(::x10aux::nullCheck(throwable__69861));
                 }
                 
             }
             if (true) {
                 ::x10::lang::Runtime::exitAtomic();
             }
-            if ((!::x10aux::struct_equals(throwable__43346,
+            if ((!::x10aux::struct_equals(throwable__69861,
                                           reinterpret_cast< ::x10::lang::CheckedThrowable*>(X10_NULL))))
             {
-                if (!(::x10aux::instanceof< ::x10::compiler::Finalization*>(throwable__43346)))
+                if (!(::x10aux::instanceof< ::x10::compiler::Finalization*>(throwable__69861)))
                 {
-                    ::x10aux::throwException(::x10aux::nullCheck(throwable__43346));
+                    ::x10aux::throwException(::x10aux::nullCheck(throwable__69861));
                 }
                 
             }
@@ -330,41 +330,41 @@ x10_int au::edu::anu::mm::LeafOctant::ghostOctants() {
         this->sendMultipole();
         
         //#line 90 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-        ::x10::util::Pair<x10_long, ::au::edu::anu::mm::MultipoleExpansion*> alloc__43172 =
+        ::x10::util::Pair<x10_long, ::au::edu::anu::mm::MultipoleExpansion*> alloc__69687 =
            ::x10::util::Pair<x10_long, ::au::edu::anu::mm::MultipoleExpansion*>::_alloc();
         
         //#line 21 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/util/Pair.x10"
-        x10_long first__43167 = ::x10aux::nullCheck(this->FMGL(atoms))->size();
-        ::au::edu::anu::mm::MultipoleExpansion* second__43168 =
+        x10_long first__69682 = ::x10aux::nullCheck(this->FMGL(atoms))->size();
+        ::au::edu::anu::mm::MultipoleExpansion* second__69683 =
           this->FMGL(multipoleExp);
         
         //#line 22 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/util/Pair.x10"
-        alloc__43172->FMGL(first) = first__43167;
+        alloc__69687->FMGL(first) = first__69682;
         
         //#line 23 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/util/Pair.x10"
-        alloc__43172->FMGL(second) = second__43168;
+        alloc__69687->FMGL(second) = second__69683;
         
         //#line 90 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-        return alloc__43172;
+        return alloc__69687;
         
     } else {
         
         //#line 92 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-        ::x10::util::Pair<x10_long, ::au::edu::anu::mm::MultipoleExpansion*> alloc__43174 =
+        ::x10::util::Pair<x10_long, ::au::edu::anu::mm::MultipoleExpansion*> alloc__69689 =
            ::x10::util::Pair<x10_long, ::au::edu::anu::mm::MultipoleExpansion*>::_alloc();
         
         //#line 21 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/util/Pair.x10"
-        ::au::edu::anu::mm::MultipoleExpansion* second__43173 =
+        ::au::edu::anu::mm::MultipoleExpansion* second__69688 =
           ::x10aux::class_cast_unchecked< ::au::edu::anu::mm::MultipoleExpansion*>(reinterpret_cast< ::x10::lang::NullType*>(X10_NULL));
         
         //#line 22 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/util/Pair.x10"
-        alloc__43174->FMGL(first) = ((x10_long)0ll);
+        alloc__69689->FMGL(first) = ((x10_long)0ll);
         
         //#line 23 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/util/Pair.x10"
-        alloc__43174->FMGL(second) = (reinterpret_cast< ::au::edu::anu::mm::MultipoleExpansion*>(reinterpret_cast< ::au::edu::anu::mm::MultipoleExpansion*>(X10_NULL)));
+        alloc__69689->FMGL(second) = (reinterpret_cast< ::au::edu::anu::mm::MultipoleExpansion*>(reinterpret_cast< ::au::edu::anu::mm::MultipoleExpansion*>(X10_NULL)));
         
         //#line 92 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-        return alloc__43174;
+        return alloc__69689;
         
     }
     
@@ -422,46 +422,46 @@ x10_double au::edu::anu::mm::LeafOctant::farField(x10_double size) {
     x10_double potential = 0.0;
     
     //#line 126 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-    x10_long i__33594max__43183 = ((::x10aux::nullCheck(this->FMGL(atoms))->size()) - (((x10_long)1ll)));
+    x10_long i__50649max__69698 = ((::x10aux::nullCheck(this->FMGL(atoms))->size()) - (((x10_long)1ll)));
     {
-        x10_long i__43184;
-        for (i__43184 = ((x10_long)0ll); ((i__43184) <= (i__33594max__43183));
-             i__43184 = ((i__43184) + (((x10_long)1ll))))
+        x10_long i__69699;
+        for (i__69699 = ((x10_long)0ll); ((i__69699) <= (i__50649max__69698));
+             i__69699 = ((i__69699) + (((x10_long)1ll))))
         {
-            x10_long atomIndex__43185 = i__43184;
+            x10_long atomIndex__69700 = i__69699;
             
             //#line 127 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            ::au::edu::anu::chem::mm::MMAtom* atom__43178 =
+            ::au::edu::anu::chem::mm::MMAtom* atom__69693 =
               ::x10aux::nullCheck(this->FMGL(atoms))->__apply(
-                atomIndex__43185);
+                atomIndex__69700);
             
             //#line 128 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            ::x10aux::nullCheck(atom__43178)->FMGL(force) =
+            ::x10aux::nullCheck(atom__69693)->FMGL(force) =
               ::x10x::vector::Vector3d::FMGL(NULL__get)();
             
             //#line 129 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            ::x10x::vector::Vector3d locationWithinBox__43179 =
+            ::x10x::vector::Vector3d locationWithinBox__69694 =
               (__extension__ ({
-                ::x10x::vector::Point3d this__43180 = ::x10aux::nullCheck(atom__43178)->FMGL(centre);
+                ::x10x::vector::Point3d this__69695 = ::x10aux::nullCheck(atom__69693)->FMGL(centre);
                 
                 //#line 57 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Point3d.x10"
-                ::x10x::vector::Point3d b__43181 = boxCentre;
+                ::x10x::vector::Point3d b__69696 = boxCentre;
                 (__extension__ ({
                     
                     //#line 58 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Point3d.x10"
-                    ::x10x::vector::Vector3d alloc__43182 =
+                    ::x10x::vector::Vector3d alloc__69697 =
                        ::x10x::vector::Vector3d::_alloc();
                     
                     //#line 16 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                    x10_double i__43175 = ((this__43180->FMGL(i)) - (b__43181->FMGL(i)));
-                    x10_double j__43176 = ((this__43180->FMGL(j)) - (b__43181->FMGL(j)));
-                    x10_double k__43177 = ((this__43180->FMGL(k)) - (b__43181->FMGL(k)));
+                    x10_double i__69690 = ((this__69695->FMGL(i)) - (b__69696->FMGL(i)));
+                    x10_double j__69691 = ((this__69695->FMGL(j)) - (b__69696->FMGL(j)));
+                    x10_double k__69692 = ((this__69695->FMGL(k)) - (b__69696->FMGL(k)));
                     
                     //#line 17 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                    alloc__43182->FMGL(i) = i__43175;
-                    alloc__43182->FMGL(j) = j__43176;
-                    alloc__43182->FMGL(k) = k__43177;
-                    alloc__43182;
+                    alloc__69697->FMGL(i) = i__69690;
+                    alloc__69697->FMGL(j) = j__69691;
+                    alloc__69697->FMGL(k) = k__69692;
+                    alloc__69697;
                 }))
                 ;
             }))
@@ -469,7 +469,7 @@ x10_double au::edu::anu::mm::LeafOctant::farField(x10_double size) {
             
             //#line 130 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
             potential = ((potential) + (::x10aux::nullCheck(this->FMGL(localExp))->calculatePotentialAndForces(
-                                          atom__43178, locationWithinBox__43179,
+                                          atom__69693, locationWithinBox__69694,
                                           plm)));
         }
     }
@@ -491,10 +491,10 @@ x10_double au::edu::anu::mm::LeafOctant::nearField(x10_double size,
     
     //#line 152 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
     {
-        ::au::edu::anu::mm::LeafOctant__UList__UListIterator* mortonId__33612;
-        for (mortonId__33612 = reinterpret_cast< ::au::edu::anu::mm::LeafOctant__UList__UListIterator*>(::x10aux::nullCheck(this->FMGL(uList))->iterator());
-             mortonId__33612->hasNext(); ) {
-            x10_uint mortonId = mortonId__33612->next();
+        ::au::edu::anu::mm::LeafOctant__UList__UListIterator* mortonId__50667;
+        for (mortonId__50667 = reinterpret_cast< ::au::edu::anu::mm::LeafOctant__UList__UListIterator*>(::x10aux::nullCheck(this->FMGL(uList))->iterator());
+             mortonId__50667->hasNext(); ) {
+            x10_uint mortonId = mortonId__50667->next();
             
             //#line 153 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
             ::x10::lang::Rail< x10_double >* oct2Data = ::x10aux::nullCheck(myLET)->getAtomDataForOctant(
@@ -506,165 +506,165 @@ x10_double au::edu::anu::mm::LeafOctant::nearField(x10_double size,
                 
                 //#line 155 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
                 directEnergy = ((directEnergy) + ((__extension__ ({
-                    ::au::edu::anu::mm::LeafOctant* this__38174 =
+                    ::au::edu::anu::mm::LeafOctant* this__67217 =
                       this;
                     
                     //#line 196 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    ::x10::lang::Rail< x10_double >* oct2Data__38144 =
+                    ::x10::lang::Rail< x10_double >* oct2Data__67187 =
                       oct2Data;
-                    x10_double ret__38175;
+                    x10_double ret__67218;
                     
                     //#line 197 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double directEnergy__43216 = 0.0;
+                    x10_double directEnergy__69731 = 0.0;
                     
                     //#line 198 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_long i__33650max__43213 = ((::x10aux::nullCheck(::x10aux::nullCheck(this__38174)->FMGL(atoms))->size()) - (((x10_long)1ll)));
+                    x10_long i__50705max__69728 = ((::x10aux::nullCheck(::x10aux::nullCheck(this__67217)->FMGL(atoms))->size()) - (((x10_long)1ll)));
                     {
-                        x10_long i__43214;
-                        for (i__43214 = ((x10_long)0ll); ((i__43214) <= (i__33650max__43213));
-                             i__43214 = ((i__43214) + (((x10_long)1ll))))
+                        x10_long i__69729;
+                        for (i__69729 = ((x10_long)0ll); ((i__69729) <= (i__50705max__69728));
+                             i__69729 = ((i__69729) + (((x10_long)1ll))))
                         {
-                            x10_long i__43215 = i__43214;
+                            x10_long i__69730 = i__69729;
                             
                             //#line 199 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            ::au::edu::anu::chem::mm::MMAtom* atomI__43189 =
-                              ::x10aux::nullCheck(::x10aux::nullCheck(this__38174)->FMGL(atoms))->__apply(
-                                i__43215);
+                            ::au::edu::anu::chem::mm::MMAtom* atomI__69704 =
+                              ::x10aux::nullCheck(::x10aux::nullCheck(this__67217)->FMGL(atoms))->__apply(
+                                i__69730);
                             
                             //#line 200 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            ::x10x::vector::Point3d ci__43190 =
-                              ::x10aux::nullCheck(atomI__43189)->FMGL(centre);
+                            ::x10x::vector::Point3d ci__69705 =
+                              ::x10aux::nullCheck(atomI__69704)->FMGL(centre);
                             
                             //#line 201 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double xi__43191 = ci__43190->FMGL(i);
+                            x10_double xi__69706 = ci__69705->FMGL(i);
                             
                             //#line 202 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double yi__43192 = ci__43190->FMGL(j);
+                            x10_double yi__69707 = ci__69705->FMGL(j);
                             
                             //#line 203 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double zi__43193 = ci__43190->FMGL(k);
+                            x10_double zi__69708 = ci__69705->FMGL(k);
                             
                             //#line 204 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double qi__43194 = ::x10aux::nullCheck(atomI__43189)->FMGL(charge);
+                            x10_double qi__69709 = ::x10aux::nullCheck(atomI__69704)->FMGL(charge);
                             
                             //#line 205 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double fix__43195 = ::x10aux::nullCheck(atomI__43189)->FMGL(force)->FMGL(i);
+                            x10_double fix__69710 = ::x10aux::nullCheck(atomI__69704)->FMGL(force)->FMGL(i);
                             
                             //#line 206 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double fiy__43196 = ::x10aux::nullCheck(atomI__43189)->FMGL(force)->FMGL(j);
+                            x10_double fiy__69711 = ::x10aux::nullCheck(atomI__69704)->FMGL(force)->FMGL(j);
                             
                             //#line 207 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double fiz__43197 = ::x10aux::nullCheck(atomI__43189)->FMGL(force)->FMGL(k);
+                            x10_double fiz__69712 = ::x10aux::nullCheck(atomI__69704)->FMGL(force)->FMGL(k);
                             
                             //#line 209 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
                             {
-                                x10_long j__43198;
-                                for (j__43198 = ((x10_long)0ll);
-                                     ((j__43198) < ((x10_long)(::x10aux::nullCheck(oct2Data__38144)->FMGL(size))));
-                                     j__43198 = ((j__43198) + (((x10_long)4ll))))
+                                x10_long j__69713;
+                                for (j__69713 = ((x10_long)0ll);
+                                     ((j__69713) < ((x10_long)(::x10aux::nullCheck(oct2Data__67187)->FMGL(size))));
+                                     j__69713 = ((j__69713) + (((x10_long)4ll))))
                                 {
                                     
                                     //#line 210 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    x10_double xj__43199 =
-                                      ::x10aux::nullCheck(oct2Data__38144)->x10::lang::Rail< x10_double >::__apply(
-                                        j__43198);
+                                    x10_double xj__69714 =
+                                      ::x10aux::nullCheck(oct2Data__67187)->x10::lang::Rail< x10_double >::__apply(
+                                        j__69713);
                                     
                                     //#line 211 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    x10_double yj__43200 =
-                                      ::x10aux::nullCheck(oct2Data__38144)->x10::lang::Rail< x10_double >::__apply(
-                                        ((j__43198) + (((x10_long)1ll))));
+                                    x10_double yj__69715 =
+                                      ::x10aux::nullCheck(oct2Data__67187)->x10::lang::Rail< x10_double >::__apply(
+                                        ((j__69713) + (((x10_long)1ll))));
                                     
                                     //#line 212 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    x10_double zj__43201 =
-                                      ::x10aux::nullCheck(oct2Data__38144)->x10::lang::Rail< x10_double >::__apply(
-                                        ((j__43198) + (((x10_long)2ll))));
+                                    x10_double zj__69716 =
+                                      ::x10aux::nullCheck(oct2Data__67187)->x10::lang::Rail< x10_double >::__apply(
+                                        ((j__69713) + (((x10_long)2ll))));
                                     
                                     //#line 213 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    x10_double qj__43202 =
-                                      ::x10aux::nullCheck(oct2Data__38144)->x10::lang::Rail< x10_double >::__apply(
-                                        ((j__43198) + (((x10_long)3ll))));
+                                    x10_double qj__69717 =
+                                      ::x10aux::nullCheck(oct2Data__67187)->x10::lang::Rail< x10_double >::__apply(
+                                        ((j__69713) + (((x10_long)3ll))));
                                     
                                     //#line 215 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    x10_double dx__43203 =
-                                      ((xj__43199) - (xi__43191));
+                                    x10_double dx__69718 =
+                                      ((xj__69714) - (xi__69706));
                                     
                                     //#line 216 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    x10_double dy__43204 =
-                                      ((yj__43200) - (yi__43192));
+                                    x10_double dy__69719 =
+                                      ((yj__69715) - (yi__69707));
                                     
                                     //#line 217 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    x10_double dz__43205 =
-                                      ((zj__43201) - (zi__43193));
+                                    x10_double dz__69720 =
+                                      ((zj__69716) - (zi__69708));
                                     
                                     //#line 218 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    x10_double r__43206 =
-                                      ((((((dx__43203) * (dx__43203))) + (((dy__43204) * (dy__43204))))) + (((dz__43205) * (dz__43205))));
+                                    x10_double r__69721 =
+                                      ((((((dx__69718) * (dx__69718))) + (((dy__69719) * (dy__69719))))) + (((dz__69720) * (dz__69720))));
                                     
                                     //#line 219 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    x10_double invR__43207;
+                                    x10_double invR__69722;
                                     
                                     //#line 220 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    x10_double invR__43208;
+                                    x10_double invR__69723;
                                     {
                                         
                                         //#line 226 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                        invR__43208 = ((1.0) / (r__43206));
+                                        invR__69723 = ((1.0) / (r__69721));
                                         
                                         //#line 227 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                        invR__43207 = ::x10::lang::MathNatives::sqrt(invR__43208);
+                                        invR__69722 = ::x10::lang::MathNatives::sqrt(invR__69723);
                                     }
                                     
                                     //#line 229 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    x10_double qq__43209 =
-                                      ((qi__43194) * (qj__43202));
+                                    x10_double qq__69724 =
+                                      ((qi__69709) * (qj__69717));
                                     
                                     //#line 230 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    x10_double e__43210 =
-                                      ((invR__43207) * (qq__43209));
+                                    x10_double e__69725 =
+                                      ((invR__69722) * (qq__69724));
                                     
                                     //#line 231 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    directEnergy__43216 =
-                                      ((directEnergy__43216) + (e__43210));
+                                    directEnergy__69731 =
+                                      ((directEnergy__69731) + (e__69725));
                                     
                                     //#line 233 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    x10_double forceScaling__43211 =
-                                      ((e__43210) * (invR__43208));
+                                    x10_double forceScaling__69726 =
+                                      ((e__69725) * (invR__69723));
                                     
                                     //#line 234 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    fix__43195 = ((fix__43195) + (((forceScaling__43211) * (dx__43203))));
+                                    fix__69710 = ((fix__69710) + (((forceScaling__69726) * (dx__69718))));
                                     
                                     //#line 235 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    fiy__43196 = ((fiy__43196) + (((forceScaling__43211) * (dy__43204))));
+                                    fiy__69711 = ((fiy__69711) + (((forceScaling__69726) * (dy__69719))));
                                     
                                     //#line 236 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                    fiz__43197 = ((fiz__43197) + (((forceScaling__43211) * (dz__43205))));
+                                    fiz__69712 = ((fiz__69712) + (((forceScaling__69726) * (dz__69720))));
                                 }
                             }
                             
                             //#line 238 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            ::x10aux::nullCheck(atomI__43189)->FMGL(force) =
+                            ::x10aux::nullCheck(atomI__69704)->FMGL(force) =
                               (__extension__ ({
-                                ::x10x::vector::Vector3d alloc__43212 =
+                                ::x10x::vector::Vector3d alloc__69727 =
                                    ::x10x::vector::Vector3d::_alloc();
                                 
                                 //#line 16 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                                x10_double i__43186 = fix__43195;
-                                x10_double j__43187 = fiy__43196;
-                                x10_double k__43188 = fiz__43197;
+                                x10_double i__69701 = fix__69710;
+                                x10_double j__69702 = fiy__69711;
+                                x10_double k__69703 = fiz__69712;
                                 
                                 //#line 17 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                                alloc__43212->FMGL(i) = i__43186;
-                                alloc__43212->FMGL(j) = j__43187;
-                                alloc__43212->FMGL(k) = k__43188;
-                                alloc__43212;
+                                alloc__69727->FMGL(i) = i__69701;
+                                alloc__69727->FMGL(j) = j__69702;
+                                alloc__69727->FMGL(k) = k__69703;
+                                alloc__69727;
                             }))
                             ;
                         }
                     }
                     
                     //#line 240 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    ret__38175 = directEnergy__43216;
-                    ret__38175;
+                    ret__67218 = directEnergy__69731;
+                    ret__67218;
                 }))
                 ));
             }
@@ -673,63 +673,63 @@ x10_double au::edu::anu::mm::LeafOctant::nearField(x10_double size,
     }
     
     //#line 159 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-    x10_long i__33632max__43256 = ((::x10aux::nullCheck(this->FMGL(atoms))->size()) - (((x10_long)1ll)));
+    x10_long i__50687max__69771 = ((::x10aux::nullCheck(this->FMGL(atoms))->size()) - (((x10_long)1ll)));
     {
-        x10_long i__43257;
-        for (i__43257 = ((x10_long)0ll); ((i__43257) <= (i__33632max__43256));
-             i__43257 = ((i__43257) + (((x10_long)1ll))))
+        x10_long i__69772;
+        for (i__69772 = ((x10_long)0ll); ((i__69772) <= (i__50687max__69771));
+             i__69772 = ((i__69772) + (((x10_long)1ll))))
         {
-            x10_long atomIndex__43258 = i__43257;
+            x10_long atomIndex__69773 = i__69772;
             
             //#line 161 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            ::au::edu::anu::chem::mm::MMAtom* atom__43255 =
+            ::au::edu::anu::chem::mm::MMAtom* atom__69770 =
               ::x10aux::nullCheck(this->FMGL(atoms))->__apply(
-                atomIndex__43258);
+                atomIndex__69773);
             
             //#line 162 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            x10_long i__33614max__43252 = ((atomIndex__43258) - (((x10_long)1ll)));
+            x10_long i__50669max__69767 = ((atomIndex__69773) - (((x10_long)1ll)));
             {
-                x10_long i__43253;
-                for (i__43253 = ((x10_long)0ll); ((i__43253) <= (i__33614max__43252));
-                     i__43253 = ((i__43253) + (((x10_long)1ll))))
+                x10_long i__69768;
+                for (i__69768 = ((x10_long)0ll); ((i__69768) <= (i__50669max__69767));
+                     i__69768 = ((i__69768) + (((x10_long)1ll))))
                 {
-                    x10_long sameBoxAtomIndex__43254 = i__43253;
+                    x10_long sameBoxAtomIndex__69769 = i__69768;
                     
                     //#line 163 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    ::au::edu::anu::chem::mm::MMAtom* sameBoxAtom__43229 =
+                    ::au::edu::anu::chem::mm::MMAtom* sameBoxAtom__69744 =
                       ::x10aux::nullCheck(this->FMGL(atoms))->__apply(
-                        sameBoxAtomIndex__43254);
+                        sameBoxAtomIndex__69769);
                     
                     //#line 164 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    ::x10x::vector::Vector3d rVec__43230 =
+                    ::x10x::vector::Vector3d rVec__69745 =
                       (__extension__ ({
-                        ::x10x::vector::Point3d this__43231 =
-                          ::x10aux::nullCheck(sameBoxAtom__43229)->FMGL(centre);
+                        ::x10x::vector::Point3d this__69746 =
+                          ::x10aux::nullCheck(sameBoxAtom__69744)->FMGL(centre);
                         
                         //#line 61 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Point3d.x10"
-                        ::x10x::vector::Point3d that__43232 =
-                          ::x10aux::nullCheck(atom__43255)->FMGL(centre);
+                        ::x10x::vector::Point3d that__69747 =
+                          ::x10aux::nullCheck(atom__69770)->FMGL(centre);
                         (__extension__ ({
                             
                             //#line 57 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Point3d.x10"
-                            ::x10x::vector::Point3d b__43233 =
-                              that__43232;
+                            ::x10x::vector::Point3d b__69748 =
+                              that__69747;
                             (__extension__ ({
                                 
                                 //#line 58 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Point3d.x10"
-                                ::x10x::vector::Vector3d alloc__43234 =
+                                ::x10x::vector::Vector3d alloc__69749 =
                                    ::x10x::vector::Vector3d::_alloc();
                                 
                                 //#line 16 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                                x10_double i__43217 = ((this__43231->FMGL(i)) - (b__43233->FMGL(i)));
-                                x10_double j__43218 = ((this__43231->FMGL(j)) - (b__43233->FMGL(j)));
-                                x10_double k__43219 = ((this__43231->FMGL(k)) - (b__43233->FMGL(k)));
+                                x10_double i__69732 = ((this__69746->FMGL(i)) - (b__69748->FMGL(i)));
+                                x10_double j__69733 = ((this__69746->FMGL(j)) - (b__69748->FMGL(j)));
+                                x10_double k__69734 = ((this__69746->FMGL(k)) - (b__69748->FMGL(k)));
                                 
                                 //#line 17 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                                alloc__43234->FMGL(i) = i__43217;
-                                alloc__43234->FMGL(j) = j__43218;
-                                alloc__43234->FMGL(k) = k__43219;
-                                alloc__43234;
+                                alloc__69749->FMGL(i) = i__69732;
+                                alloc__69749->FMGL(j) = j__69733;
+                                alloc__69749->FMGL(k) = k__69734;
+                                alloc__69749;
                             }))
                             ;
                         }))
@@ -738,63 +738,63 @@ x10_double au::edu::anu::mm::LeafOctant::nearField(x10_double size,
                     ;
                     
                     //#line 165 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double invR__43235;
+                    x10_double invR__69750;
                     
                     //#line 166 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double invR__43236;
+                    x10_double invR__69751;
                     {
                         
                         //#line 172 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                        invR__43236 = ((1.0) / (((((((rVec__43230->FMGL(i)) * (rVec__43230->FMGL(i)))) + (((rVec__43230->FMGL(j)) * (rVec__43230->FMGL(j)))))) + (((rVec__43230->FMGL(k)) * (rVec__43230->FMGL(k)))))));
+                        invR__69751 = ((1.0) / (((((((rVec__69745->FMGL(i)) * (rVec__69745->FMGL(i)))) + (((rVec__69745->FMGL(j)) * (rVec__69745->FMGL(j)))))) + (((rVec__69745->FMGL(k)) * (rVec__69745->FMGL(k)))))));
                         
                         //#line 173 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                        invR__43235 = ::x10::lang::MathNatives::sqrt(invR__43236);
+                        invR__69750 = ::x10::lang::MathNatives::sqrt(invR__69751);
                     }
                     
                     //#line 175 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double e__43237 = ((((::x10aux::nullCheck(atom__43255)->FMGL(charge)) * (::x10aux::nullCheck(sameBoxAtom__43229)->FMGL(charge)))) * (invR__43235));
+                    x10_double e__69752 = ((((::x10aux::nullCheck(atom__69770)->FMGL(charge)) * (::x10aux::nullCheck(sameBoxAtom__69744)->FMGL(charge)))) * (invR__69750));
                     
                     //#line 176 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    directEnergy = ((directEnergy) + (((2.0) * (e__43237))));
+                    directEnergy = ((directEnergy) + (((2.0) * (e__69752))));
                     
                     //#line 177 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    ::x10x::vector::Vector3d pairForce__43238 =
+                    ::x10x::vector::Vector3d pairForce__69753 =
                       (__extension__ ({
                         
                         //#line 79 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                        x10_double x__43239 = ((e__43237) * (invR__43236));
-                        ::x10x::vector::Vector3d y__43240 =
-                          rVec__43230;
+                        x10_double x__69754 = ((e__69752) * (invR__69751));
+                        ::x10x::vector::Vector3d y__69755 =
+                          rVec__69745;
                         (__extension__ ({
                             
                             //#line 72 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                            x10_double that__43241 = x__43239;
+                            x10_double that__69756 = x__69754;
                             (__extension__ ({
                                 
                                 //#line 81 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                                x10_double c__43242 = that__43241;
+                                x10_double c__69757 = that__69756;
                                 (__extension__ ({
                                     
                                     //#line 82 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                                    ::x10x::vector::Vector3d alloc__43243 =
+                                    ::x10x::vector::Vector3d alloc__69758 =
                                        ::x10x::vector::Vector3d::_alloc();
                                     
                                     //#line 16 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                                    x10_double i__43220 =
-                                      ((y__43240->FMGL(i)) * (c__43242));
-                                    x10_double j__43221 =
-                                      ((y__43240->FMGL(j)) * (c__43242));
-                                    x10_double k__43222 =
-                                      ((y__43240->FMGL(k)) * (c__43242));
+                                    x10_double i__69735 =
+                                      ((y__69755->FMGL(i)) * (c__69757));
+                                    x10_double j__69736 =
+                                      ((y__69755->FMGL(j)) * (c__69757));
+                                    x10_double k__69737 =
+                                      ((y__69755->FMGL(k)) * (c__69757));
                                     
                                     //#line 17 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                                    alloc__43243->FMGL(i) =
-                                      i__43220;
-                                    alloc__43243->FMGL(j) =
-                                      j__43221;
-                                    alloc__43243->FMGL(k) =
-                                      k__43222;
-                                    alloc__43243;
+                                    alloc__69758->FMGL(i) =
+                                      i__69735;
+                                    alloc__69758->FMGL(j) =
+                                      j__69736;
+                                    alloc__69758->FMGL(k) =
+                                      k__69737;
+                                    alloc__69758;
                                 }))
                                 ;
                             }))
@@ -805,35 +805,35 @@ x10_double au::edu::anu::mm::LeafOctant::nearField(x10_double size,
                     ;
                     
                     //#line 178 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    ::x10aux::nullCheck(atom__43255)->FMGL(force) =
+                    ::x10aux::nullCheck(atom__69770)->FMGL(force) =
                       (__extension__ ({
-                        ::x10x::vector::Vector3d this__43244 =
-                          ::x10aux::nullCheck(atom__43255)->FMGL(force);
+                        ::x10x::vector::Vector3d this__69759 =
+                          ::x10aux::nullCheck(atom__69770)->FMGL(force);
                         
                         //#line 33 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                        ::x10x::vector::Vector3d that__43245 =
-                          pairForce__43238;
+                        ::x10x::vector::Vector3d that__69760 =
+                          pairForce__69753;
                         (__extension__ ({
                             
                             //#line 37 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                            ::x10x::vector::Vector3d b__43246 =
-                              that__43245;
+                            ::x10x::vector::Vector3d b__69761 =
+                              that__69760;
                             (__extension__ ({
                                 
                                 //#line 38 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                                ::x10x::vector::Vector3d alloc__43247 =
+                                ::x10x::vector::Vector3d alloc__69762 =
                                    ::x10x::vector::Vector3d::_alloc();
                                 
                                 //#line 16 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                                x10_double i__43223 = ((this__43244->FMGL(i)) + (b__43246->FMGL(i)));
-                                x10_double j__43224 = ((this__43244->FMGL(j)) + (b__43246->FMGL(j)));
-                                x10_double k__43225 = ((this__43244->FMGL(k)) + (b__43246->FMGL(k)));
+                                x10_double i__69738 = ((this__69759->FMGL(i)) + (b__69761->FMGL(i)));
+                                x10_double j__69739 = ((this__69759->FMGL(j)) + (b__69761->FMGL(j)));
+                                x10_double k__69740 = ((this__69759->FMGL(k)) + (b__69761->FMGL(k)));
                                 
                                 //#line 17 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                                alloc__43247->FMGL(i) = i__43223;
-                                alloc__43247->FMGL(j) = j__43224;
-                                alloc__43247->FMGL(k) = k__43225;
-                                alloc__43247;
+                                alloc__69762->FMGL(i) = i__69738;
+                                alloc__69762->FMGL(j) = j__69739;
+                                alloc__69762->FMGL(k) = k__69740;
+                                alloc__69762;
                             }))
                             ;
                         }))
@@ -842,35 +842,35 @@ x10_double au::edu::anu::mm::LeafOctant::nearField(x10_double size,
                     ;
                     
                     //#line 179 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    ::x10aux::nullCheck(sameBoxAtom__43229)->FMGL(force) =
+                    ::x10aux::nullCheck(sameBoxAtom__69744)->FMGL(force) =
                       (__extension__ ({
                         
                         //#line 44 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                        ::x10x::vector::Vector3d x__43248 =
-                          ::x10aux::nullCheck(sameBoxAtom__43229)->FMGL(force);
-                        ::x10x::vector::Vector3d y__43249 =
-                          pairForce__43238;
+                        ::x10x::vector::Vector3d x__69763 =
+                          ::x10aux::nullCheck(sameBoxAtom__69744)->FMGL(force);
+                        ::x10x::vector::Vector3d y__69764 =
+                          pairForce__69753;
                         (__extension__ ({
                             
                             //#line 48 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                            ::x10x::vector::Vector3d b__43250 =
-                              y__43249;
+                            ::x10x::vector::Vector3d b__69765 =
+                              y__69764;
                             (__extension__ ({
                                 
                                 //#line 49 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                                ::x10x::vector::Vector3d alloc__43251 =
+                                ::x10x::vector::Vector3d alloc__69766 =
                                    ::x10x::vector::Vector3d::_alloc();
                                 
                                 //#line 16 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                                x10_double i__43226 = ((x__43248->FMGL(i)) - (b__43250->FMGL(i)));
-                                x10_double j__43227 = ((x__43248->FMGL(j)) - (b__43250->FMGL(j)));
-                                x10_double k__43228 = ((x__43248->FMGL(k)) - (b__43250->FMGL(k)));
+                                x10_double i__69741 = ((x__69763->FMGL(i)) - (b__69765->FMGL(i)));
+                                x10_double j__69742 = ((x__69763->FMGL(j)) - (b__69765->FMGL(j)));
+                                x10_double k__69743 = ((x__69763->FMGL(k)) - (b__69765->FMGL(k)));
                                 
                                 //#line 17 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                                alloc__43251->FMGL(i) = i__43226;
-                                alloc__43251->FMGL(j) = j__43227;
-                                alloc__43251->FMGL(k) = k__43228;
-                                alloc__43251;
+                                alloc__69766->FMGL(i) = i__69741;
+                                alloc__69766->FMGL(j) = j__69742;
+                                alloc__69766->FMGL(k) = k__69743;
+                                alloc__69766;
                             }))
                             ;
                         }))
@@ -895,130 +895,130 @@ x10_double au::edu::anu::mm::LeafOctant::p2pKernel(::x10::lang::Rail< x10_double
     x10_double directEnergy = 0.0;
     
     //#line 198 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-    x10_long i__33650max__43286 = ((::x10aux::nullCheck(this->FMGL(atoms))->size()) - (((x10_long)1ll)));
+    x10_long i__50705max__69801 = ((::x10aux::nullCheck(this->FMGL(atoms))->size()) - (((x10_long)1ll)));
     {
-        x10_long i__43287;
-        for (i__43287 = ((x10_long)0ll); ((i__43287) <= (i__33650max__43286));
-             i__43287 = ((i__43287) + (((x10_long)1ll))))
+        x10_long i__69802;
+        for (i__69802 = ((x10_long)0ll); ((i__69802) <= (i__50705max__69801));
+             i__69802 = ((i__69802) + (((x10_long)1ll))))
         {
-            x10_long i__43288 = i__43287;
+            x10_long i__69803 = i__69802;
             
             //#line 199 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            ::au::edu::anu::chem::mm::MMAtom* atomI__43262 =
+            ::au::edu::anu::chem::mm::MMAtom* atomI__69777 =
               ::x10aux::nullCheck(this->FMGL(atoms))->__apply(
-                i__43288);
+                i__69803);
             
             //#line 200 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            ::x10x::vector::Point3d ci__43263 = ::x10aux::nullCheck(atomI__43262)->FMGL(centre);
+            ::x10x::vector::Point3d ci__69778 = ::x10aux::nullCheck(atomI__69777)->FMGL(centre);
             
             //#line 201 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            x10_double xi__43264 = ci__43263->FMGL(i);
+            x10_double xi__69779 = ci__69778->FMGL(i);
             
             //#line 202 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            x10_double yi__43265 = ci__43263->FMGL(j);
+            x10_double yi__69780 = ci__69778->FMGL(j);
             
             //#line 203 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            x10_double zi__43266 = ci__43263->FMGL(k);
+            x10_double zi__69781 = ci__69778->FMGL(k);
             
             //#line 204 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            x10_double qi__43267 = ::x10aux::nullCheck(atomI__43262)->FMGL(charge);
+            x10_double qi__69782 = ::x10aux::nullCheck(atomI__69777)->FMGL(charge);
             
             //#line 205 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            x10_double fix__43268 = ::x10aux::nullCheck(atomI__43262)->FMGL(force)->FMGL(i);
+            x10_double fix__69783 = ::x10aux::nullCheck(atomI__69777)->FMGL(force)->FMGL(i);
             
             //#line 206 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            x10_double fiy__43269 = ::x10aux::nullCheck(atomI__43262)->FMGL(force)->FMGL(j);
+            x10_double fiy__69784 = ::x10aux::nullCheck(atomI__69777)->FMGL(force)->FMGL(j);
             
             //#line 207 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            x10_double fiz__43270 = ::x10aux::nullCheck(atomI__43262)->FMGL(force)->FMGL(k);
+            x10_double fiz__69785 = ::x10aux::nullCheck(atomI__69777)->FMGL(force)->FMGL(k);
             
             //#line 209 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
             {
-                x10_long j__43271;
-                for (j__43271 = ((x10_long)0ll); ((j__43271) < ((x10_long)(::x10aux::nullCheck(oct2Data)->FMGL(size))));
-                     j__43271 = ((j__43271) + (((x10_long)4ll))))
+                x10_long j__69786;
+                for (j__69786 = ((x10_long)0ll); ((j__69786) < ((x10_long)(::x10aux::nullCheck(oct2Data)->FMGL(size))));
+                     j__69786 = ((j__69786) + (((x10_long)4ll))))
                 {
                     
                     //#line 210 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double xj__43272 = ::x10aux::nullCheck(oct2Data)->x10::lang::Rail< x10_double >::__apply(
-                                             j__43271);
+                    x10_double xj__69787 = ::x10aux::nullCheck(oct2Data)->x10::lang::Rail< x10_double >::__apply(
+                                             j__69786);
                     
                     //#line 211 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double yj__43273 = ::x10aux::nullCheck(oct2Data)->x10::lang::Rail< x10_double >::__apply(
-                                             ((j__43271) + (((x10_long)1ll))));
+                    x10_double yj__69788 = ::x10aux::nullCheck(oct2Data)->x10::lang::Rail< x10_double >::__apply(
+                                             ((j__69786) + (((x10_long)1ll))));
                     
                     //#line 212 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double zj__43274 = ::x10aux::nullCheck(oct2Data)->x10::lang::Rail< x10_double >::__apply(
-                                             ((j__43271) + (((x10_long)2ll))));
+                    x10_double zj__69789 = ::x10aux::nullCheck(oct2Data)->x10::lang::Rail< x10_double >::__apply(
+                                             ((j__69786) + (((x10_long)2ll))));
                     
                     //#line 213 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double qj__43275 = ::x10aux::nullCheck(oct2Data)->x10::lang::Rail< x10_double >::__apply(
-                                             ((j__43271) + (((x10_long)3ll))));
+                    x10_double qj__69790 = ::x10aux::nullCheck(oct2Data)->x10::lang::Rail< x10_double >::__apply(
+                                             ((j__69786) + (((x10_long)3ll))));
                     
                     //#line 215 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double dx__43276 = ((xj__43272) - (xi__43264));
+                    x10_double dx__69791 = ((xj__69787) - (xi__69779));
                     
                     //#line 216 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double dy__43277 = ((yj__43273) - (yi__43265));
+                    x10_double dy__69792 = ((yj__69788) - (yi__69780));
                     
                     //#line 217 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double dz__43278 = ((zj__43274) - (zi__43266));
+                    x10_double dz__69793 = ((zj__69789) - (zi__69781));
                     
                     //#line 218 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double r__43279 = ((((((dx__43276) * (dx__43276))) + (((dy__43277) * (dy__43277))))) + (((dz__43278) * (dz__43278))));
+                    x10_double r__69794 = ((((((dx__69791) * (dx__69791))) + (((dy__69792) * (dy__69792))))) + (((dz__69793) * (dz__69793))));
                     
                     //#line 219 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double invR__43280;
+                    x10_double invR__69795;
                     
                     //#line 220 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double invR__43281;
+                    x10_double invR__69796;
                     {
                         
                         //#line 226 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                        invR__43281 = ((1.0) / (r__43279));
+                        invR__69796 = ((1.0) / (r__69794));
                         
                         //#line 227 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                        invR__43280 = ::x10::lang::MathNatives::sqrt(invR__43281);
+                        invR__69795 = ::x10::lang::MathNatives::sqrt(invR__69796);
                     }
                     
                     //#line 229 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double qq__43282 = ((qi__43267) * (qj__43275));
+                    x10_double qq__69797 = ((qi__69782) * (qj__69790));
                     
                     //#line 230 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double e__43283 = ((invR__43280) * (qq__43282));
+                    x10_double e__69798 = ((invR__69795) * (qq__69797));
                     
                     //#line 231 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    directEnergy = ((directEnergy) + (e__43283));
+                    directEnergy = ((directEnergy) + (e__69798));
                     
                     //#line 233 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double forceScaling__43284 = ((e__43283) * (invR__43281));
+                    x10_double forceScaling__69799 = ((e__69798) * (invR__69796));
                     
                     //#line 234 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    fix__43268 = ((fix__43268) + (((forceScaling__43284) * (dx__43276))));
+                    fix__69783 = ((fix__69783) + (((forceScaling__69799) * (dx__69791))));
                     
                     //#line 235 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    fiy__43269 = ((fiy__43269) + (((forceScaling__43284) * (dy__43277))));
+                    fiy__69784 = ((fiy__69784) + (((forceScaling__69799) * (dy__69792))));
                     
                     //#line 236 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    fiz__43270 = ((fiz__43270) + (((forceScaling__43284) * (dz__43278))));
+                    fiz__69785 = ((fiz__69785) + (((forceScaling__69799) * (dz__69793))));
                 }
             }
             
             //#line 238 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            ::x10aux::nullCheck(atomI__43262)->FMGL(force) =
+            ::x10aux::nullCheck(atomI__69777)->FMGL(force) =
               (__extension__ ({
-                ::x10x::vector::Vector3d alloc__43285 =  ::x10x::vector::Vector3d::_alloc();
+                ::x10x::vector::Vector3d alloc__69800 =  ::x10x::vector::Vector3d::_alloc();
                 
                 //#line 16 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                x10_double i__43259 = fix__43268;
-                x10_double j__43260 = fiy__43269;
-                x10_double k__43261 = fiz__43270;
+                x10_double i__69774 = fix__69783;
+                x10_double j__69775 = fiy__69784;
+                x10_double k__69776 = fiz__69785;
                 
                 //#line 17 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                alloc__43285->FMGL(i) = i__43259;
-                alloc__43285->FMGL(j) = j__43260;
-                alloc__43285->FMGL(k) = k__43261;
-                alloc__43285;
+                alloc__69800->FMGL(i) = i__69774;
+                alloc__69800->FMGL(j) = j__69775;
+                alloc__69800->FMGL(k) = k__69776;
+                alloc__69800;
             }))
             ;
         }
@@ -1083,20 +1083,20 @@ x10_double au::edu::anu::mm::LeafOctant::p2pKernel(::x10::lang::Rail< x10_double
     }
     
     //#line 268 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-    ::x10x::vector::Vector3d alloc__43292 =  ::x10x::vector::Vector3d::_alloc();
+    ::x10x::vector::Vector3d alloc__69807 =  ::x10x::vector::Vector3d::_alloc();
     
     //#line 16 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-    x10_double i__43289 = translationX;
-    x10_double j__43290 = translationY;
-    x10_double k__43291 = translationZ;
+    x10_double i__69804 = translationX;
+    x10_double j__69805 = translationY;
+    x10_double k__69806 = translationZ;
     
     //#line 17 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-    alloc__43292->FMGL(i) = i__43289;
-    alloc__43292->FMGL(j) = j__43290;
-    alloc__43292->FMGL(k) = k__43291;
+    alloc__69807->FMGL(i) = i__69804;
+    alloc__69807->FMGL(j) = j__69805;
+    alloc__69807->FMGL(k) = k__69806;
     
     //#line 268 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-    return alloc__43292;
+    return alloc__69807;
     
 }
 
@@ -1149,24 +1149,24 @@ x10_long au::edu::anu::mm::LeafOctant::estimateUListCost(
     ::au::edu::anu::mm::LeafOctant* dummyOctant =  (new (::x10aux::alloc_z< ::au::edu::anu::mm::LeafOctant>()) ::au::edu::anu::mm::LeafOctant());
     (dummyOctant)->::au::edu::anu::mm::LeafOctant::_constructor(
       (__extension__ ({
-          ::au::edu::anu::mm::OctantId alloc__33552 =  ::au::edu::anu::mm::OctantId::_alloc();
+          ::au::edu::anu::mm::OctantId alloc__50607 =  ::au::edu::anu::mm::OctantId::_alloc();
           
           //#line 27 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-          alloc__33552->FMGL(x) = ((x10_ubyte)0);
-          alloc__33552->FMGL(y) = ((x10_ubyte)0);
-          alloc__33552->FMGL(z) = ((x10_ubyte)0);
-          alloc__33552->FMGL(level) = ((x10_ubyte)0);
-          alloc__33552;
+          alloc__50607->FMGL(x) = ((x10_ubyte)0);
+          alloc__50607->FMGL(y) = ((x10_ubyte)0);
+          alloc__50607->FMGL(z) = ((x10_ubyte)0);
+          alloc__50607->FMGL(level) = ((x10_ubyte)0);
+          alloc__50607;
       }))
       , ((x10_int)1), ((x10_int)1), ((x10_ubyte)0));
     
     //#line 294 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
     dummyOctant->FMGL(atoms) = (__extension__ ({
-        ::x10::util::ArrayList< ::au::edu::anu::chem::mm::MMAtom*>* alloc__33553 =
+        ::x10::util::ArrayList< ::au::edu::anu::chem::mm::MMAtom*>* alloc__50608 =
            (new (::x10aux::alloc_z< ::x10::util::ArrayList< ::au::edu::anu::chem::mm::MMAtom*> >()) ::x10::util::ArrayList< ::au::edu::anu::chem::mm::MMAtom*>());
-        (alloc__33553)->::x10::util::ArrayList< ::au::edu::anu::chem::mm::MMAtom*>::_constructor(
+        (alloc__50608)->::x10::util::ArrayList< ::au::edu::anu::chem::mm::MMAtom*>::_constructor(
           ((x10_long)(q)));
-        alloc__33553;
+        alloc__50608;
     }))
     ;
     
@@ -1177,38 +1177,38 @@ x10_long au::edu::anu::mm::LeafOctant::estimateUListCost(
     (rand)->::x10::util::Random::_constructor(::x10::lang::RuntimeNatives::nanoTime());
     
     //#line 296 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-    x10_long i__33668max__43331 = ((((x10_long)(q))) - (((x10_long)1ll)));
+    x10_long i__50723max__69846 = ((((x10_long)(q))) - (((x10_long)1ll)));
     {
-        x10_long i__43332;
-        for (i__43332 = ((x10_long)0ll); ((i__43332) <= (i__33668max__43331));
-             i__43332 = ((i__43332) + (((x10_long)1ll))))
+        x10_long i__69847;
+        for (i__69847 = ((x10_long)0ll); ((i__69847) <= (i__50723max__69846));
+             i__69847 = ((i__69847) + (((x10_long)1ll))))
         {
-            x10_long i__43333 = i__43332;
+            x10_long i__69848 = i__69847;
             
             //#line 298 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            ::au::edu::anu::chem::mm::MMAtom* atom__43296 =
+            ::au::edu::anu::chem::mm::MMAtom* atom__69811 =
                (new (::x10aux::alloc_z< ::au::edu::anu::chem::mm::MMAtom>()) ::au::edu::anu::chem::mm::MMAtom());
-            (atom__43296)->::au::edu::anu::chem::mm::MMAtom::_constructor(
+            (atom__69811)->::au::edu::anu::chem::mm::MMAtom::_constructor(
               (__extension__ ({
-                  ::x10x::vector::Point3d alloc__43297 = 
+                  ::x10x::vector::Point3d alloc__69812 = 
                   ::x10x::vector::Point3d::_alloc();
                   
                   //#line 10 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Point3d.x10"
-                  x10_double i__43293 = ((rand->nextDouble()) + (40.0));
-                  x10_double j__43294 = ((rand->nextDouble()) + (40.0));
-                  x10_double k__43295 = ((rand->nextDouble()) + (40.0));
+                  x10_double i__69808 = ((rand->nextDouble()) + (40.0));
+                  x10_double j__69809 = ((rand->nextDouble()) + (40.0));
+                  x10_double k__69810 = ((rand->nextDouble()) + (40.0));
                   
                   //#line 11 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Point3d.x10"
-                  alloc__43297->FMGL(i) = i__43293;
-                  alloc__43297->FMGL(j) = j__43294;
-                  alloc__43297->FMGL(k) = k__43295;
-                  alloc__43297;
+                  alloc__69812->FMGL(i) = i__69808;
+                  alloc__69812->FMGL(j) = j__69809;
+                  alloc__69812->FMGL(k) = k__69810;
+                  alloc__69812;
               }))
               , 1.0, 1.0);
             
             //#line 299 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
             ::x10aux::nullCheck(dummyOctant->FMGL(atoms))->__set(
-              i__43333, atom__43296);
+              i__69848, atom__69811);
         }
     }
     
@@ -1221,157 +1221,157 @@ x10_long au::edu::anu::mm::LeafOctant::estimateUListCost(
     
     //#line 307 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
     {
-        x10_long i__43334;
-        for (i__43334 = ((x10_long)0ll); ((i__43334) <= (((x10_long)1000ll)));
-             i__43334 = ((i__43334) + (((x10_long)1ll))))
+        x10_long i__69849;
+        for (i__69849 = ((x10_long)0ll); ((i__69849) <= (((x10_long)1000ll)));
+             i__69849 = ((i__69849) + (((x10_long)1ll))))
         {
-            x10_long i__43335 = i__43334;
+            x10_long i__69850 = i__69849;
             
             //#line 196 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            ::x10::lang::Rail< x10_double >* oct2Data__43329 =
+            ::x10::lang::Rail< x10_double >* oct2Data__69844 =
               dummyData;
-            x10_double ret__43330;
+            x10_double ret__69845;
             
             //#line 197 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            x10_double directEnergy__43328 = 0.0;
+            x10_double directEnergy__69843 = 0.0;
             
             //#line 198 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            x10_long i__33650max__43325 = ((::x10aux::nullCheck(dummyOctant->FMGL(atoms))->size()) - (((x10_long)1ll)));
+            x10_long i__50705max__69840 = ((::x10aux::nullCheck(dummyOctant->FMGL(atoms))->size()) - (((x10_long)1ll)));
             {
-                x10_long i__43326;
-                for (i__43326 = ((x10_long)0ll); ((i__43326) <= (i__33650max__43325));
-                     i__43326 = ((i__43326) + (((x10_long)1ll))))
+                x10_long i__69841;
+                for (i__69841 = ((x10_long)0ll); ((i__69841) <= (i__50705max__69840));
+                     i__69841 = ((i__69841) + (((x10_long)1ll))))
                 {
-                    x10_long i__43327 = i__43326;
+                    x10_long i__69842 = i__69841;
                     
                     //#line 199 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    ::au::edu::anu::chem::mm::MMAtom* atomI__43301 =
+                    ::au::edu::anu::chem::mm::MMAtom* atomI__69816 =
                       ::x10aux::nullCheck(dummyOctant->FMGL(atoms))->__apply(
-                        i__43327);
+                        i__69842);
                     
                     //#line 200 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    ::x10x::vector::Point3d ci__43302 = ::x10aux::nullCheck(atomI__43301)->FMGL(centre);
+                    ::x10x::vector::Point3d ci__69817 = ::x10aux::nullCheck(atomI__69816)->FMGL(centre);
                     
                     //#line 201 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double xi__43303 = ci__43302->FMGL(i);
+                    x10_double xi__69818 = ci__69817->FMGL(i);
                     
                     //#line 202 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double yi__43304 = ci__43302->FMGL(j);
+                    x10_double yi__69819 = ci__69817->FMGL(j);
                     
                     //#line 203 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double zi__43305 = ci__43302->FMGL(k);
+                    x10_double zi__69820 = ci__69817->FMGL(k);
                     
                     //#line 204 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double qi__43306 = ::x10aux::nullCheck(atomI__43301)->FMGL(charge);
+                    x10_double qi__69821 = ::x10aux::nullCheck(atomI__69816)->FMGL(charge);
                     
                     //#line 205 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double fix__43307 = ::x10aux::nullCheck(atomI__43301)->FMGL(force)->FMGL(i);
+                    x10_double fix__69822 = ::x10aux::nullCheck(atomI__69816)->FMGL(force)->FMGL(i);
                     
                     //#line 206 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double fiy__43308 = ::x10aux::nullCheck(atomI__43301)->FMGL(force)->FMGL(j);
+                    x10_double fiy__69823 = ::x10aux::nullCheck(atomI__69816)->FMGL(force)->FMGL(j);
                     
                     //#line 207 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    x10_double fiz__43309 = ::x10aux::nullCheck(atomI__43301)->FMGL(force)->FMGL(k);
+                    x10_double fiz__69824 = ::x10aux::nullCheck(atomI__69816)->FMGL(force)->FMGL(k);
                     
                     //#line 209 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
                     {
-                        x10_long j__43310;
-                        for (j__43310 = ((x10_long)0ll); ((j__43310) < ((x10_long)(::x10aux::nullCheck(oct2Data__43329)->FMGL(size))));
-                             j__43310 = ((j__43310) + (((x10_long)4ll))))
+                        x10_long j__69825;
+                        for (j__69825 = ((x10_long)0ll); ((j__69825) < ((x10_long)(::x10aux::nullCheck(oct2Data__69844)->FMGL(size))));
+                             j__69825 = ((j__69825) + (((x10_long)4ll))))
                         {
                             
                             //#line 210 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double xj__43311 = ::x10aux::nullCheck(oct2Data__43329)->x10::lang::Rail< x10_double >::__apply(
-                                                     j__43310);
+                            x10_double xj__69826 = ::x10aux::nullCheck(oct2Data__69844)->x10::lang::Rail< x10_double >::__apply(
+                                                     j__69825);
                             
                             //#line 211 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double yj__43312 = ::x10aux::nullCheck(oct2Data__43329)->x10::lang::Rail< x10_double >::__apply(
-                                                     ((j__43310) + (((x10_long)1ll))));
+                            x10_double yj__69827 = ::x10aux::nullCheck(oct2Data__69844)->x10::lang::Rail< x10_double >::__apply(
+                                                     ((j__69825) + (((x10_long)1ll))));
                             
                             //#line 212 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double zj__43313 = ::x10aux::nullCheck(oct2Data__43329)->x10::lang::Rail< x10_double >::__apply(
-                                                     ((j__43310) + (((x10_long)2ll))));
+                            x10_double zj__69828 = ::x10aux::nullCheck(oct2Data__69844)->x10::lang::Rail< x10_double >::__apply(
+                                                     ((j__69825) + (((x10_long)2ll))));
                             
                             //#line 213 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double qj__43314 = ::x10aux::nullCheck(oct2Data__43329)->x10::lang::Rail< x10_double >::__apply(
-                                                     ((j__43310) + (((x10_long)3ll))));
+                            x10_double qj__69829 = ::x10aux::nullCheck(oct2Data__69844)->x10::lang::Rail< x10_double >::__apply(
+                                                     ((j__69825) + (((x10_long)3ll))));
                             
                             //#line 215 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double dx__43315 = ((xj__43311) - (xi__43303));
+                            x10_double dx__69830 = ((xj__69826) - (xi__69818));
                             
                             //#line 216 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double dy__43316 = ((yj__43312) - (yi__43304));
+                            x10_double dy__69831 = ((yj__69827) - (yi__69819));
                             
                             //#line 217 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double dz__43317 = ((zj__43313) - (zi__43305));
+                            x10_double dz__69832 = ((zj__69828) - (zi__69820));
                             
                             //#line 218 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double r__43318 = ((((((dx__43315) * (dx__43315))) + (((dy__43316) * (dy__43316))))) + (((dz__43317) * (dz__43317))));
+                            x10_double r__69833 = ((((((dx__69830) * (dx__69830))) + (((dy__69831) * (dy__69831))))) + (((dz__69832) * (dz__69832))));
                             
                             //#line 219 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double invR__43319;
+                            x10_double invR__69834;
                             
                             //#line 220 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double invR__43320;
+                            x10_double invR__69835;
                             {
                                 
                                 //#line 226 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                invR__43320 = ((1.0) / (r__43318));
+                                invR__69835 = ((1.0) / (r__69833));
                                 
                                 //#line 227 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                                invR__43319 = ::x10::lang::MathNatives::sqrt(invR__43320);
+                                invR__69834 = ::x10::lang::MathNatives::sqrt(invR__69835);
                             }
                             
                             //#line 229 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double qq__43321 = ((qi__43306) * (qj__43314));
+                            x10_double qq__69836 = ((qi__69821) * (qj__69829));
                             
                             //#line 230 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double e__43322 = ((invR__43319) * (qq__43321));
+                            x10_double e__69837 = ((invR__69834) * (qq__69836));
                             
                             //#line 231 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            directEnergy__43328 = ((directEnergy__43328) + (e__43322));
+                            directEnergy__69843 = ((directEnergy__69843) + (e__69837));
                             
                             //#line 233 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            x10_double forceScaling__43323 =
-                              ((e__43322) * (invR__43320));
+                            x10_double forceScaling__69838 =
+                              ((e__69837) * (invR__69835));
                             
                             //#line 234 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            fix__43307 = ((fix__43307) + (((forceScaling__43323) * (dx__43315))));
+                            fix__69822 = ((fix__69822) + (((forceScaling__69838) * (dx__69830))));
                             
                             //#line 235 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            fiy__43308 = ((fiy__43308) + (((forceScaling__43323) * (dy__43316))));
+                            fiy__69823 = ((fiy__69823) + (((forceScaling__69838) * (dy__69831))));
                             
                             //#line 236 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                            fiz__43309 = ((fiz__43309) + (((forceScaling__43323) * (dz__43317))));
+                            fiz__69824 = ((fiz__69824) + (((forceScaling__69838) * (dz__69832))));
                         }
                     }
                     
                     //#line 238 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-                    ::x10aux::nullCheck(atomI__43301)->FMGL(force) =
+                    ::x10aux::nullCheck(atomI__69816)->FMGL(force) =
                       (__extension__ ({
-                        ::x10x::vector::Vector3d alloc__43324 =
+                        ::x10x::vector::Vector3d alloc__69839 =
                            ::x10x::vector::Vector3d::_alloc();
                         
                         //#line 16 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                        x10_double i__43298 = fix__43307;
-                        x10_double j__43299 = fiy__43308;
-                        x10_double k__43300 = fiz__43309;
+                        x10_double i__69813 = fix__69822;
+                        x10_double j__69814 = fiy__69823;
+                        x10_double k__69815 = fiz__69824;
                         
                         //#line 17 "/localdisk/qqiu/workspace/anuchem/xla/xla.jar:x10x/vector/Vector3d.x10"
-                        alloc__43324->FMGL(i) = i__43298;
-                        alloc__43324->FMGL(j) = j__43299;
-                        alloc__43324->FMGL(k) = k__43300;
-                        alloc__43324;
+                        alloc__69839->FMGL(i) = i__69813;
+                        alloc__69839->FMGL(j) = j__69814;
+                        alloc__69839->FMGL(k) = k__69815;
+                        alloc__69839;
                     }))
                     ;
                 }
             }
             
             //#line 240 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            ret__43330 = directEnergy__43328;
+            ret__69845 = directEnergy__69843;
             
             //#line 196 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-            ret__43330;
+            ret__69845;
         }
     }
     
@@ -1394,11 +1394,11 @@ void au::edu::anu::mm::LeafOctant::createUList(x10_int ws) {
     
     //#line 319 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
     this->FMGL(uList) = (__extension__ ({
-        ::au::edu::anu::mm::LeafOctant__UList* alloc__33555 =
+        ::au::edu::anu::mm::LeafOctant__UList* alloc__50610 =
            (new (::x10aux::alloc_z< ::au::edu::anu::mm::LeafOctant__UList>()) ::au::edu::anu::mm::LeafOctant__UList());
-        (alloc__33555)->::au::edu::anu::mm::LeafOctant__UList::_constructor(
+        (alloc__50610)->::au::edu::anu::mm::LeafOctant__UList::_constructor(
           this, this->FMGL(id), ws);
-        alloc__33555;
+        alloc__50610;
     }))
     ;
 }
@@ -1415,7 +1415,7 @@ void au::edu::anu::mm::LeafOctant::createUList(x10_int ws) {
   ) {
     
     //#line 399 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-    return ::x10::lang::String::__plus((&::au::edu::anu::mm::LeafOctant_Strings::sl__48386), this->FMGL(id));
+    return ::x10::lang::String::__plus((&::au::edu::anu::mm::LeafOctant_Strings::sl__73022), this->FMGL(id));
     
 }
 
@@ -1463,7 +1463,7 @@ void au::edu::anu::mm::LeafOctant::_initRTT() {
     rtt.initStageTwo("au.edu.anu.mm.LeafOctant",::x10aux::RuntimeType::class_kind, 1, parents, 0, NULL, NULL);
 }
 
-::x10::lang::String au::edu::anu::mm::LeafOctant_Strings::sl__48386("LeafOctant ");
+::x10::lang::String au::edu::anu::mm::LeafOctant_Strings::sl__73022("LeafOctant ");
 
 ::x10::lang::Fun_0_1<x10_long, x10_double>::itable<au_edu_anu_mm_LeafOctant__closure__1>au_edu_anu_mm_LeafOctant__closure__1::_itable(&::x10::lang::Reference::equals, &::x10::lang::Closure::hashCode, &au_edu_anu_mm_LeafOctant__closure__1::__apply, &au_edu_anu_mm_LeafOctant__closure__1::toString, &::x10::lang::Closure::typeName);
 ::x10aux::itable_entry au_edu_anu_mm_LeafOctant__closure__1::_itables[2] = {::x10aux::itable_entry(&::x10aux::getRTT< ::x10::lang::Fun_0_1<x10_long, x10_double> >, &au_edu_anu_mm_LeafOctant__closure__1::_itable),::x10aux::itable_entry(NULL, NULL)};
@@ -1512,10 +1512,10 @@ void au::edu::anu::mm::LeafOctant__UList__UListIterator::_constructor(::au::edu:
     //#line 353 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
     
     //#line 349 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-    ::au::edu::anu::mm::LeafOctant__UList__UListIterator* this__43338 = this;
-    ::x10aux::nullCheck(this__43338)->FMGL(x) = ((x10_ubyte)0);
-    ::x10aux::nullCheck(this__43338)->FMGL(y) = ((x10_ubyte)0);
-    ::x10aux::nullCheck(this__43338)->FMGL(z) = ((x10_ubyte)0);
+    ::au::edu::anu::mm::LeafOctant__UList__UListIterator* this__69853 = this;
+    ::x10aux::nullCheck(this__69853)->FMGL(x) = ((x10_ubyte)0);
+    ::x10aux::nullCheck(this__69853)->FMGL(y) = ((x10_ubyte)0);
+    ::x10aux::nullCheck(this__69853)->FMGL(z) = ((x10_ubyte)0);
     
     //#line 354 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
     this->FMGL(x) = ::x10aux::nullCheck(this->FMGL(out__))->FMGL(minX);
@@ -1592,59 +1592,59 @@ x10_uint au::edu::anu::mm::LeafOctant__UList__UListIterator::next(
         x10_uint res = (__extension__ ({
             
             //#line 76 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            x10_uint x__43051 = ((x10_uint) (this->FMGL(x)));
-            x10_uint y__43052 = ((x10_uint) (this->FMGL(y)));
-            x10_uint z__43053 = ((x10_uint) (this->FMGL(z)));
-            x10_uint level__43054 = ((x10_uint) (::x10aux::nullCheck(this->FMGL(out__))->FMGL(level)));
-            x10_uint ret__43064;
+            x10_uint x__69654 = ((x10_uint) (this->FMGL(x)));
+            x10_uint y__69655 = ((x10_uint) (this->FMGL(y)));
+            x10_uint z__69656 = ((x10_uint) (this->FMGL(z)));
+            x10_uint level__69657 = ((x10_uint) (::x10aux::nullCheck(this->FMGL(out__))->FMGL(level)));
+            x10_uint ret__69667;
             
             //#line 78 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            x10_uint id__43343 = ((x10_uint)0u);
+            x10_uint id__69858 = ((x10_uint)0u);
             
             //#line 79 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            x10_uint bitmask__43344 = ((x10_uint)1u);
+            x10_uint bitmask__69859 = ((x10_uint)1u);
             
             //#line 80 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            x10_int shift__43345 = ((x10_int)0);
+            x10_int shift__69860 = ((x10_int)0);
             
             //#line 81 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
             {
-                x10_long i__43341;
-                for (i__43341 = ((x10_long)0ll); ((i__43341) <= (((x10_long)7ll)));
-                     i__43341 = ((i__43341) + (((x10_long)1ll))))
+                x10_long i__69856;
+                for (i__69856 = ((x10_long)0ll); ((i__69856) <= (((x10_long)7ll)));
+                     i__69856 = ((i__69856) + (((x10_long)1ll))))
                 {
-                    x10_long i__43342 = i__43341;
+                    x10_long i__69857 = i__69856;
                     
                     //#line 82 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-                    id__43343 = ((x10_uint) ((id__43343) | (((x10_uint) ((((x10_uint) ((bitmask__43344) & (z__43053)))) << (x10_int)(0x1f & (((x10_long)((__extension__ ({
-                        x10_int pre__43339 = shift__43345;
-                        shift__43345 = ((shift__43345) + (((x10_int)1)));
-                        pre__43339;
+                    id__69858 = ((x10_uint) ((id__69858) | (((x10_uint) ((((x10_uint) ((bitmask__69859) & (z__69656)))) << (x10_int)(0x1f & (((x10_long)((__extension__ ({
+                        x10_int pre__69854 = shift__69860;
+                        shift__69860 = ((shift__69860) + (((x10_int)1)));
+                        pre__69854;
                     }))
                     )))))))));
                     
                     //#line 83 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-                    id__43343 = ((x10_uint) ((id__43343) | (((x10_uint) ((((x10_uint) ((bitmask__43344) & (y__43052)))) << (x10_int)(0x1f & (((x10_long)((__extension__ ({
-                        x10_int pre__43340 = shift__43345;
-                        shift__43345 = ((shift__43345) + (((x10_int)1)));
-                        pre__43340;
+                    id__69858 = ((x10_uint) ((id__69858) | (((x10_uint) ((((x10_uint) ((bitmask__69859) & (y__69655)))) << (x10_int)(0x1f & (((x10_long)((__extension__ ({
+                        x10_int pre__69855 = shift__69860;
+                        shift__69860 = ((shift__69860) + (((x10_int)1)));
+                        pre__69855;
                     }))
                     )))))))));
                     
                     //#line 84 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-                    id__43343 = ((x10_uint) ((id__43343) | (((x10_uint) ((((x10_uint) ((bitmask__43344) & (x__43051)))) << (x10_int)(0x1f & (((x10_long)(shift__43345)))))))));
+                    id__69858 = ((x10_uint) ((id__69858) | (((x10_uint) ((((x10_uint) ((bitmask__69859) & (x__69654)))) << (x10_int)(0x1f & (((x10_long)(shift__69860)))))))));
                     
                     //#line 85 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-                    bitmask__43344 = ((x10_uint) ((bitmask__43344) << (x10_int)(0x1f & (((x10_long)1ll)))));
+                    bitmask__69859 = ((x10_uint) ((bitmask__69859) << (x10_int)(0x1f & (((x10_long)1ll)))));
                 }
             }
             
             //#line 87 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            id__43343 = ((x10_uint) ((id__43343) | (((x10_uint) ((level__43054) << (x10_int)(0x1f & (((x10_long)24ll))))))));
+            id__69858 = ((x10_uint) ((id__69858) | (((x10_uint) ((level__69657) << (x10_int)(0x1f & (((x10_long)24ll))))))));
             
             //#line 89 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/OctantId.x10"
-            ret__43064 = id__43343;
-            ret__43064;
+            ret__69667 = id__69858;
+            ret__69667;
         }))
         ;
         
@@ -1657,7 +1657,7 @@ x10_uint au::edu::anu::mm::LeafOctant__UList__UListIterator::next(
     } else {
         
         //#line 377 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-        ::x10aux::throwException(::x10aux::nullCheck(::x10::lang::UnsupportedOperationException::_make(::x10::lang::String::__plus((&::au::edu::anu::mm::LeafOctant__UList__UListIterator_Strings::sl__48437), ::x10aux::nullCheck(::x10aux::nullCheck(this->FMGL(out__))->FMGL(out__))->FMGL(id)))));
+        ::x10aux::throwException(::x10aux::nullCheck(::x10::lang::UnsupportedOperationException::_make(::x10::lang::String::__plus((&::au::edu::anu::mm::LeafOctant__UList__UListIterator_Strings::sl__73073), ::x10aux::nullCheck(::x10aux::nullCheck(this->FMGL(out__))->FMGL(out__))->FMGL(id)))));
     }
     
 }
@@ -1758,7 +1758,7 @@ void au::edu::anu::mm::LeafOctant__UList__UListIterator::_initRTT() {
     rtt.initStageTwo("au.edu.anu.mm.LeafOctant.UList.UListIterator",::x10aux::RuntimeType::class_kind, 1, parents, 0, NULL, NULL);
 }
 
-::x10::lang::String au::edu::anu::mm::LeafOctant__UList__UListIterator_Strings::sl__48437("reached end of uList for ");
+::x10::lang::String au::edu::anu::mm::LeafOctant__UList__UListIterator_Strings::sl__73073("reached end of uList for ");
 
 /* END of LeafOctant$UList$UListIterator */
 /*************************************************/
@@ -1807,7 +1807,7 @@ void au::edu::anu::mm::LeafOctant__UList::_constructor(::au::edu::anu::mm::LeafO
     //#line 336 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
     
     //#line 327 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
-    ::au::edu::anu::mm::LeafOctant__UList* this__43336 = this;
+    ::au::edu::anu::mm::LeafOctant__UList* this__69851 = this;
     
     //#line 337 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
     x10_ubyte levelDim = ((x10_ubyte) ((((x10_ubyte)1)) << (0x7 & (x10_int)(((x10_long)(id->FMGL(level)))))));
@@ -1816,8 +1816,8 @@ void au::edu::anu::mm::LeafOctant__UList::_constructor(::au::edu::anu::mm::LeafO
     this->FMGL(minX) = ((x10_ubyte) ((__extension__ ({
         
         //#line 463 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int b__43030 = ((((x10_int)(id->FMGL(x)))) - (ws));
-        ((((x10_int)0)) < (b__43030)) ? (b__43030) : (((x10_int)0));
+        x10_int b__69640 = ((((x10_int)(id->FMGL(x)))) - (ws));
+        ((((x10_int)0)) < (b__69640)) ? (b__69640) : (((x10_int)0));
     }))
     ));
     
@@ -1825,9 +1825,9 @@ void au::edu::anu::mm::LeafOctant__UList::_constructor(::au::edu::anu::mm::LeafO
     this->FMGL(maxX) = ((x10_ubyte) ((__extension__ ({
         
         //#line 467 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int a__43031 = ((((x10_int)(levelDim))) - (((x10_int)1)));
-        x10_int b__43032 = ((((x10_int)(id->FMGL(x)))) + (ws));
-        ((a__43031) < (b__43032)) ? (a__43031) : (b__43032);
+        x10_int a__69641 = ((((x10_int)(levelDim))) - (((x10_int)1)));
+        x10_int b__69642 = ((((x10_int)(id->FMGL(x)))) + (ws));
+        ((a__69641) < (b__69642)) ? (a__69641) : (b__69642);
     }))
     ));
     
@@ -1835,8 +1835,8 @@ void au::edu::anu::mm::LeafOctant__UList::_constructor(::au::edu::anu::mm::LeafO
     this->FMGL(minY) = ((x10_ubyte) ((__extension__ ({
         
         //#line 463 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int b__43034 = ((((x10_int)(id->FMGL(y)))) - (ws));
-        ((((x10_int)0)) < (b__43034)) ? (b__43034) : (((x10_int)0));
+        x10_int b__69644 = ((((x10_int)(id->FMGL(y)))) - (ws));
+        ((((x10_int)0)) < (b__69644)) ? (b__69644) : (((x10_int)0));
     }))
     ));
     
@@ -1844,9 +1844,9 @@ void au::edu::anu::mm::LeafOctant__UList::_constructor(::au::edu::anu::mm::LeafO
     this->FMGL(maxY) = ((x10_ubyte) ((__extension__ ({
         
         //#line 467 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int a__43035 = ((((x10_int)(levelDim))) - (((x10_int)1)));
-        x10_int b__43036 = ((((x10_int)(id->FMGL(y)))) + (ws));
-        ((a__43035) < (b__43036)) ? (a__43035) : (b__43036);
+        x10_int a__69645 = ((((x10_int)(levelDim))) - (((x10_int)1)));
+        x10_int b__69646 = ((((x10_int)(id->FMGL(y)))) + (ws));
+        ((a__69645) < (b__69646)) ? (a__69645) : (b__69646);
     }))
     ));
     
@@ -1854,8 +1854,8 @@ void au::edu::anu::mm::LeafOctant__UList::_constructor(::au::edu::anu::mm::LeafO
     this->FMGL(minZ) = ((x10_ubyte) ((__extension__ ({
         
         //#line 463 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int b__43038 = ((((x10_int)(id->FMGL(z)))) - (ws));
-        ((((x10_int)0)) < (b__43038)) ? (b__43038) : (((x10_int)0));
+        x10_int b__69648 = ((((x10_int)(id->FMGL(z)))) - (ws));
+        ((((x10_int)0)) < (b__69648)) ? (b__69648) : (((x10_int)0));
     }))
     ));
     
@@ -1863,9 +1863,9 @@ void au::edu::anu::mm::LeafOctant__UList::_constructor(::au::edu::anu::mm::LeafO
     this->FMGL(maxZ) = ((x10_ubyte) ((__extension__ ({
         
         //#line 467 "/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/x10.jar:x10/lang/Math.x10"
-        x10_int a__43039 = ((((x10_int)(levelDim))) - (((x10_int)1)));
-        x10_int b__43040 = ((((x10_int)(id->FMGL(z)))) + (ws));
-        ((a__43039) < (b__43040)) ? (a__43039) : (b__43040);
+        x10_int a__69649 = ((((x10_int)(levelDim))) - (((x10_int)1)));
+        x10_int b__69650 = ((((x10_int)(id->FMGL(z)))) + (ws));
+        ((a__69649) < (b__69650)) ? (a__69649) : (b__69650);
     }))
     ));
     
@@ -1885,11 +1885,11 @@ void au::edu::anu::mm::LeafOctant__UList::_constructor(::au::edu::anu::mm::LeafO
 //#line 347 "/localdisk/qqiu/workspace/anuchem/apps/fmm/src/au/edu/anu/mm/LeafOctant.x10"
 ::x10::lang::Iterator<x10_uint>* au::edu::anu::mm::LeafOctant__UList::iterator(
   ) {
-    ::au::edu::anu::mm::LeafOctant__UList__UListIterator* alloc__43337 =
+    ::au::edu::anu::mm::LeafOctant__UList__UListIterator* alloc__69852 =
        (new (::x10aux::alloc_z< ::au::edu::anu::mm::LeafOctant__UList__UListIterator>()) ::au::edu::anu::mm::LeafOctant__UList__UListIterator());
-    (alloc__43337)->::au::edu::anu::mm::LeafOctant__UList__UListIterator::_constructor(
+    (alloc__69852)->::au::edu::anu::mm::LeafOctant__UList__UListIterator::_constructor(
       this);
-    return reinterpret_cast< ::x10::lang::Iterator<x10_uint>*>(alloc__43337);
+    return reinterpret_cast< ::x10::lang::Iterator<x10_uint>*>(alloc__69852);
     
 }
 
