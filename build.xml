@@ -42,7 +42,7 @@
     description="Test the Fast Multipole Method app code">
         <exec executable="${bash.exe}" failonerror="true" dir="${basedir}/apps/fmm">
             <arg value="-c"/>
-            <arg value="bin/fmm 51396"/>
+            <arg value="bin/fmm 4"/>
         </exec>
     </target>
 
