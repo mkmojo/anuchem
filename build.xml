@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project [<!ENTITY buildfile SYSTEM "file:./build-user.xml">]>
+<project name="X10 application project" default="test" basedir=".">
+    <property environment="env"/>
+    <fail unless="env.X10_HOME" message="Environment variable X10_HOME is not set."/>
+
+    <property name="bash.exe" value="bash"/>  
+
+    <target name="test" depends="test-fmm,test-pme,test-pumjarasaayani" />
+
+    <target name="build" depends="xla,anu-chem,anumm,fmm,pme,pumjarasaayani" />
+
+    <target name="anu-chem" description="Build the ANUChem shared library" depends="xla">
+        <ant dir="anu-chem" antfile="build.xml" />
+    </target>
+
+    <target name="xla" description="Build the X10 Linear Algebra (XLA) shared library">
+        <ant dir="xla" antfile="build.xml" />
+    </target>
+
+    <target name="papi" description="Build the PAPI wrapper shared library">
+        <ant dir="papi_wrapper" antfile="build.xml" />
+    </target>
+
+    <target name="fftw_wrapper" description="Build the FFTW wrapper shared library">
+        <ant dir="fftw_wrapper" antfile="build.xml" />
+    </target>
+
+    <target name="fmm" description="Build the Fast Multipole Method app code" depends="anu-chem,xla">
+        <ant antfile="build.xml" dir="apps/fmm" target="build"/>
+    </target>
+
+    <target name="fmm-x10lib-cpp" description="Build the Fast Multipole Method shared library" depends="anu-chem,xla">
+        <ant antfile="build.xml" dir="apps/fmm" target="buildx10lib-cpp"/>
+    </target>
+
+    <target name="anumm" description="Build the ANU Molecular Mechanics app code" depends="anu-chem,xla,fftw_wrapper,fmm-x10lib-cpp">
+        <ant antfile="build.xml" dir="apps/anumm" target="build"/>
+    </target>
+
+	<target name="test-fmm" depends="fmm"
+    description="Test the Fast Multipole Method app code">
+        <exec executable="${bash.exe}" failonerror="true" dir="${basedir}/apps/fmm">
+            <arg value="-c"/>
+            <arg value="bin/fmm 51396"/>
+        </exec>
+    </target>
+
+    <target name="pme" description="Build the Particle Mesh Ewald app code" depends="xla,anu-chem,fftw_wrapper">
+        <ant antfile="build.xml" dir="apps/pme" target="build"/>
+    </target>
+
+	<target name="test-pme" depends="pme"
+    description="Test the Particle Mesh Ewald app code">
+        <exec executable="${bash.exe}" failonerror="true" dir="${basedir}/apps/pme">
+            <arg value="-c"/>
+            <arg value="bin/pme test/gromacs/box100k.gro"/>
+        </exec>
+    </target>
+
+    <target name="pumjarasaayani" description="Build the Pumja Rasaayani (Quantum Chemistry) app code" depends="anu-chem,xla">
+        <ant antfile="build.xml" dir="apps/pumjarasaayani" target="build"/>
+    </target>
+
+	<target name="test-pumjarasaayani" depends="pumjarasaayani"
+    description="Test the Pumja Rasaayani app code">
+        <exec executable="${bash.exe}" failonerror="true" dir="${basedir}/apps/pumjarasaayani">
+            <arg value="-c"/>
+            <arg value="X10_NTHREADS=1 bin/pumjarasaayani test/H2O-321g.inp"/>
+        </exec>
+    </target>
+
+
+    <target name="srctar">
+        <fail unless="env.X10_VERSION" message="Environment variable X10_VERSION is not set."/>
+        <tar destfile="anuchem-${env.X10_VERSION}-src.tar.bz2" compression="bzip2" longfile="gnu">
+            <tarfileset dir="${basedir}" excludes="**/*.bz2,.hg/**,**/.hg*,**/bin,**/target,**/include,**/lib,**/*.jar"/>
+        </tar>
+    </target>
+
+</project>

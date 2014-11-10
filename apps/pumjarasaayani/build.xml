@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project [<!ENTITY buildfile SYSTEM "file:./build-user.xml">]>
+<project name="Pumja Rasaayani" default="build" basedir=".">
+    <property environment="env"/>
+    <fail unless="env.X10_HOME" message="Environment variable X10_HOME is not set."/>
+    <property name="x10rt" value="sockets" />
+    <property name="xla" location="../../xla"/>
+    <property name="xla.props" location="${xla}/xla.properties"/>
+    <property name="x10.stdlib" location="${env.X10_HOME}/x10.dist/stdlib/include"/>
+    <property name="x10.testlib" location="${env.X10_HOME}/x10.tests/tests/x10lib"/>
+    <property name="anuchem" location="../../anu-chem"/>
+    <property name="anuchem.src" location="${anuchem}/src"/>
+    <property name="anuchem.props" location="${anuchem}/anuchem.properties"/>
+    <property name="gml.lib" location="${env.X10_HOME}/x10.gml/lib/native_gml.jar"/>
+    <property name="gml.props" location="${env.X10_HOME}/x10.gml/native_gml.properties"/>
+    <property name="papi" value="false" />
+    <property name="verbose" value="false" />
+    <property name="x10papi" location="../../papi_wrapper"/>
+    <property name="x10papi.props" location="${x10papi}/x10papi.properties"/>
+    <property name="papiHome" location="${user.home}/papi"/>
+    <property name="usemkl" value="false"/>
+    <property name="lapackHome" value="/usr/lib"/>
+    <property name="lapackName" value="lapack"/>
+    <property name="blasHome" value="/usr/lib"/>
+    <property name="blasName" value="blas"/>
+    <property name="bash.exe" value="bash"/>
+    <property name="optimize" value="true" />
+    <property name="nochecks" value="true" />
+    <property name="debug" value="true"/>
+    <property name="profile"  value="false" />
+    <property name="cpuprofile"  value="false"/>
+    <property name="perftoolsHome" location="${user.home}/perftools"/>
+    <property name="heapprofile" value="false" />
+
+    <property name="testclass" value="src/au/edu/anu/qm/PumjaRasaayani.x10" />
+
+    <property name="target" location="${basedir}/target" />
+    <property name="target-src" location="${target}/classes" />
+    <property name="target-test" location="${target}/test-classes" />
+    <property name="bin" location="${basedir}/bin" />
+    <property name="exe" value="pumjarasaayani"/>
+    <property name="jar" value="pumjarasaayani.jar"/>
+    <property name="lib" location="${basedir}/lib" />
+
+    <condition property="x10c.optimize" value="-O" else="">
+        <istrue value="${optimize}" />
+    </condition>
+
+    <condition property="x10c.nochecks" value="-NO_CHECKS -VERBOSE_CHECKS=true" else="-VERBOSE_CHECKS=true">
+        <istrue value="${nochecks}" />
+    </condition>
+
+    <condition property="x10c.debug" value="-DEBUG" else="">
+        <istrue value="${debug}"/>
+    </condition>
+
+    <condition property="x10c.profile" value="-pg" else="">
+        <istrue value="${profile}" />
+    </condition>
+
+    <condition property="x10c.cpuprofile" value="-gpt" else="">
+        <istrue value="${cpuprofile}"/>
+    </condition>
+
+    <condition property="post.papi" value="-L${papiHome}/lib -lpapi" else="">
+        <istrue value="${papi}"/>
+    </condition>
+
+    <condition property="define.papi" value="-x10lib ${x10papi.props} -define __PAPI__" else="">
+        <istrue value="${papi}"/>
+    </condition>
+
+    <condition property="define.verbose" value="-define __DEBUG__" else="">
+        <istrue value="${verbose}"/>
+    </condition>
+
+
+    <condition property="post.heapprofile" value="-ltcmalloc" else="">
+        <istrue value="${heapprofile}" />
+    </condition>
+
+    <condition property="post.lapack" value="-L${env.MKL}/lib/intel64 -lmkl_intel_lp64 -lmkl_gnu_thread -lmkl_core -ldl -lpthread -lm" else="-L${lapackHome} -L${blasHome} -fopenmp -l${lapackName} -l${blasName}">
+        <istrue value="${usemkl}"/>
+    </condition>
+
+    <condition property="define.mkl" value="-define __MKL__" else="">
+        <istrue value="${usemkl}"/>
+    </condition>
+
+    <condition property="post.define.mkl" value="-D __MKL__" else="">
+        <istrue value="${usemkl}"/>
+    </condition>
+    
+    <target name="init">
+        <mkdir dir="${target}"/>
+    </target>
+
+    <target name="build" depends="dist"/>
+
+    <target name="dist" depends="exe">
+    </target>
+
+    <target name="dist-java" depends="jar">
+    </target>
+
+    <target name="jar" depends="exe-java">
+        <mkdir dir="${bin}"/>
+        <jar jarfile="${bin}/${jar}">
+            <manifest>
+                <attribute name="Main-Class" value="au.edu.anu.qm.PumjaRasaayani"/>
+            </manifest>
+            <fileset dir="${target-src}" includes="**/*.class" excludes="${jar}"/>          
+        </jar>
+    </target>
+
+    <target name="exe" depends="build-src-cpp">
+        <mkdir dir="${bin}"/>
+        <copy file="${target}/classes/a.out" tofile="${bin}/${exe}" />
+
+        <exec executable="chmod" failonerror="true" dir="${bin}">
+            <arg value="+x"/>
+            <arg value="${exe}"/>
+        </exec>
+    </target>
+
+    <target name="exe-java" depends="check-src" unless="src.uptodate">
+        <echo message="Building source tree"/>
+
+        <fileset id="changed.src.files" dir="${basedir}/src" includes="**/*.x10">
+            <depend targetdir="${target}/classes">
+                <mapper type="glob" from="*.x10" to="*.java"/>
+            </depend>
+        </fileset>
+
+        <pathconvert property="src.list" refid="changed.src.files" dirsep="/" pathsep=" ">
+            <map from="${basedir}${file.separator}src${file.separator}" to=""/>
+        </pathconvert>
+        <echo message="x10c ${src.list}"/>
+
+        <exec executable="${bash.exe}" failonerror="true" dir="${basedir}/src">
+            <arg value="-c"/>
+            <arg value="'x10c' ${x10c.nochecks} ${x10c.optimize} -x10lib ${gml.props} -x10lib ${xla.props} -x10lib ${anuchem.props} -sourcepath . -d ${target-src} '${basedir}/${testclass}'"/>
+        </exec>
+    </target>
+
+    <target name="build-src-cpp" depends="check-src,build-integral-pack" unless="src.uptodate">
+        <echo message="Building source tree"/>
+
+        <fileset id="changed.src.files" dir="${basedir}/src" includes="**/*.x10">
+            <depend targetdir="${target}/classes">
+                <mapper type="glob" from="*.x10" to="*.cc"/>
+            </depend>
+        </fileset>
+
+        <pathconvert property="src.list" refid="changed.src.files" dirsep="/" pathsep=" ">
+            <map from="${basedir}${file.separator}src${file.separator}" to=""/>
+        </pathconvert>
+        <echo message="x10c++ -x10rt ${x10rt} ${x10c.debug} ${x10c.cpuprofile} ${x10c.profile} ${x10c.optimize} ${x10c.nochecks} ${define.papi} ${define.mkl} ${define.verbose} -classpath ${gml.lib} -x10lib ${gml.props} -x10lib ${xla.props} -x10lib ${anuchem.props} -sourcepath . ${basedir}/${testclass}"/>
+
+        <exec executable="${bash.exe}" failonerror="true" dir="${basedir}/src">
+            <arg value="-c"/> 
+            <arg value="'x10c++' -x10rt ${x10rt} ${x10c.debug} ${x10c.cpuprofile} ${x10c.profile} ${x10c.optimize} ${x10c.nochecks} ${define.papi} ${define.mkl} ${define.verbose} -report postcompile=1 -classpath ${gml.lib} -x10lib ${gml.props} -x10lib ${xla.props} -x10lib ${anuchem.props} -sourcepath . -post '# # -D__X10_HEADERS ${post.define.mkl} ${post.heapprofile} # -O3 -L${lib} -lintpack ${post.lapack} ${post.papi}' -d ${target-src} ${basedir}/${testclass}"/>
+        </exec>
+    </target>
+
+    <target name="init-src" depends="init">
+        <mkdir dir="${target-src}"/>
+	</target>
+
+	<target name="check-src" depends="init-src">
+        <fileset id="src.files" dir="${basedir}/src" includes="**/*.x10"/>
+        <uptodate property="src.uptodate">
+            <srcfiles refid="src.files"/>
+            <globmapper from="*.x10" to="${target-src}/*.cc" handledirsep="true"/>
+        </uptodate>
+    </target>
+
+    <target name="check-src-cpp" depends="init-src">
+        <fileset id="cpp.files" dir="${basedir}/src" includes="**/*.h,**/*.cc"/>
+        <uptodate property="src.uptodate.cpp">
+            <srcfiles refid="cpp.files"/>
+            <globmapper from="*" to="${target-src}/*" handledirsep="true"/>
+        </uptodate>
+    </target>
+
+    <target name="build-integral-pack" depends="check-src-cpp" unless="src.uptodate.cpp">
+        <echo message="Building integral pack"/>
+
+        <mkdir dir="${lib}"/>
+
+        <copy todir="${lib}">
+            <fileset id="cpp.files" dir="ro" includes="**/*.h,**/*.cc"/>
+        </copy>
+
+        <exec executable="${bash.exe}" failonerror="true" dir="${lib}">
+            <arg value="-c"/> 
+            <arg value="g++ -Wall -c -g -O3 -D__X10_HEADERS -I${x10.stdlib} Integral_Pack.cc SphericalHarmonics.cc bessel4.cc"/>
+        </exec>
+
+        <exec executable="${bash.exe}" failonerror="true" dir="${lib}">
+            <arg value="-c"/> 
+            <arg value="ar crf libintpack.a Integral_Pack.o SphericalHarmonics.o bessel4.o"/>
+        </exec>
+
+        <mkdir dir="${target-src}/au/edu/anu/qm/ro"/>
+
+        <copy todir="${target-src}/au/edu/anu/qm/ro">
+            <fileset id="header.file" dir="ro" includes="*.h"/>
+        </copy>
+    </target>
+    
+    <target name="build-test" depends="check-test,build-harness" unless="test.uptodate">
+        <echo message="Building tests"/>
+        <fileset id="changed.test.files" dir="${basedir}/test" includes="**/TestTwoElectronIntegrals.x10">
+            <depend targetdir="${target}/test-classes">
+                <mapper type="glob" from="*.x10" to="*.cc"/>
+            </depend>
+        </fileset>
+
+        <pathconvert property="test.list" refid="changed.test.files" dirsep="/" pathsep=" ">
+            <map from="${basedir}${file.separator}test${file.separator}" to=""/>
+        </pathconvert>
+        <echo message="x10c ${test.list}"/>
+
+        <exec executable="${bash.exe}" failonerror="true" dir="${basedir}/test">
+            <arg value="-c"/>
+            <arg value="'x10c++' -x10rt ${x10rt} ${x10c.nochecks} ${x10c.optimize} -x10lib ${gml.props} -x10lib ${xla.props} -x10lib ${anuchem.props} -post '# # ${post.define.mkl} # ${post.lapack}' -sourcepath ${x10.testlib}:${basedir}/src:. -classpath ${target-src} -d ${target-test} ${test.list}"/>
+        </exec>
+    </target>
+
+    <target name="test" depends="build-test">
+        <apply executable="x10" failonerror="true" dir="${target-test}" relative="true" addsourcefile="false">
+            <arg line="-t -v -mx 128M -classpath '${xla.lib}${path.separator}${anuchem.lib}${path.separator}${target-src}${path.separator}${target-test}'" />
+            <targetfile/>
+
+            <fileset dir="${target-test}" includes="**/Test*.cc" />
+            <mapper type="glob" from="*.cc" to="*"/>
+        </apply>
+    </target>
+
+	<target name="init-test" depends="init">
+        <mkdir dir="${target-test}"/>
+	</target>
+
+	<target name="check-test" depends="init-test">
+        <fileset id="test.files" dir="${basedir}/test" includes="**/*.x10"/>
+        <uptodate property="test.uptodate">
+            <srcfiles refid="test.files"/>
+            <globmapper from="*.x10" to="${target-test}/*.cc" handledirsep="true"/>
+        </uptodate>
+    </target>
+
+	<target name="build-harness" depends="init-test,check-harness" unless="harness.uptodate">
+        <echo message="Building test harness"/>
+		<echo message="x10c ${x10.testlib}/harness/x10Test.x10"/>
+        <exec executable="${bash.exe}" failonerror="true" dir="${basedir}/test">
+            <arg value="-c"/>
+            <arg value="'x10c' ${x10c.nochecks} ${x10c.optimize} -sourcepath . -d ${target-test} ${x10.testlib}/harness/x10Test.x10"/>
+        </exec>
+    </target>
+
+	<target name="check-harness" >
+		<uptodate property="harness.uptodate">
+			<srcfiles dir="${x10.testlib}" includes="harness/*.x10"/>
+	 		<globmapper from="*.x10" to="${target-test}/*.cc" handledirsep="true"/>
+		</uptodate>
+    </target>
+
+	<target name="clean">
+		<delete dir="target" />
+		<delete dir="bin" />
+		<delete dir="lib" />
+	</target>
+
+</project>

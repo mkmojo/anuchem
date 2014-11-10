@@ -1,0 +1,10 @@
+TODOs for Particle Mesh Ewald code
+
+- formulate distributed 3D FFT using Team allToAll
+- faster grid interpolation - investigate using tables (as per GROMACS?)
+- non-cubic unit cell
+- generalise ghost cell solution (in scatterAndReduceShiftedGridContribution) and incorporate into X10 array library (XTENLANG-1365)
+
+For Summer Scholar ?
+- document performance results, including "crossover point" vs. direct and FMM, weak and strong scaling
+- document error behaviour with regard to tree size and number of terms in expansions
