@@ -54,7 +54,7 @@
     description="Test the Particle Mesh Ewald app code">
         <exec executable="${bash.exe}" failonerror="true" dir="${basedir}/apps/pme">
             <arg value="-c"/>
-            <arg value="bin/pme test/gromacs/box100k.gro"/>
+            <arg value="bin/pme test/gromacs/conf.gro"/>
         </exec>
     </target>
 
