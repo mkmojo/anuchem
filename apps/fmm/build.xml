@@ -18,7 +18,7 @@
     <property name="x10papi" location="../../papi_wrapper"/>
     <property name="x10papi.props" location="${x10papi}/x10papi.properties"/>
     <property name="papiHome" location="${user.home}/papi"/>
-    <property name="x10.sharedlib" location="/u/qqiu/workspace/x10-trunk/x10.dist/stdlib/lib/libx10.so"/>
+    <property name="x10.sharedlib" location="${env.X10_HOME}/x10.dist/stdlib/lib/libx10.so"/>
     <property name="x10.testlib" location="${env.X10_HOME}/x10.tests/tests/x10lib"/>
     <property name="bash.exe" value="bash"/>    
     <property name="optimize" value="true"/>
