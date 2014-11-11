@@ -5,8 +5,9 @@ import random
 NUM_POINT = 1000000 
 atom_list = ['H', 'O']
 
+
 def main():
-    with open('large.xyz','w') as f:
+    with open('large.xyz', 'w') as f:
         f.write(str(NUM_POINT) + '\n')
         f.write("Some random " + str(NUM_POINT) + "atoms\n")
         for i in xrange(NUM_POINT):
